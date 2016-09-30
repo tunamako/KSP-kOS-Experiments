@@ -7,7 +7,7 @@ GAME
 	linkCaption = 
 	Mode = CAREER
 	Status = 1
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/satellite
 	launchID = 10
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2884.49219970509
+		update = 2413.53219970552
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -1235,76 +1235,6 @@ GAME
 			sci = 3.692308
 			cap = 3.9
 		}
-		Science
-		{
-			id = crewReport@KerbinSrfLandedRunway
-			title = Crew Report from Runway
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 1.5
-		}
-		Science
-		{
-			id = evaReport@KerbinSrfLandedRunway
-			title = EVA Report from Runway
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 2.4
-		}
-		Science
-		{
-			id = mobileMaterialsLab@KerbinSrfLandedRunway
-			title = Materials Study from Runway
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 9.6
-		}
-		Science
-		{
-			id = mysteryGoo@KerbinSrfLandedRunway
-			title = Mystery Goo™ Observation from Runway
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 3.9
-		}
-		Science
-		{
-			id = mobileMaterialsLab@KerbinSrfLandedAdministration
-			title = Materials Study from Administration
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 9.6
-		}
-		Science
-		{
-			id = mysteryGoo@KerbinSrfLandedAdministration
-			title = Mystery Goo™ Observation from Administration
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 3.9
-		}
-		Science
-		{
-			id = evaReport@KerbinSrfLandedAdministration
-			title = EVA Report from Administration
-			dsc = 1
-			scv = 1
-			sbv = 0.3
-			sci = 0
-			cap = 2.4
-		}
 	}
 	SCENARIO
 	{
@@ -1597,7 +1527,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 2884.89219970509
+		UT = 2413.73219970552
 		activeVessel = 0
 		mapViewFiltering = 2047
 		VESSEL
@@ -1605,37 +1535,37 @@ GAME
 			pid = f81f733d933d46b192774cec958566d3
 			name = base land science
 			type = Ship
-			sit = LANDED
+			sit = PRELAUNCH
 			landed = True
-			landedAt = KSC_Administration_Grounds
+			landedAt = Runway
 			splashed = False
-			met = 469.859999999573
-			lct = 2415.01219970552
-			lastUT = 2884.89219970509
+			met = 0
+			lct = 2413.73219970552
+			lastUT = 2413.73219970552
 			root = 0
-			lat = -0.0896943593753854
-			lon = 285.336038475956
-			alt = 68.9481629087823
-			hgt = 0.9189352
-			nrm = 0.001820296,-0.007487684,-0.9999702
-			rot = -0.03219906,0.1308727,0.215564,-0.9671441
-			CoM = -0.005560026,0.7006466,-0.0989776
+			lat = -0.0489081121166974
+			lon = 285.289831351117
+			alt = 70.3075456569204
+			hgt = 1.265119
+			nrm = 0.001921743,-0.0008243215,-0.999998
+			rot = 0.1339848,-0.0003707799,-0.9909769,-0.003569233
+			CoM = -0.02604003,0.526404,0.07217738
 			stg = 1
 			prst = False
 			ref = 1156648100
 			ctrl = True
-			cPch = 0.5800002
-			cHdg = -4.258002
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300816.851806186
-				ECC = 0.99479862153944
-				INC = 0.0896335569906383
-				LPE = 90.1021477920002
-				LAN = 153.428633448435
-				MNA = 3.14159135193903
-				EPH = 2884.89219970509
+				SMA = 300817.457921179
+				ECC = 0.994798569662837
+				INC = 0.0489584007509231
+				LPE = 89.9999999999997
+				LAN = 145.61345158767
+				MNA = 3.14159347682188
+				EPH = 2413.73219970552
 				REF = 1
 			}
 			PART
@@ -1660,9 +1590,9 @@ GAME
 				attN = bottom, 1
 				attN = top, 10
 				mass = 0.8
-				temp = 313.118825264135
-				tempExt = 313.143423307046
-				tempExtUnexp = 313.143408002218
+				temp = 312.789141821184
+				tempExt = 312.816555224031
+				tempExtUnexp = 312.812399929523
 				expt = 0.5
 				state = 0
 				connected = True
@@ -1790,7 +1720,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -1822,7 +1752,7 @@ GAME
 						}
 						ReviewDataEvent
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiActiveUncommand = False
 							guiIcon = Review Data
@@ -1904,16 +1834,6 @@ GAME
 							actionGroup = None
 						}
 					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@KerbinSrfLandedRunway
-						xmit = 1
-						labBoost = 1
-						title = Crew Report from Runway
-						triggered = False
-						container = 1156648100
-					}
 				}
 				MODULE
 				{
@@ -1924,11 +1844,11 @@ GAME
 					{
 						StoreDataExternalEvent
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiActiveUncommand = False
 							guiIcon = 
-							guiName = Store Experiments (7)
+							guiName = Store Experiments (0)
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 1.3
@@ -1936,11 +1856,11 @@ GAME
 						}
 						CollectDataExternalEvent
 						{
-							active = True
+							active = False
 							guiActive = False
 							guiActiveUncommand = False
 							guiIcon = 
-							guiName = Take Data (7)
+							guiName = Take Data (0)
 							category = 
 							guiActiveUnfocused = True
 							unfocusedRange = 1.3
@@ -1948,11 +1868,11 @@ GAME
 						}
 						ReviewDataEvent
 						{
-							active = True
+							active = False
 							guiActive = True
 							guiActiveUncommand = False
 							guiIcon = Review Data
-							guiName = Review Stored Data (6)
+							guiName = Review Stored Data (0)
 							category = Review Data
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -1973,66 +1893,6 @@ GAME
 					}
 					ACTIONS
 					{
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@KerbinSrfLandedRunway
-						xmit = 1
-						labBoost = 1
-						title = EVA Report from Runway
-						triggered = False
-						container = 1156648100
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@KerbinSrfLandedRunway
-						xmit = 0.35
-						labBoost = 1
-						title = Materials Study from Runway
-						triggered = False
-						container = 1156648100
-					}
-					ScienceData
-					{
-						data = 10
-						subjectID = mysteryGoo@KerbinSrfLandedRunway
-						xmit = 0.3
-						labBoost = 1
-						title = Mystery Goo™ Observation from Runway
-						triggered = False
-						container = 1156648100
-					}
-					ScienceData
-					{
-						data = 10
-						subjectID = mysteryGoo@KerbinSrfLandedAdministration
-						xmit = 0.3
-						labBoost = 1
-						title = Mystery Goo™ Observation from Administration
-						triggered = False
-						container = 1156648100
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@KerbinSrfLandedAdministration
-						xmit = 0.35
-						labBoost = 1
-						title = Materials Study from Administration
-						triggered = False
-						container = 1156648100
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@KerbinSrfLandedAdministration
-						xmit = 1
-						labBoost = 1
-						title = EVA Report from Administration
-						triggered = False
-						container = 1156648100
 					}
 				}
 				MODULE
@@ -2161,7 +2021,6 @@ GAME
 					Log
 					{
 						flight = 0
-						0 = Land,Kerbin
 					}
 				}
 				MODULE
@@ -2203,7 +2062,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 49.243256619543
+					amount = 50
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -2245,9 +2104,9 @@ GAME
 				attN = top, 0
 				attN = bottom, -1
 				mass = 0.2
-				temp = 312.980131233733
-				tempExt = 313.086649691797
-				tempExtUnexp = 313.086641527077
+				temp = 312.78888253717
+				tempExt = 312.733146564507
+				tempExtUnexp = 312.731738136317
 				expt = 0.5
 				state = 0
 				connected = True
@@ -2270,8 +2129,8 @@ GAME
 					isEnabled = True
 					aniState = LOCKED
 					animSwitch = True
-					animTime = 0.008015163
-					animSpeed = 0
+					animTime = 0
+					animSpeed = 1
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -2499,9 +2358,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 312.949521716461
-				tempExt = 312.958177231531
-				tempExtUnexp = 312.958168858731
+				temp = 312.789135804584
+				tempExt = 312.786888081889
+				tempExtUnexp = 312.786843950552
 				expt = 0.5
 				state = 0
 				connected = True
@@ -2578,9 +2437,9 @@ GAME
 				sym = 7
 				srfN = srfAttach, 2
 				mass = 0.015
-				temp = 312.924975310074
-				tempExt = 312.826591823468
-				tempExtUnexp = 312.826582904057
+				temp = 312.789127873868
+				tempExt = 312.778121292002
+				tempExtUnexp = 312.77904688834
 				expt = 0.5
 				state = 0
 				connected = True
@@ -2602,7 +2461,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = FREE
-					isGrounded = True
+					isGrounded = False
 					autoFriction = True
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -2655,7 +2514,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (2.200902E-05, -0.3424595, -2.82377E-06)
+					suspensionPos = (-1, -1, -1)
 					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
@@ -2822,9 +2681,9 @@ GAME
 				sym = 8
 				srfN = srfAttach, 2
 				mass = 0.015
-				temp = 312.989769528594
-				tempExt = 313.272128814959
-				tempExtUnexp = 313.272120146691
+				temp = 312.789112996152
+				tempExt = 312.785382476621
+				tempExtUnexp = 312.78517414901
 				expt = 0
 				state = 0
 				connected = True
@@ -2898,7 +2757,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.0005642774, -3.032376E-08, 0.006211254)
+					suspensionPos = (-1, -1, -1)
 					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
@@ -3100,9 +2959,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 312.925961318313
-				tempExt = 312.880161247998
-				tempExtUnexp = 312.880152200713
+				temp = 312.789131241921
+				tempExt = 312.776387602363
+				tempExtUnexp = 312.77729748938
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3181,9 +3040,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 312.926609136746
-				tempExt = 312.931419223486
-				tempExtUnexp = 312.931411274046
+				temp = 312.789139291147
+				tempExt = 312.794957997785
+				tempExtUnexp = 312.793967653797
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3260,9 +3119,9 @@ GAME
 				sym = 3
 				srfN = srfAttach, 6
 				mass = 0.015
-				temp = 312.901714339378
-				tempExt = 312.801971523957
-				tempExtUnexp = 312.801962748082
+				temp = 312.789127954216
+				tempExt = 312.778295128229
+				tempExtUnexp = 312.779178385529
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3284,7 +3143,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = FREE
-					isGrounded = True
+					isGrounded = False
 					autoFriction = True
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -3337,7 +3196,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-3.650784E-06, -0.348428, -3.919005E-06)
+					suspensionPos = (-1, -1, -1)
 					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
@@ -3504,9 +3363,9 @@ GAME
 				sym = 4
 				srfN = srfAttach, 6
 				mass = 0.015
-				temp = 312.960377002302
-				tempExt = 313.022743790168
-				tempExtUnexp = 313.022733124814
+				temp = 312.789202343524
+				tempExt = 312.830319979023
+				tempExtUnexp = 312.824315293429
 				expt = 0
 				state = 0
 				connected = True
@@ -3580,7 +3439,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.0005643601, -9.51438E-08, 0.00621146)
+					suspensionPos = (-1, -1, -1)
 					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
@@ -3782,9 +3641,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 312.903360812883
-				tempExt = 312.856668839131
-				tempExtUnexp = 312.856660203185
+				temp = 312.789141860971
+				tempExt = 312.797728911925
+				tempExtUnexp = 312.796447041341
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3862,9 +3721,9 @@ GAME
 				attN = bottom, 0
 				attN = top, -1
 				mass = 0.05
-				temp = 313.155893774722
-				tempExt = 313.125050898146
-				tempExtUnexp = 313.125033417289
+				temp = 312.789115721633
+				tempExt = 312.770350355459
+				tempExtUnexp = 312.771235158235
 				expt = 0.5
 				state = 0
 				connected = True
@@ -3999,9 +3858,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 313.418487603537
-				tempExt = 313.413227869887
-				tempExtUnexp = 313.41321069287
+				temp = 312.789141444843
+				tempExt = 312.797089526819
+				tempExtUnexp = 312.795794688414
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4079,9 +3938,9 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.125
-				temp = 313.884476363258
-				tempExt = 313.75442531436
-				tempExtUnexp = 313.754409425378
+				temp = 312.789132238079
+				tempExt = 312.777811451113
+				tempExtUnexp = 312.778638121152
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4158,9 +4017,9 @@ GAME
 				sym = 14
 				srfN = srfAttach, 12
 				mass = 0.022
-				temp = 313.859791799732
-				tempExt = 313.623493271512
-				tempExtUnexp = 313.623483226083
+				temp = 312.789144957969
+				tempExt = 312.803518812175
+				tempExtUnexp = 312.801057954163
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4182,7 +4041,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = FREE
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 5
 					stagingEnabled = True
@@ -4236,7 +4095,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					suspensionPos = (-1, -1, -1)
-					autoBoost = 0.5039988
+					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
 					{
@@ -4276,7 +4135,7 @@ GAME
 					name = ModuleWheelBrakes
 					isEnabled = True
 					brakeTweakable = 50
-					brakeInput = 1
+					brakeInput = 0
 					stagingEnabled = True
 					brakeTweakable_UIFlight
 					{
@@ -4405,9 +4264,9 @@ GAME
 				sym = 13
 				srfN = srfAttach, 12
 				mass = 0.022
-				temp = 313.95743697108
-				tempExt = 314.172047110602
-				tempExtUnexp = 314.172050750292
+				temp = 312.789130238791
+				tempExt = 312.77830046068
+				tempExtUnexp = 312.779253477421
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4429,7 +4288,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = FREE
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 5
 					stagingEnabled = True
@@ -4483,7 +4342,7 @@ GAME
 					springTweakable = 1
 					damperTweakable = 1
 					suspensionPos = (-1, -1, -1)
-					autoBoost = 0.1339988
+					autoBoost = 0
 					stagingEnabled = True
 					springTweakable_UIEditor
 					{
@@ -4523,7 +4382,7 @@ GAME
 					name = ModuleWheelBrakes
 					isEnabled = True
 					brakeTweakable = 50
-					brakeInput = 1
+					brakeInput = 0
 					stagingEnabled = True
 					brakeTweakable_UIFlight
 					{
@@ -4653,9 +4512,9 @@ GAME
 				attN = top, 16
 				attN = bottom, 17
 				mass = 0.025
-				temp = 314.007355066129
-				tempExt = 313.787037669345
-				tempExtUnexp = 313.787083690701
+				temp = 312.789142363035
+				tempExt = 312.817045863369
+				tempExtUnexp = 312.813201401766
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4713,7 +4572,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 49.4179078938172
+					amount = 50
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -4743,9 +4602,9 @@ GAME
 				srfN = , -1
 				attN = bottom01, 15
 				mass = 0.007
-				temp = 313.997419657187
-				tempExt = 313.770622652303
-				tempExtUnexp = 313.770665926596
+				temp = 312.789126553177
+				tempExt = 312.784548891827
+				tempExtUnexp = 312.78472675766
 				expt = 0.5
 				state = 0
 				connected = True
@@ -4856,7 +4715,7 @@ GAME
 				RESOURCE
 				{
 					name = IntakeAir
-					amount = 0.5
+					amount = 0.294177594203655
 					maxAmount = 0.5
 					flowState = True
 					isTweakable = False
@@ -4886,9 +4745,9 @@ GAME
 				srfN = , -1
 				attN = top, 15
 				mass = 0.25
-				temp = 314.142577807388
-				tempExt = 314.095674174151
-				tempExtUnexp = 314.095737281319
+				temp = 312.789147059407
+				tempExt = 312.841191062464
+				tempExtUnexp = 312.832075973247
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5135,9 +4994,9 @@ GAME
 				attN = top, 19
 				attN = bottom, 20
 				mass = 0.025
-				temp = 313.374064466554
-				tempExt = 313.45649545457
-				tempExtUnexp = 313.456472057753
+				temp = 312.789143401289
+				tempExt = 312.82682801707
+				tempExtUnexp = 312.82139766111
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5195,7 +5054,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 49.4179078938172
+					amount = 50
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -5225,9 +5084,9 @@ GAME
 				srfN = , -1
 				attN = bottom01, 18
 				mass = 0.007
-				temp = 313.370521640959
-				tempExt = 313.371864537055
-				tempExtUnexp = 313.371840583556
+				temp = 312.789126588057
+				tempExt = 312.784559767694
+				tempExtUnexp = 312.784730338186
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5338,7 +5197,7 @@ GAME
 				RESOURCE
 				{
 					name = IntakeAir
-					amount = 0.5
+					amount = 0.294184364383548
 					maxAmount = 0.5
 					flowState = True
 					isTweakable = False
@@ -5368,9 +5227,9 @@ GAME
 				srfN = , -1
 				attN = top, 18
 				mass = 0.25
-				temp = 313.368515364476
-				tempExt = 313.667783810407
-				tempExtUnexp = 313.667760514116
+				temp = 312.789146666398
+				tempExt = 312.842080711218
+				tempExtUnexp = 312.831893954419
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5586,7 +5445,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.02
+					amount = 0
 					maxAmount = 0.02
 					flowState = True
 					isTweakable = False
@@ -5616,9 +5475,9 @@ GAME
 				srfN = srfAttach, 0
 				attN = bottom, -1
 				mass = 0.005
-				temp = 313.095723046232
-				tempExt = 313.094446186487
-				tempExtUnexp = 313.094428968895
+				temp = 312.789132443263
+				tempExt = 312.783154784816
+				tempExtUnexp = 312.78322298097
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5809,9 +5668,9 @@ GAME
 				attm = 1
 				srfN = srfAttach, 0
 				mass = 0.05
-				temp = 313.027808778136
-				tempExt = 313.031963349768
-				tempExtUnexp = 313.031950476768
+				temp = 312.789115634833
+				tempExt = 312.772402381094
+				tempExtUnexp = 312.772857634157
 				expt = 0.5
 				state = 0
 				connected = True
@@ -5835,7 +5694,7 @@ GAME
 					aniState = LOCKED
 					animSwitch = True
 					animTime = 0
-					animSpeed = 0
+					animSpeed = 1
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -6047,7 +5906,7 @@ GAME
 				Light = False, 0
 				RCS = False, 0
 				SAS = False, 0
-				Brakes = True, 2815.27219970515
+				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
 				Custom02 = False, 0
@@ -6207,10 +6066,6 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 0
-				0 = Land,Kerbin
-				0 = ExitVessel,Kerbin
-				0 = Flight,Kerbin
-				0 = BoardVessel,Kerbin
 			}
 		}
 		KERBAL
