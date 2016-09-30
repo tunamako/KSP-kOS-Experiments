@@ -12,7 +12,9 @@
 !/GameData/Wah
 
 #   managed game saves
-!/saves/Wah R&D
+!/saves
+/saves/*
+!/saves/Wah R&D/
 
 #   other global stuff like ships and scripts
 !/Screenshots
