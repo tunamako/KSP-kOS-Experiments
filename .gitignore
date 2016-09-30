@@ -1,0 +1,19 @@
+# ignore everything...
+
+/*
+
+
+# except...
+
+#   this, duh!
+!.gitignore
+
+#   flags and such
+!/GameData/Wah
+
+#   managed game saves
+!/saves/Wah R&D
+
+#   other global stuff like ships and scripts
+!/Screenshots
+!/Ships
