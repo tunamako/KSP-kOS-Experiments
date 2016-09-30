@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/satellite
-	launchID = 4
+	launchID = 5
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1027.02799804661
+		update = 1248.32799804641
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -765,7 +765,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 167500.510626614
+		funds = 165500.910641491
 	}
 	SCENARIO
 	{
@@ -861,7 +861,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 19.39537
+		sci = 34.49154
 		Tech
 		{
 			id = start
@@ -979,9 +979,9 @@ GAME
 			id = recovery@KerbinFlew
 			title = Recovery of a vessel that survived a flight.
 			dsc = 1
-			scv = 0.000771602
+			scv = 0.0001286666
 			sbv = 5
-			sci = 5.99537
+			sci = 5.999228
 			cap = 6
 		}
 		Science
@@ -1053,6 +1053,46 @@ GAME
 			sbv = 0.4
 			sci = 4
 			cap = 5.2
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedVABMainBuilding
+			title = Mystery Goo™ Observation from VAB Main Building
+			dsc = 1
+			scv = 0.05325446
+			sbv = 0.3
+			sci = 3.692308
+			cap = 3.9
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedVABMainBuilding
+			title = Materials Study from VAB Main Building
+			dsc = 1
+			scv = 0.21875
+			sbv = 0.3
+			sci = 7.5
+			cap = 9.6
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedVABMainBuilding
+			title = Crew Report from VAB Main Building
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedVABMainBuilding
+			title = EVA Report from VAB Main Building
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 2.4
+			cap = 2.4
 		}
 	}
 	SCENARIO
@@ -1346,7 +1386,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 1028.64799804661
+		UT = 1254.4279980464
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -1380,7 +1420,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 3
+				flight = 4
 				0 = ExitVessel,Kerbin
 				0 = Flight,Kerbin
 				0 = BoardVessel,Kerbin
@@ -1394,10 +1434,15 @@ GAME
 				2 = Flight,Kerbin
 				2 = Land,Kerbin
 				2 = Recover
+				3 = Flight,Kerbin
+				3 = Land,Kerbin
+				3 = ExitVessel,Kerbin
+				3 = BoardVessel,Kerbin
+				3 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 3
+				flight = 4
 			}
 		}
 		KERBAL
@@ -1470,37 +1515,5 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test LV-T45 "Swivel" Liquid Fuel Engine splashed down at Kerbin.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  13,125   </color>~n<color=#6DCFF6>© 2   </color>~n<color=#E0D503>¡ 4   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test RT-10 "Hammer" Solid Fuel Booster at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,500   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken an altitude record of 7,000m.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have splashed into the ocean.~n<color=#b4d455>£  4,800 </color><color=#e0d503>¡ 1 </color>~n~nWe have splashed into the ocean.~n<color=#b4d455>£  4,800 </color><color=#e0d503>¡ 1 </color>~n~nWe have broken an ocean depth record of 10m.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n~nWe have broken an ocean depth record of 20m.~n<color=#b4d455>£  9,600 </color><color=#6dcff6>© 1 </color><color=#e0d503>¡ 2 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Test RT-10 "Hammer" Solid Fuel Booster at the Launch Site.</b>~n~nTest Complete! We got some good data here. Thanks!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  4,500   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
 	}
 }
