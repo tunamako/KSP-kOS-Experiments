@@ -390,11 +390,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-<<<<<<< HEAD
-		UT = 5884.64712890874
-=======
-		UT = 39.3600000000005
->>>>>>> origin/master
+		UT = 430.419999999898
 		activeVessel = 0
 		mapViewFiltering = -1026
 		VESSEL
