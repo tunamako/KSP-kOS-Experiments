@@ -22,3 +22,7 @@ It'll manage global ships, scripts, and specific game saves.
 ###Wah R&D (sandbox)
 where most of the KOS testing and some subassembly building will happen.
 Still setting this stuff up, but we'll get there one day.
+
+###Wah Enterprises (career)
+Where the actual srsbsns is conducted.
+Ships, scripts etc. can be shared across multiple users  playing this save, but progress-based game mechanics like in-progress flights, contracts, tech tree etc. will be overwritten between commits.
