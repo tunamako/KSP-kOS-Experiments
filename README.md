@@ -4,7 +4,7 @@ _stuco and tuna's shared automation-heavy games._
 
 ##To Do
 
-  * set up a decent .gitignore for this repo based on the game install structure
+  * adjust .gitignore to allow mods. would simplify game setup for new players if anyone else wants to play with us, and will sync mechanics if we choose to adjust them (and i feel like we might want to eventually for balancing reasons)
 
 ##Getting Started
 
@@ -22,3 +22,7 @@ It'll manage global ships, scripts, and specific game saves.
 ###Wah R&D (sandbox)
 where most of the KOS testing and some subassembly building will happen.
 Still setting this stuff up, but we'll get there one day.
+
+###Wah Enterprises (career)
+Where the actual srsbsns is conducted.
+Ships, scripts etc. can be shared across multiple users  playing this save, but progress-based game mechanics like in-progress flights, contracts, tech tree etc. will be overwritten between commits.
