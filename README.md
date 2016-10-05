@@ -4,7 +4,7 @@ _stuco and tuna's shared automation-heavy games._
 
 ##To Do
 
-  * adjust .gitignore to allow mods. would simplify game setup for new players if anyone else wants to play with us, and will sync mechanics if we choose to adjust them (and i feel like we might want to eventually for balancing reasons)
+  * (none)
 
 ##Getting Started
 
