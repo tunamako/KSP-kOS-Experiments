@@ -1,0 +1,18 @@
+{
+	"NAME":		"TAC Fuel Balancer",
+	"URL":		"https://themoose.co.uk/ksp/TacFuelBalancer.version",
+	"DOWNLOAD":	"https://themoose.co.uk/ksp/downloads.html",
+	"CHANGE_LOG_URL":"https://themoose.co.uk/ksp/TacFuelBalancerChanges.md",
+	"VERSION":
+	{
+		"MAJOR":2,
+		"MINOR":8,
+		"PATCH":0
+	},
+	"KSP_VERSION":
+	{
+		"MAJOR": 1,
+		"MINOR": 1,
+		"PATCH": 3
+	}
+}

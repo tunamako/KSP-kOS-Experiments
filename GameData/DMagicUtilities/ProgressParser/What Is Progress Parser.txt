@@ -1,0 +1,5 @@
+Progress Parser is a required compenent of Contracts Window + and CapCom.
+
+It is used to calculate and store the values for progress rewards for a save file.
+
+DO NOT remove Progress Parser unless you have already removed both CapCom and Contracts Window +.

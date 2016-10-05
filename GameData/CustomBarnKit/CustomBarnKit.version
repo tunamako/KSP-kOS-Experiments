@@ -1,0 +1,26 @@
+{
+    "NAME": "CustomBarnKit",
+    "URL": "https://ksp.sarbian.com/jenkins/job/CustomBarnKit/lastSuccessfulBuild/artifact/CustomBarnKit/CustomBarnKit.version",
+    "DOWNLOAD": "http://forum.kerbalspaceprogram.com/index.php?/topic/109027-/",
+    "VERSION":{
+        "MAJOR": 1,
+        "MINOR": 1,
+        "PATCH": 9,
+        "BUILD": 0
+    },
+    "KSP_VERSION": {
+        "MAJOR": 1,
+        "MINOR": 1,
+        "PATCH": 3
+    },
+    "KSP_VERSION_MIN": {
+        "MAJOR": 1,
+        "MINOR": 1,
+        "PATCH": 3
+    },
+    "KSP_VERSION_MAX": {
+        "MAJOR": 1,
+        "MINOR": 1,
+        "PATCH": 3
+    }
+}

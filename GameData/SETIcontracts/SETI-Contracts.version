@@ -1,0 +1,18 @@
+{
+	"NAME":"SETI-Contracts",
+	"URL":"http://ksp-avc.cybutek.net/version.php?id=144",
+	"DOWNLOAD":"http://forum.kerbalspaceprogram.com/threads/106130",
+	"VERSION":
+	{
+		"MAJOR":0,
+		"MINOR":9,
+		"PATCH":7,
+		"BUILD":1
+	},
+	"KSP_VERSION":
+	{
+		"MAJOR":1,
+		"MINOR":1,
+		"PATCH":3
+	}
+}

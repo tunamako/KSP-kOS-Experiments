@@ -1,0 +1,31 @@
+{
+     "NAME":"Progress Parser",
+	 "URL":"https://raw.githubusercontent.com/DMagic1/KSP_Progress_Parser/master/GameData/DMagicUtilities/ProgressParser/ProgressParser.version",
+     "DOWNLOAD":"https://github.com/DMagic1/KSP_Progress_Parser/releases/tag/5.0",
+     "GITHUB":{
+         "USERNAME":"DMagic1",
+         "REPOSITORY":"KSP_Progress_Parser",
+         "ALLOW_PRE_RELEASE":false,
+     },
+     "VERSION":{
+         "MAJOR":1,
+         "MINOR":0,
+         "PATCH":5,
+         "BUILD":0
+     },
+     "KSP_VERSION":{
+         "MAJOR":1,
+         "MINOR":1,
+         "PATCH":2
+     },
+     "KSP_VERSION_MIN":{
+         "MAJOR":1,
+         "MINOR":1,
+         "PATCH":2
+     },
+     "KSP_VERSION_MAX":{
+         "MAJOR":1,
+         "MINOR":1,
+         "PATCH":99
+     }
+ } 

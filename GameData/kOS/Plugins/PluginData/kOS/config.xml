@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <int name="InstructionsPerUpdate">200</int>
+    <bool name="UseCompressedPersistence">0</bool>
+    <bool name="ShowStatistics">0</bool>
+    <bool name="EnableRTIntegration">1</bool>
+    <bool name="StartOnArchive">0</bool>
+    <bool name="ObeyHideUI">1</bool>
+    <bool name="EnableSafeMode">1</bool>
+    <bool name="AudibleExceptions">1</bool>
+    <bool name="VerboseExceptions">1</bool>
+    <bool name="EnableTelnet">0</bool>
+    <int name="TelnetPort">5410</int>
+    <bool name="TelnetLoopback">1</bool>
+    <bool name="DebugEachOpcode">0</bool>
+</config>
