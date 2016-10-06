@@ -8,9 +8,8 @@
 #   this, duh!
 !.gitignore
 
-#   mods cause someone cant use ckan pff
-!/GameData
-/GameData/Squad
+#   flags and such
+!/GameData/Wah
 
 #   managed game saves
 !/saves
