@@ -1,0 +1,176 @@
+{
+	"kind": "metapackage",
+	"abstract": "A list of modules installed on the default KSP instance",
+	"name": "installed-default",
+	"license": "unknown",
+	"version": "2016.10.06.03.44.37",
+	"identifier": "installed-default",
+	"spec_version": "v1.6",
+	"recommends": [
+		{
+			"name": "kOS"
+		},
+		{
+			"name": "ModuleManager"
+		},
+		{
+			"name": "KerbalAircraftExpansion"
+		},
+		{
+			"name": "FirespitterCore"
+		},
+		{
+			"name": "FirespitterResourcesConfig"
+		},
+		{
+			"name": "RemoteTech"
+		},
+		{
+			"name": "SETI-BalanceMod"
+		},
+		{
+			"name": "SETI-ProbeControlEnabler"
+		},
+		{
+			"name": "SETI-RemoteTech"
+		},
+		{
+			"name": "AlternateResourcePanel"
+		},
+		{
+			"name": "BackgroundProcessing"
+		},
+		{
+			"name": "BetterBurnTime"
+		},
+		{
+			"name": "CapCom"
+		},
+		{
+			"name": "CommunityTechTree"
+		},
+		{
+			"name": "ContractConfigurator"
+		},
+		{
+			"name": "ContractConfigurator-AnomalySurveyor"
+		},
+		{
+			"name": "ContractConfigurator-FieldResearch"
+		},
+		{
+			"name": "ContractConfigurator-KerbinSpaceStation"
+		},
+		{
+			"name": "ContractConfigurator-Tourism"
+		},
+		{
+			"name": "ContractsWindowPlus"
+		},
+		{
+			"name": "CrowdSourcedScience"
+		},
+		{
+			"name": "CustomBarnKit"
+		},
+		{
+			"name": "DMagicOrbitalScience"
+		},
+		{
+			"name": "DockingPortAlignmentIndicator"
+		},
+		{
+			"name": "FilterExtensionsDefaultConfig"
+		},
+		{
+			"name": "GAP"
+		},
+		{
+			"name": "KerbalAlarmClock"
+		},
+		{
+			"name": "KerbalEngineerRedux"
+		},
+		{
+			"name": "KerbalJointReinforcement"
+		},
+		{
+			"name": "KIS"
+		},
+		{
+			"name": "LandingHeight"
+		},
+		{
+			"name": "PlanetShine-Config-Default"
+		},
+		{
+			"name": "QuickSearch"
+		},
+		{
+			"name": "RCSBuildAid"
+		},
+		{
+			"name": "RealChute"
+		},
+		{
+			"name": "RealPlume-StockConfigs"
+		},
+		{
+			"name": "SETI-Contracts"
+		},
+		{
+			"name": "SETI-ProbeParts"
+		},
+		{
+			"name": "ShipManifest"
+		},
+		{
+			"name": "StationScience"
+		},
+		{
+			"name": "TacFuelBalancer"
+		},
+		{
+			"name": "Toolbar"
+		},
+		{
+			"name": "Trajectories"
+		},
+		{
+			"name": "TransferWindowPlanner"
+		},
+		{
+			"name": "TweakScale"
+		},
+		{
+			"name": "UnmannedBeforeManned"
+		},
+		{
+			"name": "WaypointManager"
+		},
+		{
+			"name": "xScience"
+		},
+		{
+			"name": "KSP-AVC"
+		},
+		{
+			"name": "ProgressParser"
+		},
+		{
+			"name": "ContractParser"
+		},
+		{
+			"name": "FilterExtensions"
+		},
+		{
+			"name": "PlanetShine"
+		},
+		{
+			"name": "RealPlume"
+		},
+		{
+			"name": "SmokeScreen"
+		}
+	]
+}

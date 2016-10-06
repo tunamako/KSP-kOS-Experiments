@@ -11,6 +11,9 @@
 #   flags and such
 !/GameData/Wah
 
+#   modlist
+!/wahmods.ckan
+
 #   managed game saves
 !/saves
 /saves/*
