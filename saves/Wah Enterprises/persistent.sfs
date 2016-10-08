@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 23
+	launchID = 25
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 22229.1345802463
+		update = 24918.774580305
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -127,49 +127,6 @@ GAME
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = 3d6c2f61-b0b0-48e2-9654-c5a22fbecd07
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791200
-				state = Offered
-				agent = WinterOwl Aircraft Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 84292.6849365234,44885854.7286987,7042.25331544876,13063.3793069094,7874.99964237213,0,2.018724,1.941748,87175.7649365211,0,0,0
-				targetBody = 1
-				centerLatitude = 0.316624428559922
-				centerLongitude = -69.5253909557701
-				randomTopic = KSP: PresMat Barometer
-				dataName = atmospheric
-				anomalyName = abnormalities
-				reportName = readings
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take pressure readings
-					experiment = barometerScan
-					flightThreshold = 16900
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1979982652
-					wpIndex = 0
-					wpTexture = pressure
-					wpLatitude = 0.316609528853239
-					wpLongitude = -69.5254498009578
-					wpLandlocked = False
-				}
-			}
 			CONTRACT
 			{
 				guid = e62db757-1512-4aeb-8830-8fc717699ae8
@@ -210,49 +167,6 @@ GAME
 					wpTexture = report
 					wpLatitude = -1.72856139063766
 					wpLongitude = -73.4860208944866
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 23e3996a-6673-40fa-a947-0cec57a26e6d
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791201
-				state = Offered
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 20970.874786377,44667963.2949829,7724.99978542328,14329.8739511967,7874.99964237213,0,1.904762,2,23853.9547863746,0,0,0
-				targetBody = 1
-				centerLatitude = 3.44882037195054
-				centerLongitude = -74.9791565324522
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 18300
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1153203077
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 3.4488011359641
-					wpLongitude = -74.9791475264986
 					wpLandlocked = False
 				}
 			}
@@ -574,72 +488,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 32d42fba-22f7-44cb-80a0-881f7816d793
-				type = PartTest
-				prestige = 0
-				seed = 1680791168
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,9000,23624.9989271164,9449.99957084656,3,5.714286,4,24483.0799999977,0,0,0
-				part = stackSeparatorBig
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = stackSeparatorBig
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.87456982716665133
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 28000
-						maxAlt = 33000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 790
-						maxSpd = 1010
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = bfe65830-6fe9-4794-b80d-eb1b00a8c3f2
 				type = PartTest
 				prestige = 0
@@ -683,129 +531,6 @@ GAME
 						values = 0,0,0,0,0
 						sit = SPLASHED
 						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 5634a584-98c4-446f-a9aa-44387d01bb92
-				type = PartTest
-				prestige = 1
-				seed = 1039712936
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,47285.3524999966,0,0,0
-				part = HeatShield2
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = HeatShield2
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.24426806030993725
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 22000
-						maxAlt = 34000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 1720
-						maxSpd = 2140
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 63f11cb9-dad8-4035-8a7c-c7b3b401a5e5
-				type = PartTest
-				prestige = 1
-				seed = 1767076479
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 19285.7141017914,8215714.20736313,15517.2400474548,42672.4110554004,19800.0004291534,6,13.62797,8.653847,22918.3666017884,0,0,0
-				part = liquidEngine2
-				haul = False
-				dest = 1
-				sit = SUB_ORBITAL
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = liquidEngine2
-					body = Kerbin
-					situation = SUB_ORBITAL
-					uniqueID = 0.39848844772134367
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 120000
-						maxAlt = 130000
 					}
 				}
 			}
@@ -1153,102 +878,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = cd6477be-dc38-4136-bf8a-1ccf5c97f4f1
-				type = PartTest
-				prestige = 2
-				seed = 583940749
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 18305.0851821899,15595932.5752258,65322.5811123848,187802.416804577,93149.9980688095,14,32.40886,19.81132,23729.7176822155,0,0,0
-				part = liquidEngine3
-				haul = False
-				dest = 2
-				sit = LANDED
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = liquidEngine3
-					body = Mun
-					situation = LANDED
-					uniqueID = 0.61966058221629849
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = e9a9c588-0a4e-4f3c-ad0d-d988f03c41b0
-				type = PartTest
-				prestige = 2
-				seed = 25357562
-				state = Offered
-				agent = RealChute
-				deadlineType = Floating
-				expiryType = Floating
-				values = 18782.6093673706,16002783.1809998,70434.7851276398,176086.962819099,81000,14,31.05,24.15,23305.2618673765,0,0,0
-				part = RC.cone.double
-				haul = False
-				dest = 2
-				sit = LANDED
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = RC.cone.double
-					body = Mun
-					situation = LANDED
-					uniqueID = 0.032906426597808687
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
 				guid = 0ab106c7-f335-47f2-9c91-4a0cba95dea3
 				type = PartTest
 				prestige = 1
@@ -1301,6 +930,312 @@ GAME
 						values = 0,0,0,0,0
 						minAlt = 270000
 						maxAlt = 280000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 5d723924-5238-4ac5-aa9a-b51a88f42f34
+				type = PartTest
+				prestige = 1
+				seed = 429743407
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,22500,56250,22500,8,15,11,66118.3745802613,0,0,0
+				part = fairingSize1
+				haul = False
+				dest = 1
+				sit = ORBITING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = fairingSize1
+					body = Kerbin
+					situation = ORBITING
+					uniqueID = 0.85549289307347165
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ORBITING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 500000
+						maxAlt = 510000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 292518c2-3a6a-401e-b44c-b6313a570689
+				type = PartTest
+				prestige = 2
+				seed = 176923076
+				state = Offered
+				agent = RealChute
+				deadlineType = Floating
+				expiryType = Floating
+				values = 37565.2187347412,16002783.1809998,70434.7851276398,176086.962819099,81000,14,31.05,24.15,60870.513315011,0,0,0
+				part = RC.cone
+				haul = False
+				dest = 2
+				sit = LANDED
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = RC.cone
+					body = Mun
+					situation = LANDED
+					uniqueID = 0.65264734656207601
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = LANDED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
+				type = PartTest
+				prestige = 2
+				seed = 1906476906
+				state = Offered
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,54000,135000,54000,9,18,14,66905.8745802786,0,0,0
+				part = sepMotor1
+				haul = False
+				dest = 2
+				sit = SUB_ORBITAL
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = sepMotor1
+					body = Mun
+					situation = SUB_ORBITAL
+					uniqueID = 0.98176223830401999
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 90000
+						maxAlt = 100000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
+				type = PartTest
+				prestige = 2
+				seed = 1382093761
+				state = Offered
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,32400,93149.9980688095,37259.9992275238,6,8.695652,8,66929.7545802791,0,0,0
+				part = radialDecoupler2
+				haul = False
+				dest = 2
+				sit = ESCAPING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDecoupler2
+					body = Mun
+					situation = ESCAPING
+					uniqueID = 0.76770400803894923
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = db09359b-d770-42f0-9766-a0355fd93983
+				type = PartTest
+				prestige = 0
+				seed = 1826879328
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,5400,13500,5400,2,4,3,45453.9945802819,0,0,0
+				part = GearSmall
+				haul = False
+				dest = 1
+				sit = SPLASHED
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = GearSmall
+					body = Kerbin
+					situation = SPLASHED
+					uniqueID = 0.96257320091248177
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SPLASHED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = c4146a83-441c-4892-95d1-906f21eeaff6
+				type = PartTest
+				prestige = 0
+				seed = 1485116751
+				state = Offered
+				agent = RealChute
+				deadlineType = Floating
+				expiryType = Floating
+				values = 20571.4299201965,8763429.14600372,5142.85748004913,12857.1437001228,5400,2,4.2,3.15,45054.5445004921,0,0,0
+				part = RC.radial
+				haul = False
+				dest = 1
+				sit = SPLASHED
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = RC.radial
+					body = Kerbin
+					situation = SPLASHED
+					uniqueID = 0.96119294593166227
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SPLASHED
+						title = 
 					}
 				}
 			}
@@ -7795,7 +7730,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 176831.655121663
+		funds = 176931.315117697
 	}
 	SCENARIO
 	{
@@ -7861,6 +7796,19 @@ GAME
 					crews = Jebediah Kerman
 				}
 			}
+			POIKerbinMonolith01
+			{
+				completed = 24079.0545802867
+				vessel
+				{
+					name = Test Jet
+					flag = Squad/Flags/default
+				}
+				crew
+				{
+					crews = Jebediah Kerman
+				}
+			}
 			Kerbin
 			{
 				reached = 59.8000000000038
@@ -7905,7 +7853,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 51.25563
+		sci = 7.455627
 		Tech
 		{
 			id = start
@@ -8132,6 +8080,21 @@ GAME
 			part = science.module.radial
 			part = science.module
 			part = dockingPort3
+		}
+		Tech
+		{
+			id = aerodynamicSystems
+			state = Available
+			cost = 90
+			part = KAXelectricprop
+			part = KAXmedCockpit
+			part = KAXmedFuselage
+			part = KAXmedJetFuel
+			part = KAXmedTail
+			part = noseConeAdapter
+			part = fairingSize2
+			part = MK1CrewCabin
+			part = Mark2Cockpit
 		}
 		Science
 		{
@@ -9743,6 +9706,156 @@ GAME
 			sci = 0.3
 			cap = 0.3
 		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedRunway
+			title = Materials Study from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 7.2
+			cap = 7.2
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinFlyingLow
+			title = Materials Study while flying at Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 0.7
+			sci = 16.8
+			cap = 16.8
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfSplashedGrasslands
+			title = Temperature Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfSplashedGrasslands
+			title = Atmospheric Pressure Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfSplashedGrasslands
+			title = Crew Report from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 2.4
+			cap = 2.4
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfSplashedDeserts
+			title = Temperature Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfSplashedDeserts
+			title = Atmospheric Pressure Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfSplashedDeserts
+			title = Crew Report from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 2.4
+			cap = 2.4
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedDeserts
+			title = Temperature Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 0.9
+			cap = 0.9
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedDeserts
+			title = Atmospheric Pressure Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 0.9
+			cap = 0.9
+		}
+		Science
+		{
+			id = seismicScan@KerbinSrfLandedDeserts
+			title = Seismic Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = magScan@KerbinSrfLandedDeserts
+			title = Magnetometer Scan from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedDeserts
+			title = Crew Report from Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.8
+			cap = 1.8
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowDeserts
+			title = Temperature Scan while flying over Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.7
+			sci = 2.1
+			cap = 2.1
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowDeserts
+			title = Crew Report while flying over Kerbin's Deserts
+			dsc = 1
+			scv = 0
+			sbv = 0.7
+			sci = 4.2
+			cap = 4.2
+		}
 	}
 	SCENARIO
 	{
@@ -9753,7 +9866,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 256.6695
+		rep = 266.5756
 	}
 	SCENARIO
 	{
@@ -10932,541 +11045,6 @@ GAME
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.IslandTours-Shoreline
 						title = Recover Halory Kerman
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 0a71268e-5f6e-448f-88e8-cd11c859345d
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1470539768
-			state = Offered
-			agent = KSC Coast Guard
-			deadlineType = Floating
-			expiryType = Floating
-			ignoresWeight = True
-			values = 21600,21600,4000,0,6000,0,0,0,23530.7199999985,0,0,0
-			subtype = CoastGuard-Certification
-			title = Coast Guard Rescue Certification
-			description = With most money going to the Kerbal Space Program, the KSC Coast Guard often finds itself short on funds for new craft and qualified personnel. We are asking your organization to partner with us to help save lives and bring home what is lost or needs retrieving.\n\nThis is a volunteer contract only, with hazard pay being available only in the most dangerous of missions. We will provide a small advance for fuel and supplies, but what you'll earn mostly by serving is the pride in knowing you are making a difference, and a good reputation. Join us today and our trained rescue diver and paramedic, Lt. Dan Kerman, will help train your volunteers, and will accompany you as a rescue diver on KSC Coast Guard rescue missions.
-			synopsis = KSC Coast Guard: Our motto is Always Ready - Kemper Keratus!
-			completedMessage = KSC Coast Guard Certification Mission Completed! Your organization is now certified to accept KSC Coast Guard rescue and retrieval contracts.
-			notes = Rescue Lt. Dan from the waters off the eastern shore of the Kerbal Space Center. Bring him back to dry land by any means possible so he can be recovered.
-			hash = 1424908495
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.SpawnKerbal
-				KERBAL_DETAIL
-				{
-					name = Lt. Dan Kerman
-					gender = Male
-					experienceTrait = Pilot
-					kerbalType = Crew
-					body = Kerbin
-					lat = -0.00876185259255794
-					lon = 285.747519887593
-					landed = True
-					owned = False
-					addToRoster = False
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = PQS_CITY
-					names = S.O.S.
-					celestialName = Kerbin
-					name = S.O.S.
-					icon = marker
-					latitude = -0.00876185259255794
-					longitude = 285.747519887593
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					pqsCity = KSC
-					pqsOffset = 3636.74176576774,948.452291817594,-54.6489646538366
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = Your craft must
-				notes = 
-				completedMessage = 
-				define = GAPcraftCoastGuardCertification
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = True
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = have a Kerbal in command
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					minCrew = 1
-					maxCrew = 2147483647
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = HasCrewCapacity
-					id = HasCrewCapacity
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = have at least 1 passenger seat
-					notes = 
-					completedMessage = 
-					fakeFailures = True
-					allowStateReset = True
-					failWhenUnmet = True
-					minCapacity = 2
-					maxCapacity = 2147483647
-				}
-				PARAM
-				{
-					name = All
-					id = PreFlightCheck
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = complete all pre-flight checks
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = remain stationary on the runway
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						biome = Runway
-						maxSpeed = 0.1
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.CoastGuard-Certification
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Runway
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.CoastGuard-Certification
-							title = Biome: Runway
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Less than 0 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.CoastGuard-Certification
-							title = Speed: Less than 0 m/s
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = Duration
-						id = RegisterFlightPlan
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = review checklist:
-						waitingText = registering flight plan:
-						completionText = flight plan registered
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-					PARAM
-					{
-						name = Duration
-						id = RequestTakeoffKSC
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = request clearance for takeoff:
-						waitingText = requesting clearance for takeoff:
-						completionText = be cleared for takeoff
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = navigate to S.O.S Waypoint
-				notes = 
-				completedMessage = 
-				hideChildren = True
-				vessel = GAPcraftCoastGuardCertification
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Vessel: GAPcraftCoastGuardCertification
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = Vessel: GAPcraftCoastGuardCertification
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = 
-					notes = 
-					completedMessage = 
-					hidden = True
-					hideChildren = True
-					allowStateReset = False
-					distance = 500
-					waypointIndex = 0
-					hideOnCompletion = True
-					showMessages = False
-				}
-			}
-			PARAM
-			{
-				name = HasCrew
-				id = HasCrew
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = rescue crewman
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				allowStateReset = True
-				minCrew = 0
-				maxCrew = 2147483647
-				minExperience = 0
-				maxExperience = 5
-				KERBAL
-				{
-					name = Lt. Dan Kerman
-					gender = Male
-					experienceTrait = Pilot
-					kerbalType = Crew
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Lt. Dan Kerman: On board
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = Lt. Dan Kerman: On board
-					notes = 
-					completedMessage = 
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = and land back on land
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				hideChildren = True
-				vessel = GAPcraftCoastGuardCertification
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Vessel: GAPcraftCoastGuardCertification
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = Vessel: GAPcraftCoastGuardCertification
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = 
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					hidden = True
-					hideChildren = True
-					allowStateReset = True
-					targetBody = Kerbin
-					situation = LANDED
-					maxSpeed = 0
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Landed
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = Situation: Landed
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Speed: Less than 0 m/s
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = Speed: Less than 0 m/s
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = All
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = safely
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				PARAM
-				{
-					name = VesselNotDestroyed
-					id = VesselNotDestroyed
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = without destroying your rescue craft
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vessel = GAPcraftCoastGuardCertification
-				}
-				PARAM
-				{
-					name = All
-					id = All
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = or killing anyone
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					PARAM
-					{
-						name = KerbalDeathsCustom
-						id = KerbalDeaths
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = or killing your crew
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						countMax = 1
-						count = 0
-						vesselIdentifier = GAPcraftCoastGuardCertification
-					}
-					PARAM
-					{
-						name = KerbalDeathsCustom
-						id = KerbalDeaths
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = or killing anyone you need to rescue
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						countMax = 1
-						count = 0
-						KERBAL
-						{
-							name = Lt. Dan Kerman
-							gender = Male
-							experienceTrait = Pilot
-							kerbalType = Crew
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Lt. Dan Kerman
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.CoastGuard-Certification
-							title = Lt. Dan Kerman
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = All
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.CoastGuard-Certification
-				title = and recover
-				notes = 
-				completedMessage = 
-				PARAM
-				{
-					name = RecoverKerbalCustom
-					id = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.CoastGuard-Certification
-					title = Lt. Dan Kerman
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					count = 0
-					index = 0
-					KERBAL
-					{
-						name = Lt. Dan Kerman
-						gender = Male
-						experienceTrait = Pilot
-						kerbalType = Crew
-						recovered = False
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recover Lt. Dan Kerman
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.CoastGuard-Certification
-						title = Recover Lt. Dan Kerman
 						notes = 
 						completedMessage = 
 					}
@@ -18380,17 +17958,559 @@ GAME
 				}
 			}
 		}
+		CONTRACT
+		{
+			guid = 0ad12c6a-58a6-41e3-b8e4-2c1d9d1b5cab
+			type = ConfiguredContract
+			prestige = 0
+			seed = 670532214
+			state = Offered
+			agent = KSC Coast Guard
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 21600,21600,4000,0,6000,0,0,0,45134.1345802748,0,0,0
+			subtype = CoastGuard-Certification
+			title = Coast Guard Rescue Certification
+			description = With most money going to the Kerbal Space Program, the KSC Coast Guard often finds itself short on funds for new craft and qualified personnel. We are asking your organization to partner with us to help save lives and bring home what is lost or needs retrieving.\n\nThis is a volunteer contract only, with hazard pay being available only in the most dangerous of missions. We will provide a small advance for fuel and supplies, but what you'll earn mostly by serving is the pride in knowing you are making a difference, and a good reputation. Join us today and our trained rescue diver and paramedic, Lt. Dan Kerman, will help train your volunteers, and will accompany you as a rescue diver on KSC Coast Guard rescue missions.
+			synopsis = KSC Coast Guard: Our motto is Always Ready - Kemper Keratus!
+			completedMessage = KSC Coast Guard Certification Mission Completed! Your organization is now certified to accept KSC Coast Guard rescue and retrieval contracts.
+			notes = Rescue Lt. Dan from the waters off the eastern shore of the Kerbal Space Center. Bring him back to dry land by any means possible so he can be recovered.
+			hash = 1424908495
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnKerbal
+				KERBAL_DETAIL
+				{
+					name = Lt. Dan Kerman
+					gender = Male
+					experienceTrait = Pilot
+					kerbalType = Crew
+					body = Kerbin
+					lat = -0.00876184731283877
+					lon = 285.747519431639
+					landed = True
+					owned = False
+					addToRoster = False
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = PQS_CITY
+					names = S.O.S.
+					celestialName = Kerbin
+					name = S.O.S.
+					icon = marker
+					latitude = -0.00876184731283877
+					longitude = 285.747519431639
+					altitude = 0
+					index = 0
+					hidden = False
+					clustered = False
+					pqsCity = KSC
+					pqsOffset = 3636.74176576774,948.452291817594,-54.6489646538366
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = Your craft must
+				notes = 
+				completedMessage = 
+				define = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = have a Kerbal in command
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrewCapacity
+					id = HasCrewCapacity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = have at least 1 passenger seat
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					minCapacity = 2
+					maxCapacity = 2147483647
+				}
+				PARAM
+				{
+					name = All
+					id = PreFlightCheck
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = complete all pre-flight checks
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = remain stationary on the runway
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						hideChildren = True
+						allowStateReset = True
+						targetBody = Kerbin
+						biome = Runway
+						maxSpeed = 0.1
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Runway
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Biome: Runway
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Speed: Less than 0 m/s
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Speed: Less than 0 m/s
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = Duration
+						id = RegisterFlightPlan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = review checklist:
+						waitingText = registering flight plan:
+						completionText = flight plan registered
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+					PARAM
+					{
+						name = Duration
+						id = RequestTakeoffKSC
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = request clearance for takeoff:
+						waitingText = requesting clearance for takeoff:
+						completionText = be cleared for takeoff
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = navigate to S.O.S Waypoint
+				notes = 
+				completedMessage = 
+				hideChildren = True
+				vessel = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftCoastGuardCertification
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					distance = 500
+					waypointIndex = 0
+					hideOnCompletion = True
+					showMessages = False
+				}
+			}
+			PARAM
+			{
+				name = HasCrew
+				id = HasCrew
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = rescue crewman
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				allowStateReset = True
+				minCrew = 0
+				maxCrew = 2147483647
+				minExperience = 0
+				maxExperience = 5
+				KERBAL
+				{
+					name = Lt. Dan Kerman
+					gender = Male
+					experienceTrait = Pilot
+					kerbalType = Crew
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Lt. Dan Kerman: On board
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Lt. Dan Kerman: On board
+					notes = 
+					completedMessage = 
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = and land back on land
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftCoastGuardCertification
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = without destroying your rescue craft
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftCoastGuardCertification
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = or killing your crew
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						countMax = 1
+						count = 0
+						vesselIdentifier = GAPcraftCoastGuardCertification
+					}
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = or killing anyone you need to rescue
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						countMax = 1
+						count = 0
+						KERBAL
+						{
+							name = Lt. Dan Kerman
+							gender = Male
+							experienceTrait = Pilot
+							kerbalType = Crew
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Lt. Dan Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Lt. Dan Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = and recover
+				notes = 
+				completedMessage = 
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Lt. Dan Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Lt. Dan Kerman
+						gender = Male
+						experienceTrait = Pilot
+						kerbalType = Crew
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Lt. Dan Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Recover Lt. Dan Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
 		UNREAD_CONTRACTS
 		{
 			contract = 68958568-ca32-407d-8e39-b69bf35a1b9a
 			contract = 9ca98f04-aed2-4337-84d8-052d1bf16934
 			contract = 6448be1f-faf1-4784-9d71-cef3804f4154
 			contract = 0ab106c7-f335-47f2-9c91-4a0cba95dea3
+			contract = 5d723924-5238-4ac5-aa9a-b51a88f42f34
+			contract = 292518c2-3a6a-401e-b44c-b6313a570689
+			contract = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
+			contract = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
+			contract = db09359b-d770-42f0-9766-a0355fd93983
+			contract = c4146a83-441c-4892-95d1-906f21eeaff6
 			contract = a05ef998-7c42-4ee8-8a0f-607eaf1e5d60
 			contract = c4dbb7b0-c190-421d-bbda-32fd7662c5ae
 			contract = 85ee37ff-a088-47c8-b279-a5e7df3d9da3
 			contract = 4c2ebaaa-dc4d-4452-a7fb-0b815164eb5b
 			contract = feea8c19-583e-4343-9a9f-0e166168f9b5
+			contract = 0ad12c6a-58a6-41e3-b8e4-2c1d9d1b5cab
 		}
 	}
 	SCENARIO
@@ -18417,7 +18537,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 21909
+		nextCheck = 24942
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -18586,7 +18706,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 22232.9345802464
+		UT = 24920.6745803051
 		activeVessel = 0
 		mapViewFiltering = -1026
 	}
@@ -18710,7 +18830,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 6
+				flight = 8
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
 				0 = SpecialExperience3,Kerbin
@@ -18731,10 +18851,15 @@ GAME
 				4 = Recover
 				5 = Land,Kerbin
 				5 = Recover
+				6 = Land,Kerbin
+				6 = Recover
+				7 = Land,Kerbin
+				7 = Flight,Kerbin
+				7 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 6
+				flight = 8
 			}
 		}
 		KERBAL
@@ -18842,7 +18967,7 @@ GAME
 		MESSAGE
 		{
 			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken an ocean depth record of 10m.~n<color=#b4d455>£  2,400 </color>~n~nWe have broken an ocean depth record of 20m.~n<color=#b4d455>£  2,400 </color>~n~nWe have broken an ocean depth record of 80m.~n<color=#b4d455>£  2,400 </color><color=#e0d503>¡ 1 </color>~n~nWe have broken an ocean depth record of 240m.~n<color=#b4d455>£  2,400 </color>~n
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have broken an ocean depth record of 10m.~n<color=#b4d455>£  2,400 </color>~n~nWe have broken an ocean depth record of 20m.~n<color=#b4d455>£  2,400 </color>~n~nWe have broken an ocean depth record of 80m.~n<color=#b4d455>£  2,400 </color><color=#e0d503>¡ 1 </color>~n~nWe have broken an ocean depth record of 240m.~n<color=#b4d455>£  2,400 </color>~n~nWe have discovered a strange monolith on Kerbin.~n<color=#b4d455>£  1,200 </color>~n
 			color = 3
 			icon = 6
 			read = False
