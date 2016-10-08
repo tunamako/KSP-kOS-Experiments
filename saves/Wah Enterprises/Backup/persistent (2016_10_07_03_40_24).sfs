@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 12
+	launchID = 11
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 6129.2994336329
+		update = 4537.71250000622
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -215,92 +215,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = a008f86f-f908-4628-bbf2-1aca50ac8d8d
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791215
-				state = Offered
-				agent = Wenkel Corporation
-				deadlineType = Floating
-				expiryType = Floating
-				values = 45359.9979400635,48308397.8061676,7500,13250,7500,0,1.814059,1.814059,48243.0779400611,0,0,0
-				targetBody = 1
-				centerLatitude = 4.79644111410653
-				centerLongitude = -72.6690219097143
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17100
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1855821159
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 4.79645923010814
-					wpLongitude = -72.6690714261085
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 57c2dc29-c842-4893-9605-058c0b130af9
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791138
-				state = Offered
-				agent = Kerbal Motion LLC
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,7500,13250,7500,0,2,2,110883.079999998,0,0,0
-				targetBody = 1
-				centerLatitude = -7.55437263777238
-				centerLongitude = -72.5154130993963
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 16400
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1113090606
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = -7.5543516389728
-					wpLongitude = -72.515498709058
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
 				guid = 23e3996a-6673-40fa-a947-0cec57a26e6d
 				type = SurveyContract
 				prestige = 0
@@ -382,6 +296,92 @@ GAME
 					wpTexture = thermometer
 					wpLatitude = -2.17790930897039
 					wpLongitude = -76.0946108453851
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 57c2dc29-c842-4893-9605-058c0b130af9
+				type = SurveyContract
+				prestige = 0
+				seed = 1680791138
+				state = Offered
+				agent = Kerbal Motion LLC
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,7500,13250,7500,0,2,2,110883.079999998,0,0,0
+				targetBody = 1
+				centerLatitude = -7.55437263777238
+				centerLongitude = -72.5154130993963
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 16400
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1113090606
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -7.5543516389728
+					wpLongitude = -72.515498709058
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = a008f86f-f908-4628-bbf2-1aca50ac8d8d
+				type = SurveyContract
+				prestige = 0
+				seed = 1680791215
+				state = Offered
+				agent = Wenkel Corporation
+				deadlineType = Floating
+				expiryType = Floating
+				values = 45359.9979400635,48308397.8061676,7500,13250,7500,0,1.814059,1.814059,48243.0779400611,0,0,0
+				targetBody = 1
+				centerLatitude = 4.79644111410653
+				centerLongitude = -72.6690219097143
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17100
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1855821159
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 4.79645923010814
+					wpLongitude = -72.6690714261085
 					wpLandlocked = False
 				}
 			}
@@ -481,7 +481,7 @@ GAME
 					PARAM
 					{
 						name = ReachDestination
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						dest = 1
@@ -490,7 +490,7 @@ GAME
 					PARAM
 					{
 						name = ReachSituation
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						sit = LANDED
@@ -1223,115 +1223,183 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = cd6477be-dc38-4136-bf8a-1ccf5c97f4f1
-				type = PartTest
-				prestige = 2
-				seed = 583940749
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
+				guid = e9e01555-2ce7-4e6e-b284-91a22c2d7d1e
+				type = ConfiguredContract
+				prestige = 0
+				seed = 52099645
+				state = Active
+				agent = Space Exploration & Technology Initiative
+				deadlineType = None
 				expiryType = Floating
-				values = 18305.0851821899,15595932.5752258,65322.5811123848,187802.416804577,93149.9980688095,14,32.40886,19.81132,23729.7176822155,0,0,0
-				part = liquidEngine3
-				haul = False
-				dest = 2
-				sit = LANDED
-				exp = True
+				ignoresWeight = True
+				values = 185760000,0,4000,9000,8000,0,8,0,185760218.66,4535.19250000617,0,0
+				subtype = Altitude18km
+				title = Altitude Record of 18km!
+				description = Although balloons have already reached the upper atmosphere, achieving this altitude by rocket is an important step on our way to space. This will also secure support for further missions.
+				synopsis = We want you to reach an altitude of 18km.
+				completedMessage = You set a new altitude record!
+				hash = -1592226916
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						setiAltitude18km = 10
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
 				PARAM
 				{
-					name = PartTest
+					name = VesselIsType
+					id = VesselIsType
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
-					part = liquidEngine3
-					body = Mun
-					situation = LANDED
-					uniqueID = 0.61966058221629849
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					ContractIdentifier = SETIcontracts.Altitude18km
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vesselType = Probe
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.Altitude18km
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					minAltitude = 18000
 					PARAM
 					{
-						name = ReachDestination
-						state = Incomplete
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						dest = 2
-						title = 
+						ContractIdentifier = SETIcontracts.Altitude18km
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
 					}
 					PARAM
 					{
-						name = ReachSituation
+						name = ParameterDelegate`1
+						id = Altitude: Above 18,000 m
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
+						ContractIdentifier = SETIcontracts.Altitude18km
+						title = Altitude: Above 18,000 m
+						notes = 
+						completedMessage = 
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 0d0341d3-838b-4d9d-bb0d-2b8255327a53
-				type = PartTest
+				guid = b4d13adc-2ca5-43d1-b9ab-7f246ac333d5
+				type = ConfiguredContract
 				prestige = 1
-				seed = 584597555
-				state = Offered
-				agent = Research & Development Department
-				deadlineType = Floating
+				seed = 468101297
+				state = Active
+				agent = Space Exploration & Technology Initiative
+				deadlineType = None
 				expiryType = Floating
-				values = 43200,9201600,11250,28125,11250,4,8,5,48624.6925000256,0,0,0
-				part = fairingSize1
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = False
+				ignoresWeight = True
+				values = 185760000,0,7500,18750,15000,1,25,0,185760218.9,4535.19250000617,0,0
+				subtype = ReachSpace
+				title = Escape the atmosphere!
+				description = Reaching space is the difference between a rocket program and a space program. It will also reassure the public of our progress.
+				synopsis = We want you to send a probe to an altitude of at least 70km.
+				completedMessage = You have reached space!
+				hash = 1690175058
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.Expression
+					CONTRACT_OFFERED
+					{
+					}
+					CONTRACT_ACCEPTED
+					{
+					}
+					CONTRACT_COMPLETED_SUCCESS
+					{
+						type = Double
+						setiReachSpace = 10
+					}
+					CONTRACT_COMPLETED_FAILURE
+					{
+					}
+				}
 				PARAM
 				{
-					name = PartTest
+					name = VesselIsType
+					id = VesselIsType
 					state = Incomplete
+					disableOnStateChange = False
 					values = 0,0,0,0,0
-					part = fairingSize1
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.97907402737954352
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					ContractIdentifier = SETIcontracts.ReachSpace
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vesselType = Probe
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.ReachSpace
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Kerbin
+					minAltitude = 70000
 					PARAM
 					{
-						name = ReachDestination
-						state = Incomplete
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						dest = 1
-						title = 
+						ContractIdentifier = SETIcontracts.ReachSpace
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
 					}
 					PARAM
 					{
-						name = ReachSituation
+						name = ParameterDelegate`1
+						id = Altitude: Above 70,000 m
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 24000
-						maxAlt = 27000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 200
-						maxSpd = 1890
+						ContractIdentifier = SETIcontracts.ReachSpace
+						title = Altitude: Above 70,000 m
+						notes = 
+						completedMessage = 
 					}
 				}
 			}
@@ -5007,184 +5075,6 @@ GAME
 					}
 				}
 			}
-			CONTRACT_FINISHED
-			{
-				guid = e9e01555-2ce7-4e6e-b284-91a22c2d7d1e
-				type = ConfiguredContract
-				prestige = 0
-				seed = 52099645
-				state = Completed
-				agent = Space Exploration & Technology Initiative
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 185760000,0,4000,9000,8000,0,8,0,185760218.66,4535.19250000617,0,5383.35250002468
-				subtype = Altitude18km
-				title = Altitude Record of 18km!
-				description = Although balloons have already reached the upper atmosphere, achieving this altitude by rocket is an important step on our way to space. This will also secure support for further missions.
-				synopsis = We want you to reach an altitude of 18km.
-				completedMessage = You set a new altitude record!
-				hash = -1592226916
-				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.Expression
-					CONTRACT_OFFERED
-					{
-					}
-					CONTRACT_ACCEPTED
-					{
-					}
-					CONTRACT_COMPLETED_SUCCESS
-					{
-					}
-					CONTRACT_COMPLETED_FAILURE
-					{
-					}
-				}
-				PARAM
-				{
-					name = VesselIsType
-					id = VesselIsType
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.Altitude18km
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vesselType = Probe
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.Altitude18km
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Kerbin
-					minAltitude = 18000
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.Altitude18km
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Above 18,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.Altitude18km
-						title = Altitude: Above 18,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = b4d13adc-2ca5-43d1-b9ab-7f246ac333d5
-				type = ConfiguredContract
-				prestige = 1
-				seed = 468101297
-				state = Completed
-				agent = Space Exploration & Technology Initiative
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 185760000,0,7500,18750,15000,1,25,0,185760218.9,4535.19250000617,0,5424.63250002558
-				subtype = ReachSpace
-				title = Escape the atmosphere!
-				description = Reaching space is the difference between a rocket program and a space program. It will also reassure the public of our progress.
-				synopsis = We want you to send a probe to an altitude of at least 70km.
-				completedMessage = You have reached space!
-				hash = 1690175058
-				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.Expression
-					CONTRACT_OFFERED
-					{
-					}
-					CONTRACT_ACCEPTED
-					{
-					}
-					CONTRACT_COMPLETED_SUCCESS
-					{
-					}
-					CONTRACT_COMPLETED_FAILURE
-					{
-					}
-				}
-				PARAM
-				{
-					name = VesselIsType
-					id = VesselIsType
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.ReachSpace
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vesselType = Probe
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.ReachSpace
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Kerbin
-					minAltitude = 70000
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.ReachSpace
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Above 70,000 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.ReachSpace
-						title = Altitude: Above 70,000 m
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -5197,7 +5087,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 261285.502318006
+		funds = 215706.274326902
 	}
 	SCENARIO
 	{
@@ -5219,31 +5109,18 @@ GAME
 			}
 			RecordsAltitude
 			{
-				completed = 4639.49250000844
-				record = 70000
+				reached = 3637.51249999699
+				record = 10198.9656459559
 			}
 			RecordsSpeed
 			{
-				reached = 5045.3325000173
-				record = 1448.99731597267
+				reached = 3035.29999999752
+				record = 331.371338417952
 			}
 			RecordsDistance
 			{
 				completed = 475.939999999857
 				record = 100000
-			}
-			ReachedSpace
-			{
-				completed = 4639.49250000844
-				vessel
-				{
-					name = Untitled Space Craft
-					flag = Squad/Flags/default
-				}
-				crew
-				{
-					crews = Bob Kerman
-				}
 			}
 			Kerbin
 			{
@@ -5285,7 +5162,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 100.8334
+		sci = 7.600047
 		Tech
 		{
 			id = start
@@ -6468,326 +6345,6 @@ GAME
 			sci = 2.1
 			cap = 2.1
 		}
-		Science
-		{
-			id = crewReport@KerbinSrfLandedLaunchPad
-			title = Crew Report from LaunchPad
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.8
-			cap = 1.8
-		}
-		Science
-		{
-			id = crewReport@KerbinFlyingLowShores
-			title = Crew Report while flying over Kerbin's Shores
-			dsc = 1
-			scv = 0
-			sbv = 0.7
-			sci = 4.2
-			cap = 4.2
-		}
-		Science
-		{
-			id = crewReport@KerbinFlyingHigh
-			title = Crew Report from Kerbin's upper atmosphere
-			dsc = 1
-			scv = 0
-			sbv = 0.9
-			sci = 5.4
-			cap = 5.4
-		}
-		Science
-		{
-			id = barometerScan@KerbinFlyingHigh
-			title = Atmospheric Pressure Scan from Kerbin's upper atmosphere
-			dsc = 1
-			scv = 0
-			sbv = 0.9
-			sci = 2.7
-			cap = 2.7
-		}
-		Science
-		{
-			id = temperatureScan@KerbinFlyingHigh
-			title = Temperature Scan from Kerbin's upper atmosphere
-			dsc = 1
-			scv = 0
-			sbv = 0.9
-			sci = 2.7
-			cap = 2.7
-		}
-		Science
-		{
-			id = telemetryReport@KerbinFlyingHigh
-			title = Telemetry Report from Kerbin's upper atmosphere
-			dsc = 1
-			scv = 0
-			sbv = 0.9
-			sci = 0.9
-			cap = 0.9
-		}
-		Science
-		{
-			id = crewReport@KerbinInSpaceLowGrasslands
-			title = Crew Report from space just above Kerbin's Grasslands
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 6
-			cap = 6
-		}
-		Science
-		{
-			id = barometerScan@KerbinInSpaceLow
-			title = Atmospheric Pressure Scan while in space near Kerbin
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 3
-			cap = 3
-		}
-		Science
-		{
-			id = temperatureScan@KerbinInSpaceLow
-			title = Temperature Scan while in space near Kerbin
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 3
-			cap = 3
-		}
-		Science
-		{
-			id = telemetryReport@KerbinInSpaceLow
-			title = Telemetry Report while in space near Kerbin
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 1
-			cap = 1
-		}
-		Science
-		{
-			id = scopeScan@KerbinInSpaceLowGrasslands
-			title = Orbital Telescope Observations from space just above Kerbin's Grasslands
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 6
-			cap = 6
-		}
-		Science
-		{
-			id = magScan@KerbinInSpaceLow
-			title = Magnetometer Scan while in space near Kerbin
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 5
-			cap = 5
-		}
-		Science
-		{
-			id = scopeScan@KerbinInSpaceLowHighlands
-			title = Orbital Telescope Observations from space just above Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 6
-			cap = 6
-		}
-		Science
-		{
-			id = crewReport@KerbinInSpaceLowHighlands
-			title = Crew Report from space just above Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 1
-			sci = 6
-			cap = 6
-		}
-		Science
-		{
-			id = crewReport@KerbinFlyingLowMountains
-			title = Crew Report while flying over Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.7
-			sci = 4.2
-			cap = 4.2
-		}
-		Science
-		{
-			id = temperatureScan@KerbinFlyingLowMountains
-			title = Temperature Scan while flying over Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.7
-			sci = 2.1
-			cap = 2.1
-		}
-		Science
-		{
-			id = crewReport@KerbinSrfLandedMountains
-			title = Crew Report from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.8
-			cap = 1.8
-		}
-		Science
-		{
-			id = seismicScan@KerbinSrfLandedMountains
-			title = Seismic Scan from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.2
-			cap = 1.2
-		}
-		Science
-		{
-			id = barometerScan@KerbinSrfLandedMountains
-			title = Atmospheric Pressure Scan from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.9
-			cap = 0.9
-		}
-		Science
-		{
-			id = temperatureScan@KerbinSrfLandedMountains
-			title = Temperature Scan from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.9
-			cap = 0.9
-		}
-		Science
-		{
-			id = telemetryReport@KerbinSrfLandedMountains
-			title = Telemetry Report from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.3
-			cap = 0.3
-		}
-		Science
-		{
-			id = magScan@KerbinSrfLandedMountains
-			title = Magnetometer Scan from Kerbin's Mountains
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.5
-			cap = 1.5
-		}
-		Science
-		{
-			id = recovery@KerbinSubOrbited
-			title = Recovery of a vessel after a sub-orbital flight.
-			dsc = 1
-			scv = 0.02777775
-			sbv = 8
-			sci = 9.333334
-			cap = 9.6
-		}
-		Science
-		{
-			id = temperatureScan@KerbinFlyingLowHighlands
-			title = Temperature Scan while flying over Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.7
-			sci = 2.1
-			cap = 2.1
-		}
-		Science
-		{
-			id = crewReport@KerbinFlyingLowHighlands
-			title = Crew Report while flying over Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.7
-			sci = 4.2
-			cap = 4.2
-		}
-		Science
-		{
-			id = telemetryReport@KerbinSrfLandedHighlands
-			title = Telemetry Report from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.3
-			cap = 0.3
-		}
-		Science
-		{
-			id = temperatureScan@KerbinSrfLandedHighlands
-			title = Temperature Scan from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.9
-			cap = 0.9
-		}
-		Science
-		{
-			id = barometerScan@KerbinSrfLandedHighlands
-			title = Atmospheric Pressure Scan from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 0.9
-			cap = 0.9
-		}
-		Science
-		{
-			id = seismicScan@KerbinSrfLandedHighlands
-			title = Seismic Scan from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.2
-			cap = 1.2
-		}
-		Science
-		{
-			id = crewReport@KerbinSrfLandedHighlands
-			title = Crew Report from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.8
-			cap = 1.8
-		}
-		Science
-		{
-			id = magScan@KerbinSrfLandedHighlands
-			title = Magnetometer Scan from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 1.5
-			cap = 1.5
-		}
-		Science
-		{
-			id = evaReport@KerbinSrfLandedHighlands
-			title = EVA Report from Kerbin's Highlands
-			dsc = 1
-			scv = 0
-			sbv = 0.3
-			sci = 2.4
-			cap = 2.4
-		}
 	}
 	SCENARIO
 	{
@@ -6798,7 +6355,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 195.9814
+		rep = 151.0479
 	}
 	SCENARIO
 	{
@@ -6929,7 +6486,7 @@ GAME
 	{
 		name = ContractConfiguratorSettings
 		scene = 5, 7, 8
-		lastMCButton = Active
+		lastMCButton = Available
 		DisplayOfferedOrbits = True
 		DisplayOfferedWaypoints = True
 		DisplayActiveOrbits = True
@@ -13938,962 +13495,16 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = c4dbb7b0-c190-421d-bbda-32fd7662c5ae
-			type = ConfiguredContract
-			prestige = 1
-			seed = 29385070
-			state = Offered
-			agent = Space Exploration & Technology Initiative
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 185760000,0,10000,50000,20000,1,50,0,185765226.8325,0,0,0
-			subtype = Orbit
-			title = Orbit around Kerbin!
-			description = Leaving the atmosphere has provided a new perspective and the telemetric information resulted in valuable information regarding the upper atmosphere. The next challenge is orbiting Kerbin for the first time!
-			synopsis = We want you to send a probe into orbit around Kerbin and let it stay in this orbit for 40 minutes.
-			completedMessage = You have successfully completed the first orbital mission around Kerbin.
-			hash = -568239659
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.Expression
-				CONTRACT_OFFERED
-				{
-				}
-				CONTRACT_ACCEPTED
-				{
-				}
-				CONTRACT_COMPLETED_SUCCESS
-				{
-					type = Double
-					setiOrbit = 10
-				}
-				CONTRACT_COMPLETED_FAILURE
-				{
-				}
-			}
-			PARAM
-			{
-				name = VesselIsType
-				id = VesselIsType
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = SETIcontracts.Orbit
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = True
-				vesselType = Probe
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = OrbitKerbin
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = SETIcontracts.Orbit
-				title = Orbit Kerbin
-				notes = 
-				completedMessage = 
-				duration = 2400
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.Orbit
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Kerbin
-					situation = ORBITING
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.Orbit
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Orbit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = SETIcontracts.Orbit
-						title = Situation: Orbit
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Duration: 00:40:00
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = SETIcontracts.Orbit
-					title = Duration: 00:40:00
-					notes = 
-					completedMessage = 
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 607d8501-6529-4d08-bc0e-cb8f789dcfc1
+			guid = 5d6da34f-7a0b-406e-8f58-79c79c409e55
 			type = ConfiguredContract
 			prestige = 0
-			seed = 1947242664
-			state = Offered
-			agent = Anomaly Surveyor Group
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 435900,0,0,50000,0,0,35,0,441126.852500021,0,0,0
-			subtype = AS_Kerbin_Pyramids
-			title = Investigate structures in Kerbin's desert
-			description = From orbit, we can see something strange in the western desert.  There's what look like pyramids in an area of the desert that can't be accessed from the ground.  The Kerbin Archeological Society would love us if we could land there and take a closer look.
-			synopsis = Visit the structures in the desert.
-			completedMessage = What will future archeologist think when they see the KSC?
-			hash = -997446575
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Pyramids
-					celestialName = Kerbin
-					name = Pyramids
-					icon = ContractPacks/AnomalySurveyor/Icons/pyramids
-					latitude = -6.49976362801318
-					longitude = -141.68024760056
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.DialogBox
-				DIALOG_BOX
-				{
-					condition = PARAMETER_COMPLETED
-					position = LEFT
-					width = 0.8
-					height = 0
-					title = Tut-Un Jeb-Ahn
-					parameter = WP0
-					titleColor = #FFFFFFFF
-					KerbalSection
-					{
-						showName = True
-						textColor = #FFB9DA54
-						crewIndex = 0
-						gender = Male
-					}
-					TextSection
-					{
-						text = I see an ancient statue of a Kerbal, half-sunk into the sands.
-						textColor = #FFCCCCCC
-						fontSize = 20
-					}
-				}
-				DIALOG_BOX
-				{
-					condition = PARAMETER_COMPLETED
-					position = LEFT
-					width = 0.8
-					height = 0
-					title = Tut-Un Jeb-Ahn
-					parameter = WP0
-					titleColor = #FFFFFFFF
-					InstructorSection
-					{
-						showName = True
-						textColor = #FFB9DA54
-						name = Instructor_Gene
-						animation = true_nodA
-					}
-					TextSection
-					{
-						text = Amazing...  you found an antique Kerbal civilization.  Can you see anything else?
-						textColor = #FFCCCCCC
-						fontSize = 20
-					}
-				}
-				DIALOG_BOX
-				{
-					condition = PARAMETER_COMPLETED
-					position = LEFT
-					width = 0.8
-					height = 0
-					title = Tut-Un Jeb-Ahn
-					parameter = WP0
-					titleColor = #FFFFFFFF
-					KerbalSection
-					{
-						showName = True
-						textColor = #FFB9DA54
-						crewIndex = 0
-						gender = Male
-					}
-					TextSection
-					{
-						text = There's an inscription on the statue:\n\n    My name is Tut-Un Jeb-Ahn, king of kings:\n    Look on my works, ye Mighty, and despair!
-						textColor = #FFCCCCCC
-						fontSize = 20
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = WP0
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-				title = Check out the pyramids
-				notes = 
-				completedMessage = 
-				PARAM
-				{
-					name = VesselIsType
-					id = VesselIsType
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vesselType = EVA
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					distance = 15
-					waypointIndex = 0
-					hideOnCompletion = True
-					showMessages = False
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 7e80e878-af9a-4997-b015-3069cab9579c
-			type = ConfiguredContract
-			prestige = 1
-			seed = 174384093
+			seed = 7198456
 			state = Offered
 			agent = Field Research Team
 			deadlineType = None
 			expiryType = Floating
 			ignoresWeight = True
-			values = 484440,0,0,47711,0,0,13,0,489667.292500021,0,0,0
-			subtype = FS_HardScience
-			title = Gather rare science results from Kerbin's Badlands
-			description = They say that it's difficult to find water at Kerbin's Badlands.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
-			synopsis = Run the requested experiments in while splashed down at Kerbin's Badlands.
-			completedMessage = This is some great data that we've accumulated!
-			hash = 335385938
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -20.4345703125
-					longitude = 71.3232421875
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -14.2822265625
-					longitude = 41.2646484375
-					altitude = 0
-					index = 1
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -30.4541015625
-					longitude = 50.4931640625
-					altitude = 0
-					index = 2
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_HardScience
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Badlands
-				situation = SrfSplashed
-				experiment = dmbathymetryscan
-				experiment = telemetryReport
-				experiment = crewReport
-				recoveryMethod = None
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Badlands
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Biome: Kerbin's Badlands
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Splashed down
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Situation: Splashed down
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Bathymetry Data
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Bathymetry Data
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = dmbathymetryscanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Telemetry Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Telemetry Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = telemetryReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Crew Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Crew Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = crewReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = cb1e380b-c6c6-4503-880f-facdc431bd39
-			type = ConfiguredContract
-			prestige = 0
-			seed = 395499570
-			state = Offered
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 699840,0,0,22300,0,0,5,0,705966.179433633,0,0,0
-			subtype = FS_Experiment
-			title = Perform Orbital telescope observations experiments on Kerbin
-			description = Wernher is especially excited to try some orbital telescope observations experiments at various locations on Kerbin.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
-			synopsis = Run the orbital telescope observations experiments on Kerbin.
-			completedMessage = Yup, that's definitely a lot of orbital telescope observations results.  Just put the data in a spreadsheet and we'll look at it later.
-			hash = -1686269563
-			targetBody = Kerbin
-			UNIQUE_DATA
-			{
-				experiment = ScienceExperiment:scopeScan
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 11632,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Water
-				situation = InSpaceLow
-				experiment = scopeScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Water
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Water
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Low in space
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Low in space
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Orbital Telescope Observations
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Orbital Telescope Observations
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = scopeScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 12969,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Shores
-				situation = InSpaceLow
-				experiment = scopeScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Shores
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Shores
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Low in space
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Low in space
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Orbital Telescope Observations
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Orbital Telescope Observations
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = scopeScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 14061,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Badlands
-				situation = InSpaceLow
-				experiment = scopeScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Badlands
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Badlands
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Low in space
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Low in space
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Orbital Telescope Observations
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Orbital Telescope Observations
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = scopeScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 9b0a6b68-d699-4ffb-bd85-a401eea3b776
-			type = ConfiguredContract
-			prestige = 0
-			seed = 989752431
-			state = Offered
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 655500,0,0,20425,0,0,2,0,661626.179433633,0,0,0
-			subtype = FS_Experiment
-			title = Perform Temperature scan experiments on Kerbin
-			description = Wernher is especially excited to try some temperature scan experiments at various locations on Kerbin.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
-			synopsis = Run the temperature scan experiments on Kerbin.
-			completedMessage = Yup, that's definitely a lot of temperature scan results.  Just put the data in a spreadsheet and we'll look at it later.
-			hash = -1686269563
-			targetBody = Kerbin
-			UNIQUE_DATA
-			{
-				experiment = ScienceExperiment:temperatureScan
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 11261,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = IceCaps
-				situation = SrfLanded
-				experiment = temperatureScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Ice Caps
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Ice Caps
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Landed
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Landed
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Temperature Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Temperature Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = temperatureScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 13310,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Badlands
-				situation = FlyingLow
-				experiment = temperatureScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Badlands
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Badlands
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Flying low
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Flying low
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Temperature Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Temperature Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = temperatureScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 11207,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_Experiment
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				situation = InSpaceHigh
-				experiment = temperatureScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Destination: Kerbin
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Destination: Kerbin
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: High in space
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: High in space
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Temperature Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Temperature Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = temperatureScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 2ba64755-6c43-4f08-9fd7-44e6cb4c8120
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1340575013
-			state = Offered
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 524280,0,0,25010,0,0,4,0,530406.179433633,0,0,0
+			values = 472620,0,0,25338,0,0,2,0,477155.192500006,0,0,0
 			subtype = FS_ClimateStudy
 			title = Climate study of Kerbin
 			description = Due to the number of Kerbals that believe the crazy notion that rocketry has an adverse effect on Kerbin's climate, we've been asked by the government to perform a climate study.  Let's prove once and for all that rocketry is completely safe (ecologically speaking, that is).
@@ -14911,80 +13522,7 @@ GAME
 				id = CollectScience
 				state = Incomplete
 				disableOnStateChange = False
-				values = 15104,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_ClimateStudy
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Badlands
-				situation = SrfLanded
-				experiment = temperatureScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Badlands
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Badlands
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Landed
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Landed
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Temperature Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Temperature Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = temperatureScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 15293,0,0,0,0
+				values = 15734,0,0,0,0
 				ContractIdentifier = FieldResearch.FS_ClimateStudy
 				title = 
 				notes = 
@@ -15002,6 +13540,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Biome: Kerbin's Deserts
 					notes = 
 					completedMessage = 
@@ -15013,6 +13552,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Situation: Flying low
 					notes = 
 					completedMessage = 
@@ -15024,6 +13564,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Experiment: Temperature Scan
 					notes = 
 					completedMessage = 
@@ -15034,6 +13575,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = 
 						notes = 
 						completedMessage = 
@@ -15045,6 +13587,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = Recovery: Recover or transmit
 						notes = 
 						completedMessage = 
@@ -15057,80 +13600,7 @@ GAME
 				id = CollectScience
 				state = Incomplete
 				disableOnStateChange = False
-				values = 15303,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_ClimateStudy
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Water
-				situation = SrfSplashed
-				experiment = barometerScan
-				recoveryMethod = Ideal
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Water
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Biome: Kerbin's Water
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Splashed down
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Situation: Splashed down
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Atmospheric Pressure Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					title = Experiment: Atmospheric Pressure Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = barometerScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = 
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Recovery: Recover or transmit
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Recovery: Recover or transmit
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 15582,0,0,0,0
+				values = 15622,0,0,0,0
 				ContractIdentifier = FieldResearch.FS_ClimateStudy
 				title = 
 				notes = 
@@ -15148,6 +13618,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Biome: Kerbin's Ice Caps
 					notes = 
 					completedMessage = 
@@ -15159,6 +13630,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Situation: Landed
 					notes = 
 					completedMessage = 
@@ -15170,6 +13642,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Experiment: Atmospheric Pressure Scan
 					notes = 
 					completedMessage = 
@@ -15180,6 +13653,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = 
 						notes = 
 						completedMessage = 
@@ -15191,6 +13665,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = Recovery: Recover or transmit
 						notes = 
 						completedMessage = 
@@ -15203,36 +13678,192 @@ GAME
 				id = CollectScience
 				state = Incomplete
 				disableOnStateChange = False
-				values = 15961,0,0,0,0
+				values = 15191,0,0,0,0
 				ContractIdentifier = FieldResearch.FS_ClimateStudy
 				title = 
 				notes = 
 				completedMessage = 
 				allowStateReset = False
 				targetBody = Kerbin
-				biome = IceCaps
+				biome = Deserts
 				situation = SrfLanded
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Deserts
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Biome: Kerbin's Deserts
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15726,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				situation = FlyingHigh
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Destination: Kerbin
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Destination: Kerbin
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying high
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Situation: Flying high
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15683,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				situation = InSpaceHigh
 				experiment = temperatureScan
 				recoveryMethod = Ideal
 				PARAM
 				{
 					name = ParameterDelegate`1
-					id = Biome: Kerbin's Ice Caps
+					id = Destination: Kerbin
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					title = Biome: Kerbin's Ice Caps
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Destination: Kerbin
 					notes = 
 					completedMessage = 
 				}
 				PARAM
 				{
 					name = ParameterDelegate`1
-					id = Situation: Landed
+					id = Situation: High in space
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					title = Situation: Landed
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
+					title = Situation: High in space
 					notes = 
 					completedMessage = 
 				}
@@ -15243,6 +13874,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_ClimateStudy
 					title = Experiment: Temperature Scan
 					notes = 
 					completedMessage = 
@@ -15253,6 +13885,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = 
 						notes = 
 						completedMessage = 
@@ -15264,6 +13897,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_ClimateStudy
 						title = Recovery: Recover or transmit
 						notes = 
 						completedMessage = 
@@ -15274,14 +13908,8 @@ GAME
 		UNREAD_CONTRACTS
 		{
 			contract = e9a9c588-0a4e-4f3c-ad0d-d988f03c41b0
-			contract = cd6477be-dc38-4136-bf8a-1ccf5c97f4f1
-			contract = 0d0341d3-838b-4d9d-bb0d-2b8255327a53
 			contract = a05ef998-7c42-4ee8-8a0f-607eaf1e5d60
-			contract = c4dbb7b0-c190-421d-bbda-32fd7662c5ae
-			contract = 607d8501-6529-4d08-bc0e-cb8f789dcfc1
-			contract = cb1e380b-c6c6-4503-880f-facdc431bd39
-			contract = 9b0a6b68-d699-4ffb-bd85-a401eea3b776
-			contract = 2ba64755-6c43-4f08-9fd7-44e6cb4c8120
+			contract = 5d6da34f-7a0b-406e-8f58-79c79c409e55
 		}
 	}
 	SCENARIO
@@ -15295,8 +13923,6 @@ GAME
 		scene = 7, 8, 5
 		DATA
 		{
-			setiAltitude18km = Double:10
-			setiReachSpace = Double:10
 		}
 	}
 	SCENARIO
@@ -15308,7 +13934,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 13765
+		nextCheck = 10325
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -15441,7 +14067,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = 3499e29e-3a2f-4a20-8b4a-12d236f05fa4|N|True
+				ActiveListID = e9e01555-2ce7-4e6e-b284-91a22c2d7d1e|N|True,3499e29e-3a2f-4a20-8b4a-12d236f05fa4|N|True,b4d13adc-2ca5-43d1-b9ab-7f246ac333d5|N|True
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -15477,9 +14103,5642 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 6131.35943363294
+		UT = 4538.07250000623
 		activeVessel = 0
 		mapViewFiltering = -1026
+		VESSEL
+		{
+			pid = 7598c4bf425049058cd03420568a340f
+			name = Untitled Space Craft
+			type = Ship
+			sit = PRELAUNCH
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 0
+			lct = 4538.07250000623
+			lastUT = 4538.07250000623
+			root = 0
+			lat = -0.0972077403937514
+			lon = 285.442319521639
+			alt = 76.5191794948187
+			hgt = 8.684019
+			nrm = 0.0007452667,0.9999998,-1.082662E-07
+			rot = -0.7009888,-0.09221793,-0.09726539,0.7004643
+			CoM = -0.011783,-2.426034,-0.005964043
+			stg = 4
+			prst = False
+			ref = 2234033340
+			ctrl = True
+			cPch = 0.2
+			cHdg = 0.3
+			cMod = 0
+			ORBIT
+			{
+				SMA = 300819.400994531
+				ECC = 0.994798480739401
+				INC = 0.0972082892577381
+				LPE = 90
+				LAN = 181.254702731799
+				MNA = 3.14159265358979
+				EPH = 4538.07250000623
+				REF = 1
+			}
+			PART
+			{
+				name = mk1pod
+				cid = 4288504234
+				uid = 2234033340
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 9
+				attN = top, 1
+				mass = 0.8
+				temp = 307.192349008083
+				tempExt = 307.277048358509
+				tempExtUnexp = 307.27349761414
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = mk1pod
+				modCost = 0
+				crew = Bob Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					stagingEnabled = True
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.3
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.3
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle Flag
+							guiName = Toggle Flag
+							category = Toggle Flag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleConductionMultiplier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntennaPassive
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					RTDishCosAngle = 1
+					RTOmniRange = 160000
+					RTDishRange = -1
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPUPassive
+					isEnabled = True
+					IsRTPowered = True
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TrajectoriesVesselSettings
+					isEnabled = True
+					EntryAngle = 0
+					EntryHorizon = False
+					HighAngle = 0
+					HighHorizon = False
+					LowAngle = 0
+					LowHorizon = False
+					GroundAngle = 0
+					GroundHorizon = False
+					ProgradeEntry = False
+					RetrogradeEntry = False
+					hasTarget = False
+					targetLocation = (0, 0, 0)
+					targetReferenceBody = 
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Seat 0 inventory
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TransferDialogSpawner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						SpawnDialog
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = True
+							guiIcon = Transfer Crew
+							guiName = Transfer Crew
+							category = Transfer Crew
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 514.983200000572
+					maxAmount = 515
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = setiProbeStack2
+				cid = 4288503390
+				uid = 4228762494
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = 0,0.759380340576172,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, 0
+				attN = top, 2
+				mass = 0.1
+				temp = 307.192382764131
+				tempExt = 307.253891362266
+				tempExtUnexp = 307.252397050992
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = setiProbeStack2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					stagingEnabled = True
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					stateString = Idle
+					stagingEnabled = True
+					WheelState = Active
+					actuatorModeCycle_UIFlight
+					{
+						controlEnabled = True
+						stateNames = Normal, SAS Only, Pilot Only
+					}
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					standaloneToggle = True
+					stagingEnabled = True
+					standaloneToggle_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Temperature
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Temperature
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Telemetry Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Telemetry
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Telemetry
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Telemetry Report
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Telemetry
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TrajectoriesVesselSettings
+					isEnabled = True
+					EntryAngle = 0
+					EntryHorizon = False
+					HighAngle = 0
+					HighHorizon = False
+					LowAngle = 0
+					LowHorizon = False
+					GroundAngle = 0
+					GroundHorizon = False
+					ProgradeEntry = False
+					RetrogradeEntry = False
+					hasTarget = False
+					targetLocation = (0, 0, 0)
+					targetReferenceBody = 
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 399.983200000572
+					maxAmount = 400
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = dmscope
+				cid = 4288455736
+				uid = 1935238218
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = 0,1.17717933654785,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, 1
+				mass = 0.04
+				temp = 307.192327882323
+				tempExt = 307.207519179183
+				tempExtUnexp = 307.206811372292
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = dmscope
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = DMModuleScienceAnimate
+					isEnabled = True
+					IsDeployed = False
+					isLocked = False
+					experimentNumber = 0
+					experimentsReturned = 0
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						deployEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Open Shutter
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						retractEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Retract
+							guiName = Close Shutter
+							category = Retract
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						toggleEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Toggle
+							guiName = Toggle Shutter
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						editorDeployEvent
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Open Shutter
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						editorRetractEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Retract
+							guiName = Close Shutter
+							category = Retract
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewInitialData
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Initial Data
+							guiName = Review Initial Data
+							category = Review Initial Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Visual Observations
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Observations
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Deploy
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Observations
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						deployAction
+						{
+							actionGroup = None
+							active = False
+						}
+						retractAction
+						{
+							actionGroup = None
+							active = False
+						}
+						toggleAction
+						{
+							actionGroup = None
+						}
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dmmagBoom
+				cid = 4288454266
+				uid = 673242017
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = 4.57763688066493E-10,1.03426933288574,0.299018889665604
+				rotation = -2.528811E-07,1.430512E-09,-1.430512E-09,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				attN = bottom, -1
+				mass = 0.02
+				temp = 307.192332303672
+				tempExt = 307.208528146989
+				tempExtUnexp = 307.207759243285
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = dmmagBoom
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DMModuleScienceAnimate
+					isEnabled = True
+					IsDeployed = False
+					isLocked = False
+					experimentNumber = 0
+					experimentsReturned = 0
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						deployEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Deploy Magnetometer
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						retractEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Retract
+							guiName = Retract Magnetometer
+							category = Retract
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						toggleEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Toggle
+							guiName = Toggle Magnetometer
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						editorDeployEvent
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Deploy Magnetometer
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						editorRetractEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Retract
+							guiName = Retract Magnetometer
+							category = Retract
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewInitialData
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Initial Data
+							guiName = Review Initial Data
+							category = Review Initial Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Magnetometer Data
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Magnetometer Data
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Deploy
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Discard Magnetometer Data
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						deployAction
+						{
+							actionGroup = None
+							active = False
+						}
+						retractAction
+						{
+							actionGroup = None
+							active = False
+						}
+						toggleAction
+						{
+							actionGroup = None
+						}
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = DMMagBoomModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = sensorBarometer
+				cid = 4288427146
+				uid = 1698752947
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = 0.265210211277008,0.763019561767578,-0.153119206428528
+				rotation = 1.460008E-07,0.5,8.429359E-08,-0.8660254
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.005
+				temp = 307.19269139955
+				tempExt = 307.273819558821
+				tempExtUnexp = 307.270645364882
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = sensorBarometer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Toggle Display
+							guiName = Toggle Display
+							category = Toggle Display
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Pressure Data
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Pressure Data
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = sensorAccelerometer
+				cid = 4288423836
+				uid = 402866151
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = -0.209355905652046,0.7677001953125,-0.209355905652046
+				rotation = 1.557544E-07,-0.3826835,-6.45156E-08,-0.9238796
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.01
+				temp = 307.192482125113
+				tempExt = 307.273828284545
+				tempExtUnexp = 307.270656403736
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = sensorAccelerometer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Toggle Display
+							guiName = Toggle Display
+							category = Toggle Display
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Seismic Data
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Review Data
+							guiName = Review Data
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Deploy
+							guiName = Log Seismic Data
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Reset
+							guiName = Delete Data
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Experiment: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = longAntenna
+				cid = 4288420804
+				uid = 2527499034
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = 1.95128606605977E-08,0.874270439147949,-0.223201096057892
+				rotation = -2.528811E-07,1.430512E-09,-1.430512E-09,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				attN = bottom, -1
+				mass = 0.01
+				temp = 307.192371739319
+				tempExt = 307.249704411109
+				tempExtUnexp = 307.247435950335
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = longAntenna
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					deployPercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle
+							guiName = Extend
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntenna
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = False
+					IsRTPowered = False
+					IsRTBroken = False
+					IsNonRetractable = False
+					RTDishCosAngle = 1
+					RTOmniRange = 0
+					RTDishRange = -1
+					stagingEnabled = True
+					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+						EventToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Toggle
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Target
+							guiName = No Target
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Start deployed
+							guiName = Start deployed
+							category = Start deployed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorClose
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Start retracted
+							guiName = Start retracted
+							category = Start retracted
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OverrideTarget
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Set Target
+							guiName = [EVA] Set Target
+							category = [EVA] Set Target
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Open
+							guiName = [EVA] Force Open
+							category = [EVA] Force Open
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideClose
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Close
+							guiName = [EVA] Force Close
+							category = [EVA] Force Close
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionOpen
+						{
+							actionGroup = None
+						}
+						ActionClose
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPUPassive
+					isEnabled = True
+					IsRTPowered = True
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = EngineerChip
+				cid = 4288406892
+				uid = 184608129
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = -0.341906309127808,0.784689903259277,1.81440302782221E-08
+				rotation = 0.4999999,-0.5000001,0.4999999,0.5000001
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.005
+				temp = 307.193090566429
+				tempExt = 307.273653180666
+				tempExtUnexp = 307.270472628143
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = EngineerChip
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlightEngineerModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						SimulationDump
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Verbose Simulation Log
+							guiName = Verbose Simulation Log
+							category = Verbose Simulation Log
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = radialDrogue
+				cid = 4288377288
+				uid = 423050316
+				mid = 2088509145
+				launchID = 10
+				parent = 1
+				position = -2.67337707526849E-08,0.80912971496582,-0.305798709392548
+				rotation = 2.302946E-07,-4.896532E-08,-1.127645E-14,-1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				dstg = 0
+				sqor = 1
+				sepI = 0
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, 1
+				mass = 0.008110177
+				temp = 307.192618726828
+				tempExt = 307.253345001601
+				tempExtUnexp = 307.2510470856
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = radialDrogue
+				modCost = 12.6
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RealChuteModule
+					isEnabled = True
+					caseMass = 0.005
+					cutSpeed = 0.5
+					timer = 0
+					mustGoDown = False
+					deployOnGround = False
+					spareChutes = 5
+					initiated = True
+					wait = True
+					armed = False
+					oneWasDeployed = False
+					staged = False
+					launched = False
+					chuteCount = 5
+					stagingEnabled = True
+					EVENTS
+					{
+						GUIDeploy
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUICut
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Cut main chute
+							guiName = Cut chute
+							category = Cut main chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIArm
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Arm parachute
+							guiName = Arm parachute
+							category = Arm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIDisarm
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Disarm parachute
+							guiName = Disarm parachute
+							category = Disarm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIRepack
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Repack chute
+							guiName = Repack chute
+							category = Repack chute
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIToggleWindow
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle info
+							guiName = Toggle info
+							category = Toggle info
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionDeploy
+						{
+							actionGroup = None
+						}
+						ActionCut
+						{
+							actionGroup = None
+						}
+						ActionArm
+						{
+							actionGroup = None
+						}
+						ActionDisarm
+						{
+							actionGroup = None
+						}
+					}
+					PARACHUTE
+					{
+						material = Kevlar
+						preDeployedDiameter = 2.5
+						deployedDiameter = 5
+						minIsPressure = True
+						capOff = False
+						minDeployment = 25000
+						minPressure = 0.007
+						deploymentAlt = 2500
+						cutAlt = -1
+						preDeploymentSpeed = 4
+						deploymentSpeed = 4
+						time = 0
+						parachuteName = RC_canopy
+						baseParachuteName = canopy
+						capName = cap
+						preDeploymentAnimation = RC_chute_semi_deploy
+						deploymentAnimation = RC_chute_full_deploy
+						forcedOrientation = 0
+						depState = STOWED
+					}
+				}
+				MODULE
+				{
+					name = ProceduralChute
+					isEnabled = True
+					caseId = -1
+					lastCaseId = -1
+					size = 0
+					lastSize = 0
+					planets = 0
+					presetId = 0
+					originalSize = (0.5, 0.5, 0.5)
+					top = 0
+					bottom = 0
+					debut = 0.5
+					initiated = True
+					mustGoDown = False
+					deployOnGround = False
+					secondaryChute = False
+					timer = 0s
+					cutSpeed = 0.5
+					spares = 5
+					landingAlt = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						GUINextSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Next size
+							guiName = Next size
+							category = Next size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						GUIPreviousSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Previous size
+							guiName = Previous size
+							category = Previous size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					CHUTE
+					{
+						chuteID = 1
+						modelID = 0
+						typeID = 0
+						lastTypeID = 0
+						position = (-5.9, -0.4, 7.4)
+						isPressure = True
+						calcSelect = True
+						getMass = True
+						useDry = True
+						preDepDiam = 2.5
+						depDiam = 5
+						predepClause = 0.007
+						mass = 10
+						landingSpeed = 6
+						deceleration = 10
+						refDepAlt = 700
+						chuteCount = 1
+						deploymentAlt = 2500
+						cutAlt = 
+						preDepSpeed = 4
+						depSpeed = 4
+					}
+				}
+			}
+			PART
+			{
+				name = HeatShield1
+				cid = 4288448502
+				uid = 3427740288
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = 0,-0.427040100097656,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = direct, -1
+				attN = bottom, 10
+				attN = top, 0
+				mass = 0.1
+				temp = 307.192324523933
+				tempExt = 307.281022322032
+				tempExtUnexp = 307.277150169371
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = HeatShield1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					isJettisoned = False
+					shroudHideOverride = False
+					stagingEnabled = False
+					shroudHideOverride_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Jettison
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Jettison Shroud
+							guiName = Jettison Shroud
+							category = Jettison Shroud
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Shroud: Enable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAblator
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					stagingEnabled = False
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Decouple
+							guiName = Jettison Heat Shield
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = HS Jettison Not Staged
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 200
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Ablator
+					amount = 200
+					maxAmount = 200
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = stackDecouplerMini
+				cid = 4288366572
+				uid = 1524333559
+				mid = 2088509145
+				launchID = 10
+				parent = 9
+				position = 0,-0.748860359191895,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 1
+				sqor = 2
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = bottom, 11
+				attN = top, 9
+				mass = 0.06
+				temp = 307.192560770786
+				tempExt = 307.270652807865
+				tempExtUnexp = 307.267643862335
+				expt = 4
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = stackDecouplerMini
+				modCost = 124.2641
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					stagingEnabled = True
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Decoupler: Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleToggleCrossfeed
+					isEnabled = True
+					crossfeedStatus = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Disable Crossfeed
+							guiName = Enable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						EnableAction
+						{
+							actionGroup = None
+						}
+						DisableAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1.25
+					defaultScale = 0.625
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 424.2641
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster1-1
+				cid = 4288358824
+				uid = 606825681
+				mid = 2088509145
+				launchID = 10
+				parent = 10
+				position = 0,-4.82067966461182,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				dstg = 2
+				sqor = 3
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, -1
+				attN = top, 10
+				mass = 1.65
+				temp = 307.192391261194
+				tempExt = 307.257744736687
+				tempExtUnexp = 307.25547318639
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = solidBooster1-1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 65.5
+					manuallyOverridden = False
+					stagingEnabled = True
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 1.25
+					defaultScale = 1.25
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 472
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 880
+					maxAmount = 880
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4288352724
+				uid = 3845823349
+				mid = 2088509145
+				launchID = 10
+				parent = 11
+				position = 5.4249259306971E-08,-8.19721603393555,-0.62053918838501
+				rotation = 0,0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sym = 13
+				sym = 14
+				sym = 15
+				srfN = srfAttach, 11
+				mass = 0.01
+				temp = 307.192986764845
+				tempExt = 307.236029585913
+				tempExtUnexp = 307.234178822638
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 25
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4288349686
+				uid = 858980648
+				mid = 2088509145
+				launchID = 10
+				parent = 11
+				position = -0.62053918838501,-8.19721603393555,-9.12362807525824E-08
+				rotation = 0,0,0,-1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sym = 12
+				sym = 14
+				sym = 15
+				srfN = srfAttach, 11
+				mass = 0.01
+				temp = 307.192986764845
+				tempExt = 307.236029585913
+				tempExtUnexp = 307.234178822638
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 25
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4288349648
+				uid = 3132223314
+				mid = 2088509145
+				launchID = 10
+				parent = 11
+				position = 1.17238804317357E-15,-8.19721603393555,0.62053918838501
+				rotation = 0,-0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sym = 12
+				sym = 13
+				sym = 15
+				srfN = srfAttach, 11
+				mass = 0.01
+				temp = 307.192986764845
+				tempExt = 307.236029585913
+				tempExtUnexp = 307.234178822638
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 25
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4288349610
+				uid = 1634810729
+				mid = 2088509145
+				launchID = 10
+				parent = 11
+				position = 0.62053918838501,-8.19721603393555,1.72622396377164E-08
+				rotation = 0,-1,0,0
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sepI = 2
+				sidx = -1
+				attm = 1
+				sym = 12
+				sym = 13
+				sym = 14
+				srfN = srfAttach, 11
+				mass = 0.01
+				temp = 307.192986764845
+				tempExt = 307.236029585913
+				tempExtUnexp = 307.234178822638
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 25
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = parachuteRadial
+				cid = 4288376340
+				uid = 3580025675
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = -0.412903487682343,0.235549926757813,2.46109692625396E-08
+				rotation = 0.1287088,0.6952944,-0.1287089,0.695294
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 1
+				sym = 17
+				srfN = srfAttach, 0
+				mass = 0.03064875
+				temp = 307.19287356504
+				tempExt = 307.270831125365
+				tempExtUnexp = 307.26872680401
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = parachuteRadial
+				modCost = 68.1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RealChuteModule
+					isEnabled = True
+					caseMass = 0.005
+					cutSpeed = 0.5
+					timer = 0
+					mustGoDown = False
+					deployOnGround = False
+					spareChutes = 5
+					initiated = True
+					wait = True
+					armed = False
+					oneWasDeployed = False
+					staged = False
+					launched = False
+					chuteCount = 5
+					stagingEnabled = True
+					EVENTS
+					{
+						GUIDeploy
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUICut
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Cut main chute
+							guiName = Cut chute
+							category = Cut main chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIArm
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Arm parachute
+							guiName = Arm parachute
+							category = Arm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIDisarm
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Disarm parachute
+							guiName = Disarm parachute
+							category = Disarm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIRepack
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Repack chute
+							guiName = Repack chute
+							category = Repack chute
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIToggleWindow
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle info
+							guiName = Toggle info
+							category = Toggle info
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionDeploy
+						{
+							actionGroup = None
+						}
+						ActionCut
+						{
+							actionGroup = None
+						}
+						ActionArm
+						{
+							actionGroup = None
+						}
+						ActionDisarm
+						{
+							actionGroup = None
+						}
+					}
+					PARACHUTE
+					{
+						material = Nylon
+						preDeployedDiameter = 0.7
+						deployedDiameter = 17
+						minIsPressure = False
+						capOff = False
+						minDeployment = 3000
+						minPressure = 0.01
+						deploymentAlt = 700
+						cutAlt = -1
+						preDeploymentSpeed = 5
+						deploymentSpeed = 3
+						time = 0
+						parachuteName = RC_canopy
+						baseParachuteName = canopy
+						capName = cap
+						preDeploymentAnimation = RC_chute_semi_deploy
+						deploymentAnimation = RC_chute_full_deploy
+						forcedOrientation = 0
+						depState = STOWED
+					}
+				}
+				MODULE
+				{
+					name = ProceduralChute
+					isEnabled = True
+					caseId = -1
+					lastCaseId = -1
+					size = 0
+					lastSize = 0
+					planets = 0
+					presetId = 0
+					originalSize = (1, 1, 1)
+					top = 0
+					bottom = 0
+					debut = 1
+					initiated = True
+					mustGoDown = False
+					deployOnGround = False
+					secondaryChute = False
+					timer = 0s
+					cutSpeed = 0.5
+					spares = 5
+					landingAlt = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						GUINextSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Next size
+							guiName = Next size
+							category = Next size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						GUIPreviousSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Previous size
+							guiName = Previous size
+							category = Previous size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					CHUTE
+					{
+						chuteID = 0
+						modelID = 0
+						typeID = 0
+						lastTypeID = 0
+						position = (-5.1, 0.0, 7.3)
+						isPressure = False
+						calcSelect = True
+						getMass = True
+						useDry = True
+						preDepDiam = 0.7
+						depDiam = 17
+						predepClause = 3000
+						mass = 10
+						landingSpeed = 6
+						deceleration = 10
+						refDepAlt = 700
+						chuteCount = 1
+						deploymentAlt = 700
+						cutAlt = 
+						preDepSpeed = 5
+						depSpeed = 3
+					}
+				}
+			}
+			PART
+			{
+				name = parachuteRadial
+				cid = 4288373468
+				uid = 2136814286
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = 0.412903487682343,0.235549926757813,-6.07081389603081E-08
+				rotation = -0.1287089,0.6952939,-0.1287088,-0.6952945
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 1
+				sym = 16
+				srfN = srfAttach, 0
+				mass = 0.03064875
+				temp = 307.19287356504
+				tempExt = 307.270831125365
+				tempExtUnexp = 307.26872680401
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = parachuteRadial
+				modCost = 68.1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						RunTestEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Run Test
+							guiName = Run Test
+							category = Run Test
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RealChuteModule
+					isEnabled = True
+					caseMass = 0.005
+					cutSpeed = 0.5
+					timer = 0
+					mustGoDown = False
+					deployOnGround = False
+					spareChutes = 5
+					initiated = True
+					wait = True
+					armed = False
+					oneWasDeployed = False
+					staged = False
+					launched = False
+					chuteCount = 5
+					stagingEnabled = True
+					EVENTS
+					{
+						GUIDeploy
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUICut
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Cut main chute
+							guiName = Cut chute
+							category = Cut main chute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIArm
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Arm parachute
+							guiName = Arm parachute
+							category = Arm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIDisarm
+						{
+							active = False
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Disarm parachute
+							guiName = Disarm parachute
+							category = Disarm parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIRepack
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Repack chute
+							guiName = Repack chute
+							category = Repack chute
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						GUIToggleWindow
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle info
+							guiName = Toggle info
+							category = Toggle info
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionDeploy
+						{
+							actionGroup = None
+						}
+						ActionCut
+						{
+							actionGroup = None
+						}
+						ActionArm
+						{
+							actionGroup = None
+						}
+						ActionDisarm
+						{
+							actionGroup = None
+						}
+					}
+					PARACHUTE
+					{
+						material = Nylon
+						preDeployedDiameter = 0.7
+						deployedDiameter = 17
+						minIsPressure = False
+						capOff = False
+						minDeployment = 3000
+						minPressure = 0.01
+						deploymentAlt = 700
+						cutAlt = -1
+						preDeploymentSpeed = 5
+						deploymentSpeed = 3
+						time = 0
+						parachuteName = RC_canopy
+						baseParachuteName = canopy
+						capName = cap
+						preDeploymentAnimation = RC_chute_semi_deploy
+						deploymentAnimation = RC_chute_full_deploy
+						forcedOrientation = 0
+						depState = STOWED
+					}
+				}
+				MODULE
+				{
+					name = ProceduralChute
+					isEnabled = True
+					caseId = -1
+					lastCaseId = -1
+					size = 0
+					lastSize = 0
+					planets = 0
+					presetId = 0
+					originalSize = (1, 1, 1)
+					top = 0
+					bottom = 0
+					debut = 1
+					initiated = True
+					mustGoDown = False
+					deployOnGround = False
+					secondaryChute = False
+					timer = 0s
+					cutSpeed = 0.5
+					spares = 5
+					landingAlt = 0
+					stagingEnabled = True
+					EVENTS
+					{
+						GUINextSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Next size
+							guiName = Next size
+							category = Next size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						GUIPreviousSize
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Previous size
+							guiName = Previous size
+							category = Previous size
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					CHUTE
+					{
+						chuteID = 0
+						modelID = 0
+						typeID = 0
+						lastTypeID = 0
+						position = (-5.9, 0.0, 6.6)
+						isPressure = False
+						calcSelect = True
+						getMass = True
+						useDry = True
+						preDepDiam = 0.7
+						depDiam = 17
+						predepClause = 3000
+						mass = 10
+						landingSpeed = 6
+						deceleration = 10
+						refDepAlt = 700
+						chuteCount = 1
+						deploymentAlt = 700
+						cutAlt = 
+						preDepSpeed = 5
+						depSpeed = 3
+					}
+				}
+			}
+			PART
+			{
+				name = RTShortAntenna1
+				cid = 4288412856
+				uid = 1895323219
+				mid = 2088509145
+				launchID = 10
+				parent = 0
+				position = -0.160474002361298,0.546600341796875,0.277949213981628
+				rotation = -0.09101091,0.4916474,-0.1576355,0.851558
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 0
+				mass = 0.01
+				temp = 307.192546907397
+				tempExt = 307.275041189518
+				tempExtUnexp = 307.271843645937
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = RTShortAntenna1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntenna
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = True
+					IsRTBroken = False
+					IsNonRetractable = False
+					RTDishCosAngle = 1
+					RTOmniRange = 1200000
+					RTDishRange = -1
+					stagingEnabled = True
+					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+						EventToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Toggle
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Target
+							guiName = No Target
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Start deployed
+							guiName = Start deployed
+							category = Start deployed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorClose
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Start retracted
+							guiName = Start retracted
+							category = Start retracted
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OverrideTarget
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Set Target
+							guiName = [EVA] Set Target
+							category = [EVA] Set Target
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Open
+							guiName = [EVA] Force Open
+							category = [EVA] Force Open
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideClose
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Close
+							guiName = [EVA] Force Close
+							category = [EVA] Force Close
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionOpen
+						{
+							actionGroup = None
+						}
+						ActionClose
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPUPassive
+					isEnabled = True
+					IsRTPowered = True
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				kOSVesselModule
+				{
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
@@ -15647,29 +19906,19 @@ GAME
 			dumb = 0.1
 			badS = False
 			tour = False
-			state = Available
+			state = Assigned
 			ToD = 0
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 3
+				flight = 1
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = Recover
-				1 = Land,Kerbin
-				1 = Flight,Kerbin
-				1 = Suborbit,Kerbin
-				1 = Recover
-				2 = Land,Kerbin
-				2 = Flight,Kerbin
-				2 = Suborbit,Kerbin
-				2 = ExitVessel,Kerbin
-				2 = BoardVessel,Kerbin
-				2 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 3
+				flight = 1
 			}
 		}
 		KERBAL
