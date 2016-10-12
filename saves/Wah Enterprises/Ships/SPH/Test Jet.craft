@@ -2,15 +2,15 @@ ship = Test Jet
 version = 1.1.3
 description = 
 type = SPH
-size = 6.635107,3.850828,8.525623
+size = 6.635107,3.850828,8.610407
 PART
 {
 	part = Mark1Cockpit_4291662082
 	partName = Part
-	pos = 5.587935E-09,5,1.221895E-06
+	pos = 5.587808E-09,5,1.102686E-06
 	attPos = 0,0,0
 	attPos0 = 0,5,0
-	rot = 0.7071068,6.98492E-10,2.095469E-09,0.7071068
+	rot = 0.7071068,6.984918E-10,2.095482E-09,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0.7071068,0,0,0.7071068
 	mir = 1,1,1
@@ -705,10 +705,10 @@ PART
 {
 	part = airplaneTail_4292257398
 	partName = Part
-	pos = 5.93367E-09,5,-0.1749988
+	pos = 5.933546E-09,5,-0.1749989
 	attPos = 0,0,0
 	attPos0 = 0,-0.175,2.086163E-08
-	rot = 0.7071068,6.98492E-10,2.095469E-09,0.7071068
+	rot = 0.7071068,6.984918E-10,2.095482E-09,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -840,7 +840,7 @@ PART
 	pos = 0.3826615,5.000001,-2.190135
 	attPos = 0,0,0
 	attPos0 = 0.3826616,-2.015132,-2.366148E-07
-	rot = -0.345927,-0.6167127,0.6167127,-0.3459269
+	rot = -0.345927,-0.6167127,0.6167126,-0.3459269
 	attRot = -0.8433915,0.5372997,-1.556784E-09,-4.864842E-11
 	attRot0 = -1.192093E-07,-5.960464E-08,0.8721635,-0.4892145
 	mir = 1,1,1
@@ -963,7 +963,7 @@ PART
 	pos = -0.3826616,5.000001,-2.190135
 	attPos = 0,0,0
 	attPos0 = -0.3826616,-2.015132,-2.366148E-07
-	rot = 0.6167129,-0.3459268,-0.3459271,-0.6167126
+	rot = 0.6167129,-0.3459268,-0.3459271,-0.6167127
 	attRot = -0.8433915,0.5372997,-1.556784E-09,-4.864842E-11
 	attRot0 = 0.8721635,-0.4892145,-2.384186E-07,1.192093E-07
 	mir = 1,1,1
@@ -1086,7 +1086,7 @@ PART
 	pos = 0.3551886,5.000001,-2.480886
 	attPos = 0,0,0
 	attPos0 = 0.3551886,-2.305874,-2.019557E-07
-	rot = 0.0396077,0.7059966,0.7059969,-0.03960763
+	rot = 0.03960769,0.7059965,0.7059968,-0.03960763
 	attRot = 0,0,0,1
 	attRot0 = 0.05601371,0.99843,1.192093E-07,7.636844E-08
 	mir = 1,1,1
@@ -1210,7 +1210,7 @@ PART
 	pos = 1.647561,5.000001,-2.944479
 	attPos = 0,0,0
 	attPos0 = -1.336112,-0.3161313,-8.57186E-09
-	rot = 4.469242E-07,0.0560137,-5.724887E-08,0.9984301
+	rot = 4.767265E-07,0.0560137,-5.352358E-08,0.9984301
 	attRot = 0,0,-0.7071067,0.7071067
 	attRot0 = -6.332993E-08,-0.7071069,-0.7071067,-1.857967E-08
 	mir = 1,1,1
@@ -1750,7 +1750,7 @@ PART
 	pos = -0.3551886,5.000001,-2.480886
 	attPos = 0,0,0
 	attPos0 = -0.3551886,-2.305874,-2.019557E-07
-	rot = -0.7059969,0.03960758,-0.03960777,-0.7059966
+	rot = -0.7059968,0.03960758,-0.03960777,-0.7059965
 	attRot = 0,0,0,1
 	attRot0 = -2.384186E-07,-1.322478E-07,-0.05601371,-0.9984301
 	mir = 1,1,1
@@ -1874,7 +1874,7 @@ PART
 	pos = -1.647557,5.000001,-2.944479
 	attPos = 0,0,0
 	attPos0 = -1.336112,-0.3161306,-1.348776E-07
-	rot = 2.981339E-07,-0.05601366,4.147133E-08,0.9984302
+	rot = 3.279362E-07,-0.05601365,3.774604E-08,0.9984301
 	attRot = 0,0,-0.7071067,0.7071067
 	attRot0 = 0.7071067,2.353406E-08,1.128942E-07,-0.7071069
 	mir = 1,1,1
@@ -2411,10 +2411,10 @@ PART
 {
 	part = structuralWing3_4292156590
 	partName = Part
-	pos = -0.1369624,5.000001,-4.361449
+	pos = -0.1369624,5.000001,-4.36145
 	attPos = 0,0,0
 	attPos0 = -0.1369624,-4.186434,2.222455E-08
-	rot = 0.03960763,0.7059969,-0.7059966,0.03960772
+	rot = 0.03960763,0.7059968,-0.7059965,0.03960771
 	attRot = 0,0,-0.9999999,0
 	attRot0 = -7.636844E-08,1.192093E-07,-0.99843,0.05601371
 	mir = 1,1,1
@@ -2536,10 +2536,10 @@ PART
 {
 	part = smallCtrlSrf_4292094642
 	partName = Part
-	pos = 2.243154,5.000002,-3.972049
+	pos = 2.243155,5.000002,-3.972049
 	attPos = 0,0,0
 	attPos0 = -2.408727,-0.120741,-7.519701E-07
-	rot = -0.6958676,0.1255725,-0.1255714,-0.6958678
+	rot = -0.6958676,0.1255725,-0.1255714,-0.6958677
 	attRot = 0,0,-0.7071068,0.7071068
 	attRot0 = -8.568165E-07,6.626358E-07,-0.9925075,0.1221833
 	mir = 1,1,1
@@ -2711,7 +2711,7 @@ PART
 {
 	part = structuralWing3_4292151612
 	partName = Part
-	pos = 0.1369624,5.000001,-4.361449
+	pos = 0.1369624,5.000001,-4.36145
 	attPos = 0,0,0
 	attPos0 = 0.1369624,-4.186434,2.222455E-08
 	rot = 0.7059968,-0.03960774,-0.03960761,-0.7059966
@@ -2839,7 +2839,7 @@ PART
 	pos = -2.243145,5.000002,-3.972049
 	attPos = 0,0,0
 	attPos0 = -2.408727,-0.1207413,4.262988E-07
-	rot = 0.1255714,0.6958681,0.6958672,-0.1255726
+	rot = 0.1255714,0.6958681,0.6958673,-0.1255726
 	attRot = 0,0,-0.7071068,0.7071068
 	attRot0 = 9.70438E-07,-2.682209E-07,-0.9925076,0.1221834
 	mir = 1,1,1
@@ -3011,10 +3011,10 @@ PART
 {
 	part = MK1Fuselage_4292198348
 	partName = Part
-	pos = -0.3135265,4.686474,-4.382754
+	pos = -0.3135265,4.686474,-4.382755
 	attPos = 0,0,0
 	attPos0 = -0.3135265,-4.207746,0.3135267
-	rot = 0.6613383,-0.2739352,-0.2672193,0.6451243
+	rot = 0.6613383,-0.2739351,-0.2672193,0.6451242
 	attRot = -0.0436194,1.786596E-10,6.769952E-10,0.9990483
 	attRot0 = 0.01146486,-0.382654,0.00474888,0.9238083
 	mir = 1,1,1
@@ -3125,18 +3125,18 @@ PART
 {
 	part = JetEngine_4292193974
 	partName = Part
-	pos = -0.2967647,4.703237,-5.337649
+	pos = -0.2967647,4.703237,-5.33765
 	attPos = 0,0,0
 	attPos0 = 1.378357E-07,-1.441626,1.396984E-07
-	rot = 0.7132571,-0.006204675,0.006204677,0.7008477
+	rot = 0.7132571,-0.006204677,0.006204677,0.7008477
 	attRot = 0,0,0,1
 	attRot0 = 8.28877E-08,0.3826834,-2.980232E-08,0.9238795
 	mir = 1,1,1
 	symMethod = Mirror
-	istg = 0
+	istg = 1
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = -1152.513
@@ -3471,10 +3471,10 @@ PART
 {
 	part = MK1Fuselage_4292134164
 	partName = Part
-	pos = 0.3135266,4.686474,-4.382754
+	pos = 0.3135266,4.686474,-4.382755
 	attPos = 0,0,0
 	attPos0 = 0.3135265,-4.207746,0.3135267
-	rot = 0.6613383,0.2739351,0.2672193,0.6451242
+	rot = 0.6613383,0.2739351,0.2672193,0.6451241
 	attRot = -0.0436194,1.786596E-10,6.769952E-10,0.9990483
 	attRot0 = 0.01146504,0.382654,-0.004748895,0.9238083
 	mir = 1,1,1
@@ -3585,18 +3585,18 @@ PART
 {
 	part = JetEngine_4292134122
 	partName = Part
-	pos = 0.2967647,4.703237,-5.337649
+	pos = 0.2967647,4.703237,-5.33765
 	attPos = 0,0,0
 	attPos0 = 1.378357E-07,-1.441626,1.396984E-07
-	rot = 0.7132573,0.006204636,-0.00620455,0.7008476
+	rot = 0.7132573,0.006204608,-0.006204564,0.7008476
 	attRot = 0,0,0,1
 	attRot0 = 8.28877E-08,0.3826834,-2.980232E-08,0.9238795
 	mir = 1,1,1
 	symMethod = Mirror
-	istg = 0
+	istg = 1
 	dstg = 0
 	sidx = 0
-	sqor = 0
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = -1152.513
@@ -3931,10 +3931,10 @@ PART
 {
 	part = SmallGearBay_4291744942
 	partName = Part
-	pos = 5.72297E-09,4.429112,1.073429
+	pos = 5.722832E-09,4.429112,1.073429
 	attPos = 0,0,0
 	attPos0 = 0,1.073428,0.5708875
-	rot = 7.753631E-09,-0.9994836,0.03213695,-1.058807E-09
+	rot = 7.75364E-09,-0.9994835,0.03213695,-1.058817E-09
 	attRot = -7.924937E-10,-0.9999999,-8.565316E-09,2.301181E-10
 	attRot0 = 4.114499E-09,-0.6840172,0.7294659,4.103167E-09
 	mir = 1,1,1
@@ -4718,10 +4718,10 @@ PART
 {
 	part = StandardCtrlSrf_4292097996
 	partName = Part
-	pos = 0.9882628,5.000001,-4.440133
+	pos = 0.988263,5.000001,-4.440134
 	attPos = 0,0,0
 	attPos0 = -1.109363,0.2040482,1.931532E-07
-	rot = 0.6958678,-0.1255715,0.1255722,0.6958677
+	rot = 0.6958678,-0.1255715,0.1255722,0.6958676
 	attRot = 0,0,-0.7071067,0.7071067
 	attRot0 = -4.768371E-07,-1.206063E-07,0.9925076,-0.1221833
 	mir = 1,1,1
@@ -4893,7 +4893,7 @@ PART
 {
 	part = StandardCtrlSrf_4291275908
 	partName = Part
-	pos = -0.9882616,5.000001,-4.440133
+	pos = -0.9882615,5.000001,-4.440134
 	attPos = 0,0,0
 	attPos0 = -1.109362,0.2040482,-1.632785E-07
 	rot = 0.1255722,0.6958677,0.6958677,-0.1255716
@@ -5071,7 +5071,7 @@ PART
 	pos = 0.3517026,5.102306,-3.908614
 	attPos = 0,0,0
 	attPos0 = -0.05906579,-0.5800389,0.1023053
-	rot = -0.3575632,0.5963016,0.6276446,-0.3501939
+	rot = -0.3575632,0.5963015,0.6276445,-0.3501938
 	attRot = -0.0436194,6.769952E-10,-1.786596E-10,0.9990483
 	attRot0 = -0.03777542,0.4995241,0.02181002,0.8652012
 	mir = 1,1,1
@@ -5087,6 +5087,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = StandardCtrlSrf_4292118150
 	link = smallCtrlSrf_4291262730
+	link = MK1Fuselage_4291217184
 	sym = structuralWing2_4291274698
 	srfN = srfAttach,delta.small_4291278042
 	EVENTS
@@ -5193,10 +5194,10 @@ PART
 {
 	part = StandardCtrlSrf_4292118150
 	partName = Part
-	pos = 0.8980474,6.080347,-4.323618
+	pos = 0.8980477,6.080347,-4.323619
 	attPos = 0,0,0
 	attPos0 = -1.106694,-0.4500005,2.682209E-07
-	rot = -0.3575557,0.5963057,0.6276489,-0.3501869
+	rot = -0.3575556,0.5963056,0.6276488,-0.3501869
 	attRot = 0.3535534,0.3535534,0.6123723,-0.6123723
 	attRot0 = -8.940696E-08,-1.244247E-05,4.470348E-08,1
 	mir = 1,1,1
@@ -5371,7 +5372,7 @@ PART
 	pos = -0.3517025,5.102306,-3.908614
 	attPos = 0,0,0
 	attPos0 = -0.05906576,-0.580039,-0.1023052
-	rot = -0.6276447,0.3501939,0.3575631,-0.5963014
+	rot = -0.6276447,0.3501939,0.3575631,-0.5963013
 	attRot = -0.0436194,6.769952E-10,-1.786596E-10,0.9990483
 	attRot0 = 0.03777553,-0.499524,0.02181008,0.8652012
 	mir = 1,1,1
@@ -5387,6 +5388,7 @@ PART
 	modSize = (0.0, 0.0, 0.0)
 	link = StandardCtrlSrf_4291274656
 	link = smallCtrlSrf_4291265250
+	link = MK1Fuselage_4291219002
 	sym = structuralWing2_4292126832
 	srfN = srfAttach,delta.small_4291277080
 	EVENTS
@@ -5493,10 +5495,10 @@ PART
 {
 	part = StandardCtrlSrf_4291274656
 	partName = Part
-	pos = -0.8980467,6.080345,-4.323617
+	pos = -0.8980467,6.080345,-4.323618
 	attPos = 0,0,0
 	attPos0 = -1.106694,-0.4500005,2.682209E-07
-	rot = -0.6276492,0.3501868,0.3575556,-0.5963054
+	rot = -0.6276492,0.3501867,0.3575556,-0.5963053
 	attRot = 0.3535534,0.3535534,0.6123723,-0.6123723
 	attRot0 = -8.940696E-08,-1.244247E-05,4.470348E-08,1
 	mir = 1,1,1
@@ -5668,10 +5670,10 @@ PART
 {
 	part = smallCtrlSrf_4291265250
 	partName = Part
-	pos = -1.527004,7.171852,-4.284289
+	pos = -1.527004,7.171852,-4.28429
 	attPos = 0,0,0
 	attPos0 = -2.367064,-0.450001,-1.192093E-07
-	rot = 0.6321553,-0.3425576,-0.3495265,0.6007209
+	rot = 0.6321553,-0.3425575,-0.3495265,0.6007209
 	attRot = -0.5963677,-0.5963677,-0.3799282,0.3799282
 	attRot0 = 2.607703E-07,-0.01275817,-5.960464E-08,-0.9999187
 	mir = 1,1,1
@@ -5843,10 +5845,10 @@ PART
 {
 	part = smallCtrlSrf_4291262730
 	partName = Part
-	pos = 1.527006,7.171855,-4.28429
+	pos = 1.527007,7.171856,-4.284291
 	attPos = 0,0,0
 	attPos0 = -2.367064,-0.4500016,-2.384186E-07
-	rot = -0.3495266,0.600721,0.6321553,-0.3425578
+	rot = -0.3495266,0.6007209,0.6321552,-0.3425577
 	attRot = -0.5963677,-0.5963677,-0.3799282,0.3799282
 	attRot0 = 5.960464E-08,-0.01275821,2.980232E-08,0.9999186
 	mir = 1,1,1
@@ -6018,10 +6020,10 @@ PART
 {
 	part = miniIntake_4292133812
 	partName = Part
-	pos = -0.3217523,4.678248,-3.914148
+	pos = -0.3217523,4.678248,-3.914149
 	attPos = 0,0,0
 	attPos0 = -1.396984E-08,0.4687499,-3.213063E-08
-	rot = 0.7132573,-0.006204703,0.006204747,0.7008477
+	rot = 0.7132573,-0.006204703,0.006204747,0.7008476
 	attRot = 0,0,0,1
 	attRot0 = -2.293382E-08,0.3826835,2.980232E-08,0.9238796
 	mir = 1,1,1
@@ -6181,10 +6183,10 @@ PART
 {
 	part = miniIntake_4291243078
 	partName = Part
-	pos = 0.3217524,4.678248,-3.914148
+	pos = 0.3217524,4.678248,-3.914149
 	attPos = 0,0,0
 	attPos0 = 5.541369E-08,0.4687501,-6.798655E-08
-	rot = 0.7132573,0.006204679,-0.006204676,0.7008476
+	rot = 0.7132573,0.006204668,-0.006204664,0.7008475
 	attRot = 0,0,0,1
 	attRot0 = -2.328306E-08,-0.3826834,5.960464E-08,0.9238796
 	mir = 1,1,1
@@ -6336,6 +6338,1036 @@ PART
 		flowState = True
 		isTweakable = False
 		hideFlow = False
+		isVisible = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = MK1Fuselage_4291219002
+	partName = Part
+	pos = -0.7597376,5.355686,-4.238957
+	attPos = 0,0,0
+	attPos0 = -0.4127457,-0.33567,0.238299
+	rot = -0.3647747,0.6014273,0.6234813,-0.3413152
+	attRot = 0,0,0,1
+	attRot0 = -1.490116E-07,-0.5,-1.490116E-07,0.8660254
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -560
+	modMass = -0.21875
+	modSize = (0.0, 0.0, 0.0)
+	link = noseCone_4291214028
+	link = liquidEngine_4291203924
+	sym = MK1Fuselage_4291217184
+	srfN = srfAttach,structuralWing2_4291274698
+	attN = top,noseCone_4291214028
+	attN = bottom,liquidEngine_4291203924
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 40
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = MK1Fuselage_4291217184
+	partName = Part
+	pos = 0.7597377,5.355686,-4.238957
+	attPos = 0,0,0
+	attPos0 = -0.4127457,-0.3356701,-0.2382988
+	rot = 0.3647748,0.6014273,0.6234812,0.3413151
+	attRot = 0,0,0,1
+	attRot0 = -3.874301E-07,-0.8660254,1.639127E-07,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -560
+	modMass = -0.21875
+	modSize = (0.0, 0.0, 0.0)
+	link = noseCone_4291213120
+	link = liquidEngine_4291202538
+	sym = MK1Fuselage_4291219002
+	srfN = srfAttach,structuralWing2_4292126832
+	attN = top,noseCone_4291213120
+	attN = bottom,liquidEngine_4291202538
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 40
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = noseCone_4291214028
+	partName = Part
+	pos = -0.765908,5.335258,-3.770692
+	attPos = 0,0,0
+	attPos0 = 1.922047E-07,0.46875,-8.163039E-08
+	rot = 0.722335,-0.004655283,0.004655201,0.6915122
+	attRot = 0,0,0,1
+	attRot0 = -1.769513E-08,-0.8663656,5.960464E-08,-0.4994103
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = -180
+	modMass = -0.0225
+	modSize = (0.0, 0.0, 0.0)
+	sym = noseCone_4291213120
+	attN = bottom01,MK1Fuselage_4291219002
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 60
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = noseCone_4291213120
+	partName = Part
+	pos = 0.7659088,5.335258,-3.770692
+	attPos = 0,0,0
+	attPos0 = 1.323659E-07,0.46875,4.045504E-07
+	rot = 0.722335,0.004655202,-0.004655234,0.6915122
+	attRot = 0,0,0,1
+	attRot0 = -1.473818E-07,-0.8663657,1.192093E-07,0.4994103
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = -180
+	modMass = -0.0225
+	modSize = (0.0, 0.0, 0.0)
+	sym = noseCone_4291214028
+	attN = bottom01,MK1Fuselage_4291217184
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 60
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = liquidEngine_4291203924
+	partName = Part
+	pos = -0.7476317,5.395763,-5.157667
+	attPos = 0,0,0
+	attPos0 = 1.820899E-07,-1.370576,1.14438E-08
+	rot = 0.722335,-0.004655283,0.004655201,0.6915122
+	attRot = 0,0,0,1
+	attRot0 = -1.769513E-08,-0.8663656,5.960464E-08,-0.4994103
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = 0
+	attm = 0
+	modCost = -905.5457
+	modMass = -1.029029
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4291202538
+	attN = top,MK1Fuselage_4291219002
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		shroudHideOverride_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Jettison Shroud
+				guiName = Jettison Shroud
+				category = Jettison Shroud
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Shroud: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 194.4544
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0.0175
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		isVisible = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngine_4291202538
+	partName = Part
+	pos = 0.7476318,5.395763,-5.157667
+	attPos = 0,0,0
+	attPos0 = -2.123187E-08,-1.370576,5.5176E-07
+	rot = 0.722335,0.004655202,-0.004655234,0.6915122
+	attRot = 0,0,0,1
+	attRot0 = -1.473818E-07,-0.8663657,1.192093E-07,0.4994103
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = 0
+	attm = 0
+	modCost = -905.5457
+	modMass = -1.029029
+	modSize = (0.0, 0.0, 0.0)
+	sym = liquidEngine_4291203924
+	attN = top,MK1Fuselage_4291217184
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		shroudHideOverride_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			Jettison
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Jettison Shroud
+				guiName = Jettison Shroud
+				category = Jettison Shroud
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Shroud: Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 1.25
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 194.4544
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0.0175
+		flowState = True
+		isTweakable = False
+		hideFlow = True
 		isVisible = False
 		flowMode = Both
 	}
