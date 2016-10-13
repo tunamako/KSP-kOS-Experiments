@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 34
+	launchID = 38
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 45254.56546992
+		update = 46008.4454697992
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -499,32 +499,32 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = db09359b-d770-42f0-9766-a0355fd93983
+				guid = d48b62bc-da41-4310-ac22-a8c0ea64ad91
 				type = PartTest
 				prestige = 0
-				seed = 1826879328
+				seed = -1026928418
 				state = Offered
-				agent = Research & Development Department
+				agent = Rockomax Conglomerate
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,9201600,5400,13500,5400,2,4,3,45453.9945802819,0,0,0
-				part = GearSmall
+				values = 19315.8960745368,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,64864.9815444096,0,0,0
+				part = solidBooster1-1
 				haul = False
 				dest = 1
-				sit = SPLASHED
-				exp = True
+				sit = PRELAUNCH
+				exp = False
 				PARAM
 				{
 					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
-					part = GearSmall
+					part = solidBooster1-1
 					body = Kerbin
-					situation = SPLASHED
-					uniqueID = 0.96257320091248177
+					situation = PRELAUNCH
+					uniqueID = 0.29990825024429163
 					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
 					PARAM
 					{
 						name = ReachDestination
@@ -540,7 +540,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						sit = SPLASHED
+						sit = PRELAUNCH
 						title = 
 					}
 				}
@@ -1256,6 +1256,63 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 2b51e48a-0e83-4a6f-adcb-95231e95973a
+				type = PartTest
+				prestige = 2
+				seed = -1070405895
+				state = Offered
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 36610.1703643799,15595932.5752258,43548.3874082565,125201.611203051,62099.9987125397,9,21.60591,13.20755,82607.6758341808,0,0,0
+				part = liquidEngine3
+				haul = False
+				dest = 2
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = liquidEngine3
+					body = Mun
+					situation = SUB_ORBITAL
+					uniqueID = 0.30060149277588422
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 80000
+						maxAlt = 90000
+					}
+				}
+			}
+			CONTRACT
+			{
 				guid = 292518c2-3a6a-401e-b44c-b6313a570689
 				type = PartTest
 				prestige = 2
@@ -1457,31 +1514,24 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 640a61b7-fd71-423d-87ef-f164d8929386
+				guid = e6c4572d-789b-4e9b-a602-7278bfa9d21e
 				type = ConfiguredContract
 				prestige = 0
-				seed = 257431635
+				seed = 303210297
 				state = Active
 				agent = SSI Aerospace
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 151200,0,5000,30000,15000,10,10,5,196435.265469923,45244.6254699216,0,0
-				subtype = SSI-Helicopter
-				title = Land on a helipad!
-				description = We want you to test your first helicopter or Vertical Take-Off and Landing (VTOL) prototype. Land on one of the available helipads.
-				synopsis = For science (and a few funds)!
-				completedMessage = Flight Completed! And you're still alive, which is even better since most helicopter and other VTOL test flights have been fatal.
-				notes = Make a helicopter or VTOL and land on a VAB or Administration Building helipad!
-				hash = -2013000995
+				values = 151200,0,6000,47000,18000,10,25,5,196387.165469931,46007.2654697993,0,0
+				subtype = SSI-Mach2
+				title = Achieve Mach 2!
+				description = Mach Kerman believes with current liquid-fueled rocket technology, that it's possible to exceed Mach 2, which is twice the speed of sound. Doing so would bring SSI another step closer to spaceplane development. He wants you to take an airplane above 2,500m but below 20,000m and see if you can exceed Mach 2 safely in level controlled flight.
+				synopsis = Launch an airplane from the runway, fly between 2,500m and 20,000m, exceed 686 m/s in level flight for 5 seconds, and then land back at KSC safely.
+				completedMessage = Wow! You did it! You reached Mach 2, and came back safely!\n\nInigma passed your flight data to Gene Kerman at the Kerbal Space Program, and Gene says he's very proud of your accomplishments, and that he's very glad to have you and SSI Aerospace working together.
+				notes = Going Mach 1 was cool. Going Mach 2 will be even cooler. Unfortunately, scientists at SSI and at KSC both predict it will also lead to twice the number of required autographs when you get back.
+				hash = -593218254
 				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.AwardExperience
-					parameter = SSILand
-					experience = 1
-					awardImmediately = False
-				}
 				PARAM
 				{
 					name = VesselParameterGroup
@@ -1489,11 +1539,11 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Helicopter
+					ContractIdentifier = GAP.SSI-Mach2
 					title = Your aircraft must
 					notes = 
 					completedMessage = 
-					define = GAPcraftSSIHelicopter
+					define = GAPcraftSSIMach2
 					duration = 0
 					dissassociateVesselsOnContractFailure = True
 					dissassociateVesselsOnContractCompletion = True
@@ -1504,7 +1554,7 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Helicopter
+						ContractIdentifier = GAP.SSI-Mach2
 						title = have a certified pilot
 						notes = 
 						completedMessage = 
@@ -1522,10 +1572,10 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
 							title = Trait: Pilot
 							notes = 
 							completedMessage = 
-							hidden = True
 						}
 						PARAM
 						{
@@ -1533,10 +1583,115 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
 							title = Count: At least 1 
 							notes = 
 							completedMessage = 
-							hidden = True
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = have wings
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCount = 1
+						maxCount = 2147483647
+						FILTER
+						{
+							type = FILTER
+							category = Aero
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = With category: Aero
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = With category: Aero
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = not have any solid rocket motors
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								name = ModuleEngines
+								allowShutdown = False
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Name: Engines
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = With Name: Engines
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Allow Shutdown: False
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = With Allow Shutdown: False
+								notes = 
+								completedMessage = 
+							}
 						}
 					}
 					PARAM
@@ -1545,7 +1700,7 @@ GAME
 						id = PreFlightCheck
 						state = Incomplete
 						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Helicopter
+						ContractIdentifier = GAP.SSI-Mach2
 						title = complete all pre-flight checks
 						notes = 
 						completedMessage = 
@@ -1557,7 +1712,7 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Helicopter
+							ContractIdentifier = GAP.SSI-Mach2
 							title = remain stationary on the runway
 							notes = 
 							completedMessage = 
@@ -1574,10 +1729,10 @@ GAME
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
 								title = Destination: Kerbin
 								notes = 
 								completedMessage = 
-								hidden = True
 							}
 							PARAM
 							{
@@ -1586,10 +1741,10 @@ GAME
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
 								title = Biome: Runway
 								notes = 
 								completedMessage = 
-								hidden = True
 							}
 							PARAM
 							{
@@ -1598,10 +1753,10 @@ GAME
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
 								title = Speed: Less than 0 m/s
 								notes = 
 								completedMessage = 
-								hidden = True
 							}
 						}
 						PARAM
@@ -1609,8 +1764,9 @@ GAME
 							name = Duration
 							id = RegisterFlightPlan
 							state = Incomplete
+							disableOnStateChange = False
 							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Helicopter
+							ContractIdentifier = GAP.SSI-Mach2
 							title = 
 							notes = 
 							completedMessage = 
@@ -1628,8 +1784,9 @@ GAME
 							name = Duration
 							id = RequestTakeoffKSC
 							state = Incomplete
+							disableOnStateChange = False
 							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Helicopter
+							ContractIdentifier = GAP.SSI-Mach2
 							title = 
 							notes = 
 							completedMessage = 
@@ -1646,13 +1803,300 @@ GAME
 				}
 				PARAM
 				{
+					name = All
+					id = All
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Mach2
+					title = achieve Mach 2
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = VesselParameterGroup
+						id = VesselParameterGroup
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = fly between 2500m and 20,000m
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						vessel = GAPcraftSSIMach2
+						duration = 0
+						dissassociateVesselsOnContractFailure = True
+						dissassociateVesselsOnContractCompletion = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Vessel: GAPcraftSSIMach2 (TBD)
+							optional = True
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = Vessel: GAPcraftSSIMach2 (TBD)
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ReachState
+							id = ReachState
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = 
+							notes = 
+							completedMessage = 
+							hidden = True
+							hideChildren = True
+							allowStateReset = True
+							targetBody = Kerbin
+							situation = FLYING
+							minAltitude = 2500
+							maxAltitude = 20000
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Destination: Kerbin
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Destination: Kerbin
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Situation: Flying
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Situation: Flying
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Altitude: Between 2,500 m and 20,000 m
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Altitude: Between 2,500 m and 20,000 m
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = VesselParameterGroup
+						id = VesselParameterGroup
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = fly faster than 686 m/s
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						vessel = GAPcraftSSIMach2
+						duration = 0
+						dissassociateVesselsOnContractFailure = True
+						dissassociateVesselsOnContractCompletion = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Vessel: GAPcraftSSIMach2 (TBD)
+							optional = True
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = Vessel: GAPcraftSSIMach2 (TBD)
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ReachState
+							id = ReachState
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = 
+							notes = 
+							completedMessage = 
+							hidden = True
+							hideChildren = True
+							allowStateReset = True
+							targetBody = Kerbin
+							situation = FLYING
+							minSpeed = 686
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Destination: Kerbin
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Destination: Kerbin
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Situation: Flying
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Situation: Flying
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Speed: Greater than 686 m/s
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Speed: Greater than 686 m/s
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = VesselParameterGroup
+						id = VesselParameterGroup
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = with less than 10 m/s of vertical speed
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						hideChildren = True
+						vessel = GAPcraftSSIMach2
+						duration = 0
+						dissassociateVesselsOnContractFailure = True
+						dissassociateVesselsOnContractCompletion = False
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Vessel: GAPcraftSSIMach2 (TBD)
+							optional = True
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = Vessel: GAPcraftSSIMach2 (TBD)
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ReachState
+							id = ReachState
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Mach2
+							title = 
+							notes = 
+							completedMessage = 
+							hidden = True
+							hideChildren = True
+							allowStateReset = True
+							targetBody = Kerbin
+							situation = FLYING
+							minRateOfClimb = -10
+							maxRateOfClimb = 10
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Destination: Kerbin
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Destination: Kerbin
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Situation: Flying
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Situation: Flying
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Rate of Climb: Between -10 m/s and 10 m/s
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Rate of Climb: Between -10 m/s and 10 m/s
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = Duration
+						id = Duration
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Mach2
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 5
+						preWaitText = and hold for:
+						waitingText = and hold for:
+						completionText = You did it!
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = True
+					}
+				}
+				PARAM
+				{
 					name = Any
-					id = SSILand
+					id = Any
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Helicopter
-					title = land on a helipad
+					ContractIdentifier = GAP.SSI-Mach2
+					title = and then land and stop
 					notes = 
 					completedMessage = 
 					completeInSequence = True
@@ -1663,8 +2107,8 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Helicopter
-						title = at either
+						ContractIdentifier = GAP.SSI-Mach2
+						title = at one of the following recovery areas
 						notes = 
 						completedMessage = 
 						PARAM
@@ -1674,27 +2118,27 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Helicopter
-							title = the Vehicle Assembly Building Helipad
+							ContractIdentifier = GAP.SSI-Mach2
+							title = the KSC Runway
 							notes = 
 							completedMessage = 
 							hideChildren = True
-							vessel = GAPcraftSSIHelicopter
+							vessel = GAPcraftSSIMach2
 							duration = 0
 							dissassociateVesselsOnContractFailure = True
 							dissassociateVesselsOnContractCompletion = False
 							PARAM
 							{
 								name = ParameterDelegate`1
-								id = Vessel: GAPcraftSSIHelicopter (TBD)
+								id = Vessel: GAPcraftSSIMach2 (TBD)
 								optional = True
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
-								title = Vessel: GAPcraftSSIHelicopter (TBD)
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Vessel: GAPcraftSSIMach2 (TBD)
 								notes = 
 								completedMessage = 
-								hidden = True
 							}
 							PARAM
 							{
@@ -1703,7 +2147,7 @@ GAME
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
-								ContractIdentifier = GAP.SSI-Helicopter
+								ContractIdentifier = GAP.SSI-Mach2
 								title = 
 								notes = 
 								completedMessage = 
@@ -1711,7 +2155,7 @@ GAME
 								hideChildren = True
 								allowStateReset = True
 								targetBody = Kerbin
-								biome = VAB Main Building
+								biome = Runway
 								situation = LANDED
 								maxSpeed = 0
 								PARAM
@@ -1721,22 +2165,22 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Destination: Kerbin
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
 									name = ParameterDelegate`1
-									id = Biome: VAB Main Building
+									id = Biome: Runway
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
-									title = Biome: VAB Main Building
+									ContractIdentifier = GAP.SSI-Mach2
+									title = Biome: Runway
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
@@ -1745,10 +2189,10 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Situation: Landed
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
@@ -1757,10 +2201,10 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Speed: Less than 0 m/s
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 							}
 						}
@@ -1771,27 +2215,27 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Helicopter
-							title = or the Administration Building Helipad
+							ContractIdentifier = GAP.SSI-Mach2
+							title = or the Spaceplane Hangar Air Terminal
 							notes = 
 							completedMessage = 
 							hideChildren = True
-							vessel = GAPcraftSSIHelicopter
+							vessel = GAPcraftSSIMach2
 							duration = 0
 							dissassociateVesselsOnContractFailure = True
 							dissassociateVesselsOnContractCompletion = False
 							PARAM
 							{
 								name = ParameterDelegate`1
-								id = Vessel: GAPcraftSSIHelicopter (TBD)
+								id = Vessel: GAPcraftSSIMach2 (TBD)
 								optional = True
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
-								title = Vessel: GAPcraftSSIHelicopter (TBD)
+								ContractIdentifier = GAP.SSI-Mach2
+								title = Vessel: GAPcraftSSIMach2 (TBD)
 								notes = 
 								completedMessage = 
-								hidden = True
 							}
 							PARAM
 							{
@@ -1800,7 +2244,7 @@ GAME
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
-								ContractIdentifier = GAP.SSI-Helicopter
+								ContractIdentifier = GAP.SSI-Mach2
 								title = 
 								notes = 
 								completedMessage = 
@@ -1808,7 +2252,7 @@ GAME
 								hideChildren = True
 								allowStateReset = True
 								targetBody = Kerbin
-								biome = Administration
+								biome = SPH
 								situation = LANDED
 								maxSpeed = 0
 								PARAM
@@ -1818,22 +2262,22 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Destination: Kerbin
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
 									name = ParameterDelegate`1
-									id = Biome: Administration
+									id = Biome: SPH
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
-									title = Biome: Administration
+									ContractIdentifier = GAP.SSI-Mach2
+									title = Biome: SPH
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
@@ -1842,10 +2286,10 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Situation: Landed
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 								PARAM
 								{
@@ -1854,10 +2298,10 @@ GAME
 									state = Incomplete
 									disableOnStateChange = False
 									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Mach2
 									title = Speed: Less than 0 m/s
 									notes = 
 									completedMessage = 
-									hidden = True
 								}
 							}
 						}
@@ -1869,7 +2313,7 @@ GAME
 					id = All
 					state = Incomplete
 					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Helicopter
+					ContractIdentifier = GAP.SSI-Mach2
 					title = safely
 					notes = 
 					completedMessage = 
@@ -1881,12 +2325,12 @@ GAME
 						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Helicopter
+						ContractIdentifier = GAP.SSI-Mach2
 						title = without destroying your aircraft
 						notes = 
 						completedMessage = 
 						allowStateReset = True
-						vessel = GAPcraftSSIHelicopter
+						vessel = GAPcraftSSIMach2
 					}
 					PARAM
 					{
@@ -1895,13 +2339,13 @@ GAME
 						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Helicopter
+						ContractIdentifier = GAP.SSI-Mach2
 						title = or killing anyone
 						notes = 
 						completedMessage = 
 						countMax = 1
 						count = 0
-						vesselIdentifier = GAPcraftSSIHelicopter
+						vesselIdentifier = GAPcraftSSIMach2
 					}
 				}
 			}
@@ -11635,13 +12079,6 @@ GAME
 						maxCrew = 2147483647
 						minExperience = 0
 						maxExperience = 5
-						VESSEL_STATS
-						{
-							vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-							state = Complete
-							strength = STRONG
-							completionTime = 44822.6527941833
-						}
 						PARAM
 						{
 							name = ParameterDelegate`1
@@ -11681,13 +12118,6 @@ GAME
 						allowStateReset = True
 						minCount = 1
 						maxCount = 2147483647
-						VESSEL_STATS
-						{
-							vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-							state = Complete
-							strength = STRONG
-							completionTime = 44822.6527941833
-						}
 						FILTER
 						{
 							type = FILTER
@@ -11732,13 +12162,6 @@ GAME
 						allowStateReset = True
 						minCount = 0
 						maxCount = 2147483647
-						VESSEL_STATS
-						{
-							vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-							state = Complete
-							strength = STRONG
-							completionTime = 44822.6527941833
-						}
 						FILTER
 						{
 							type = NONE
@@ -11814,13 +12237,6 @@ GAME
 							targetBody = Kerbin
 							biome = Runway
 							maxSpeed = 0.1
-							VESSEL_STATS
-							{
-								vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-								state = Complete
-								strength = STRONG
-								completionTime = 44824.572794183
-							}
 							PARAM
 							{
 								name = ParameterDelegate`1
@@ -11941,13 +12357,13 @@ GAME
 						PARAM
 						{
 							name = ParameterDelegate`1
-							id = Vessel: Test Jet
+							id = Vessel: GAPcraftSSIMach1 (TBD)
 							optional = True
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = GAP.SSI-Mach1
-							title = Vessel: Test Jet
+							title = Vessel: GAPcraftSSIMach1 (TBD)
 							notes = 
 							completedMessage = 
 						}
@@ -11969,13 +12385,6 @@ GAME
 							situation = FLYING
 							minAltitude = 2500
 							maxAltitude = 20000
-							VESSEL_STATS
-							{
-								vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-								state = Complete
-								strength = STRONG
-								completionTime = 44927.525411363
-							}
 							PARAM
 							{
 								name = ParameterDelegate`1
@@ -12033,13 +12442,13 @@ GAME
 						PARAM
 						{
 							name = ParameterDelegate`1
-							id = Vessel: Test Jet
+							id = Vessel: GAPcraftSSIMach1 (TBD)
 							optional = True
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = GAP.SSI-Mach1
-							title = Vessel: Test Jet
+							title = Vessel: GAPcraftSSIMach1 (TBD)
 							notes = 
 							completedMessage = 
 						}
@@ -12060,13 +12469,6 @@ GAME
 							targetBody = Kerbin
 							situation = FLYING
 							minSpeed = 343
-							VESSEL_STATS
-							{
-								vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-								state = Complete
-								strength = STRONG
-								completionTime = 44981.8715832325
-							}
 							PARAM
 							{
 								name = ParameterDelegate`1
@@ -12125,13 +12527,13 @@ GAME
 						PARAM
 						{
 							name = ParameterDelegate`1
-							id = Vessel: Test Jet
+							id = Vessel: GAPcraftSSIMach1 (TBD)
 							optional = True
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = GAP.SSI-Mach1
-							title = Vessel: Test Jet
+							title = Vessel: GAPcraftSSIMach1 (TBD)
 							notes = 
 							completedMessage = 
 						}
@@ -12153,13 +12555,6 @@ GAME
 							situation = FLYING
 							minRateOfClimb = -10
 							maxRateOfClimb = 10
-							VESSEL_STATS
-							{
-								vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-								state = Complete
-								strength = STRONG
-								completionTime = 44957.5315832364
-							}
 							PARAM
 							{
 								name = ParameterDelegate`1
@@ -12261,13 +12656,13 @@ GAME
 							PARAM
 							{
 								name = ParameterDelegate`1
-								id = Vessel: Test Jet
+								id = Vessel: GAPcraftSSIMach1 (TBD)
 								optional = True
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
 								ContractIdentifier = GAP.SSI-Mach1
-								title = Vessel: Test Jet
+								title = Vessel: GAPcraftSSIMach1 (TBD)
 								notes = 
 								completedMessage = 
 							}
@@ -12289,13 +12684,6 @@ GAME
 								biome = Runway
 								situation = LANDED
 								maxSpeed = 0
-								VESSEL_STATS
-								{
-									vessel = d4e4106a-cb0c-479d-85d2-e533fcdac225
-									state = Complete
-									strength = STRONG
-									completionTime = 45185.905469931
-								}
 								PARAM
 								{
 									name = ParameterDelegate`1
@@ -12365,13 +12753,13 @@ GAME
 							PARAM
 							{
 								name = ParameterDelegate`1
-								id = Vessel: Test Jet
+								id = Vessel: GAPcraftSSIMach1 (TBD)
 								optional = True
 								state = Incomplete
 								disableOnStateChange = False
 								values = 0,0,0,0,0
 								ContractIdentifier = GAP.SSI-Mach1
-								title = Vessel: Test Jet
+								title = Vessel: GAPcraftSSIMach1 (TBD)
 								notes = 
 								completedMessage = 
 							}
@@ -12504,6 +12892,1039 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 640a61b7-fd71-423d-87ef-f164d8929386
+				type = ConfiguredContract
+				prestige = 0
+				seed = 257431635
+				state = Completed
+				agent = SSI Aerospace
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 151200,0,5000,30000,15000,10,10,5,196435.265469923,45244.6254699216,0,45549.0454698728
+				subtype = SSI-Helicopter
+				title = Land on a helipad!
+				description = We want you to test your first helicopter or Vertical Take-Off and Landing (VTOL) prototype. Land on one of the available helipads.
+				synopsis = For science (and a few funds)!
+				completedMessage = Flight Completed! And you're still alive, which is even better since most helicopter and other VTOL test flights have been fatal.
+				notes = Make a helicopter or VTOL and land on a VAB or Administration Building helipad!
+				hash = -2013000995
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.AwardExperience
+					parameter = SSILand
+					experience = 1
+					awardImmediately = False
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Helicopter
+					title = Your aircraft must
+					notes = 
+					completedMessage = 
+					define = GAPcraftSSIHelicopter
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = True
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Helicopter
+						title = have a certified pilot
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						trait = Pilot
+						minCrew = 1
+						maxCrew = 2147483647
+						minExperience = 0
+						maxExperience = 5
+						DOCKED_SUB_VESSEL
+						{
+							hash = 3590213259
+							strength = STRONG
+							completionTime = 45334.5254699071
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Trait: Pilot
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = Trait: Pilot
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = All
+						id = PreFlightCheck
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Helicopter
+						title = complete all pre-flight checks
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						PARAM
+						{
+							name = ReachState
+							id = ReachState
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = remain stationary on the runway
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							hideChildren = True
+							allowStateReset = True
+							targetBody = Kerbin
+							biome = Runway
+							maxSpeed = 0.1
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Destination: Kerbin
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = Destination: Kerbin
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Biome: Runway
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = Biome: Runway
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Speed: Less than 0 m/s
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = Speed: Less than 0 m/s
+								notes = 
+								completedMessage = 
+							}
+						}
+						PARAM
+						{
+							name = Duration
+							id = RegisterFlightPlan
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = 
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							duration = 10
+							preWaitText = review checklist:
+							waitingText = registering flight plan:
+							completionText = flight plan registered
+							endTime = 45322.3654699106
+							startCriteria = CONTRACT_ACCEPTANCE
+							triggered = True
+							VESSEL_END_TIME
+							{
+								vessel = 4243626b-23fd-40de-a925-0ad88d20a606
+								endTime = 45321.2454699108
+							}
+						}
+						PARAM
+						{
+							name = Duration
+							id = RequestTakeoffKSC
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = 
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							duration = 10
+							preWaitText = request clearance for takeoff:
+							waitingText = requesting clearance for takeoff:
+							completionText = be cleared for takeoff
+							endTime = 45333.5054699089
+							startCriteria = CONTRACT_ACCEPTANCE
+							triggered = True
+							VESSEL_END_TIME
+							{
+								vessel = 4243626b-23fd-40de-a925-0ad88d20a606
+								endTime = 45345.0454699071
+							}
+						}
+					}
+				}
+				PARAM
+				{
+					name = Any
+					id = SSILand
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Helicopter
+					title = land on a helipad
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = Any
+						id = Any
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Helicopter
+						title = at either
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = VesselParameterGroup
+							id = VesselParameterGroup
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = the Vehicle Assembly Building Helipad
+							notes = 
+							completedMessage = 
+							hideChildren = True
+							vessel = GAPcraftSSIHelicopter
+							duration = 0
+							dissassociateVesselsOnContractFailure = True
+							dissassociateVesselsOnContractCompletion = False
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Vessel: GAPcraftSSIHelicopter (TBD)
+								optional = True
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = Vessel: GAPcraftSSIHelicopter (TBD)
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ReachState
+								id = ReachState
+								state = Complete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = 
+								notes = 
+								completedMessage = 
+								hidden = True
+								hideChildren = True
+								allowStateReset = True
+								targetBody = Kerbin
+								biome = VAB Main Building
+								situation = LANDED
+								maxSpeed = 0
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Destination: Kerbin
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Destination: Kerbin
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Biome: VAB Main Building
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Biome: VAB Main Building
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Situation: Landed
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Situation: Landed
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Speed: Less than 0 m/s
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Speed: Less than 0 m/s
+									notes = 
+									completedMessage = 
+								}
+							}
+						}
+						PARAM
+						{
+							name = VesselParameterGroup
+							id = VesselParameterGroup
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = or the Administration Building Helipad
+							notes = 
+							completedMessage = 
+							hideChildren = True
+							vessel = GAPcraftSSIHelicopter
+							duration = 0
+							dissassociateVesselsOnContractFailure = True
+							dissassociateVesselsOnContractCompletion = False
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Vessel: GAPcraftSSIHelicopter (TBD)
+								optional = True
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = Vessel: GAPcraftSSIHelicopter (TBD)
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ReachState
+								id = ReachState
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.SSI-Helicopter
+								title = 
+								notes = 
+								completedMessage = 
+								hidden = True
+								hideChildren = True
+								allowStateReset = True
+								targetBody = Kerbin
+								biome = Administration
+								situation = LANDED
+								maxSpeed = 0
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Destination: Kerbin
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Destination: Kerbin
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Biome: Administration
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Biome: Administration
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Situation: Landed
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Situation: Landed
+									notes = 
+									completedMessage = 
+								}
+								PARAM
+								{
+									name = ParameterDelegate`1
+									id = Speed: Less than 0 m/s
+									state = Incomplete
+									disableOnStateChange = False
+									values = 0,0,0,0,0
+									ContractIdentifier = GAP.SSI-Helicopter
+									title = Speed: Less than 0 m/s
+									notes = 
+									completedMessage = 
+								}
+							}
+						}
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Helicopter
+					title = safely
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = VesselNotDestroyed
+						id = VesselNotDestroyed
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Helicopter
+						title = without destroying your aircraft
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						vessel = GAPcraftSSIHelicopter
+					}
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.SSI-Helicopter
+						title = or killing anyone
+						notes = 
+						completedMessage = 
+						countMax = 1
+						count = 0
+						vesselIdentifier = GAPcraftSSIHelicopter
+						KERBAL
+						{
+							name = Valentina Kerman
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Valentina Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.SSI-Helicopter
+							title = Valentina Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 5169fda4-214f-4fed-b7e6-2d58e77c1c95
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1335930600
+				state = Completed
+				agent = Wright Aeronautical
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 151200,0,0,0,2000,0,40,10,155294.112499997,45860.6854698229,0,45997.5054698009
+				subtype = Wright-Barnstorm
+				title = Barnstorm Jebediah's tool shed!
+				description = There's an old tool shed by the hangar which used to belong to Jebediah Kerman, but is now owned by Wright Aeronautical to store fuel for the aviation program. Jebediah thinks it's not only big enough to house an airplane, but even big enough to fly through it. Bill Kerman objected, Bob Kerman protested, and now Jebediah thinks we outta prove it.\n\nHe managed to convince Orville Kerman that the stunt was somehow for science, and he now has the keys back to the shed. Grinning, he says he's already moved the fuel tanks to a safer location, and that we're ready to try!
+				synopsis = Go barnstorm Jebediah's tool shed near KSC.
+				completedMessage = Amazing! You actually managed to fly an airplane through a building!\n\nYour pilot has earned some experience, and your organziation has gained some reputation for the stunt.
+				notes = Be sure your pilot signs off on the insurance waiver before attempting this one, as it's not covered.
+				hash = 1591037089
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.WaypointGenerator
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = Jebediah's Tool Shed
+						celestialName = Kerbin
+						name = Jebediah's Tool Shed
+						icon = marker
+						latitude = -0.0678114865739704
+						longitude = 285.353755969352
+						altitude = 20
+						index = 0
+						hidden = True
+						clustered = False
+						randomAltitude = False
+						underwater = False
+					}
+				}
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.SpawnVessel
+					vesselsCreated = True
+					deferVesselCreation = False
+					VESSEL_DETAIL
+					{
+						name = Tool Shed
+						id = ee778737-3551-4dc2-b177-0deddca2bd60
+						craftURL = ContractPacks/GAP/Assets/Land/Tool Shed.craft
+						flagURL = ContractPacks/GAP/Assets/Flags/WrightAeronautical
+						vesselType = Ship
+						body = Kerbin
+						lat = -0.0678115196176901
+						lon = 285.35376092069
+						alt = 64.7848289376125
+						heading = 328
+						pitch = 0
+						roll = 0
+						orbiting = False
+						owned = True
+						ORBIT
+						{
+							SMA = 284.558700653982
+							ECC = 0.999998578042864
+							INC = 52.214281084837
+							LPE = 299.167938253947
+							LAN = 194.783724910402
+							MNA = 3.14689243149937
+							EPH = 45860.6854698229
+							REF = 1
+						}
+					}
+				}
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.DestroyVessel
+					onState = CONTRACT_COMPLETED
+					vessel = Tool Shed
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = Your aircraft must
+					notes = 
+					completedMessage = 
+					define = GAPcraftWrightBarnstorm
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = True
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = have a pilot
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 1
+						maxCrew = 2147483647
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = have wings
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCount = 1
+						maxCount = 2147483647
+						FILTER
+						{
+							type = FILTER
+							category = Aero
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = With category: Aero
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = With category: Aero
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Count: At least 1 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = All
+						id = PreFlightCheck
+						enabled = False
+						state = Complete
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = complete all pre-flight checks
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						PARAM
+						{
+							name = ReachState
+							id = ReachState
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = remain stationary on the runway
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							hideChildren = True
+							allowStateReset = True
+							targetBody = Kerbin
+							biome = Runway
+							maxSpeed = 0.1
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Destination: Kerbin
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Barnstorm
+								title = Destination: Kerbin
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Biome: Runway
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Barnstorm
+								title = Biome: Runway
+								notes = 
+								completedMessage = 
+							}
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = Speed: Less than 0 m/s
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Barnstorm
+								title = Speed: Less than 0 m/s
+								notes = 
+								completedMessage = 
+							}
+						}
+						PARAM
+						{
+							name = Duration
+							id = RegisterFlightPlan
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = 
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							duration = 10
+							preWaitText = review checklist:
+							waitingText = registering flight plan:
+							completionText = flight plan registered
+							endTime = 0
+							startCriteria = CONTRACT_ACCEPTANCE
+							triggered = True
+							VESSEL_END_TIME
+							{
+								vessel = 657351f3-56ea-4b32-bc0c-7ab3f2c7cb42
+								endTime = 45875.525469822
+							}
+						}
+						PARAM
+						{
+							name = Duration
+							id = RequestTakeoffKSC
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = 
+							notes = 
+							completedMessage = 
+							completeInSequence = True
+							duration = 10
+							preWaitText = request clearance for takeoff:
+							waitingText = requesting clearance for takeoff:
+							completionText = be cleared for takeoff
+							endTime = 0
+							startCriteria = CONTRACT_ACCEPTANCE
+							triggered = True
+							VESSEL_END_TIME
+							{
+								vessel = 657351f3-56ea-4b32-bc0c-7ab3f2c7cb42
+								endTime = 45886.3654698203
+							}
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = barnstorm Jebediah's tool shed
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					vessel = GAPcraftWrightBarnstorm
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftWrightBarnstorm (TBD)
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Vessel: GAPcraftWrightBarnstorm (TBD)
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						hidden = True
+						hideChildren = True
+						allowStateReset = True
+						targetBody = Kerbin
+						situation = FLYING
+						maxAltitude = 78
+						minSpeed = 3
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Flying
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Situation: Flying
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Altitude: Below 78 m
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Altitude: Below 78 m
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Speed: Greater than 3 m/s
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Speed: Greater than 3 m/s
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = False
+						distance = 20
+						waypointIndex = 0
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroupBarnstormFinish
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = and then land and stop anywhere
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hideChildren = True
+					vessel = GAPcraftWrightBarnstorm
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftWrightBarnstorm (TBD)
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Vessel: GAPcraftWrightBarnstorm (TBD)
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = True
+						targetBody = Kerbin
+						situation = LANDED
+						maxSpeed = 0
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Situation: Landed
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Speed: Less than 0 m/s
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Speed: Less than 0 m/s
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = safely
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = VesselNotDestroyed
+						id = VesselNotDestroyed
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = without destroying your aircraft
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						vessel = GAPcraftWrightBarnstorm
+					}
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = or killing anyone
+						notes = 
+						completedMessage = 
+						countMax = 1
+						count = 0
+						vesselIdentifier = GAPcraftWrightBarnstorm
+						KERBAL
+						{
+							name = Jebediah Kerman
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Jebediah Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Jebediah Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -12516,7 +13937,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 12336.7042693879
+		funds = 50033.965135553
 	}
 	SCENARIO
 	{
@@ -12652,7 +14073,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 5.455627
+		sci = 15.45563
 		Tech
 		{
 			id = start
@@ -14797,7 +16218,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 377.7382
+		rep = 434.0635
 	}
 	SCENARIO
 	{
@@ -16892,513 +18313,6 @@ GAME
 					countMax = 1
 					count = 0
 					vesselIdentifier = GAPcraftWrightBail
-				}
-			}
-		}
-		CONTRACT
-		{
-			guid = 5169fda4-214f-4fed-b7e6-2d58e77c1c95
-			type = ConfiguredContract
-			prestige = 0
-			seed = 1335930600
-			state = Offered
-			agent = Wright Aeronautical
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 151200,0,0,0,2000,0,40,10,155294.112499997,0,0,0
-			subtype = Wright-Barnstorm
-			title = Barnstorm Jebediah's tool shed!
-			description = There's an old tool shed by the hangar which used to belong to Jebediah Kerman, but is now owned by Wright Aeronautical to store fuel for the aviation program. Jebediah thinks it's not only big enough to house an airplane, but even big enough to fly through it. Bill Kerman objected, Bob Kerman protested, and now Jebediah thinks we outta prove it.\n\nHe managed to convince Orville Kerman that the stunt was somehow for science, and he now has the keys back to the shed. Grinning, he says he's already moved the fuel tanks to a safer location, and that we're ready to try!
-			synopsis = Go barnstorm Jebediah's tool shed near KSC.
-			completedMessage = Amazing! You actually managed to fly an airplane through a building!\n\nYour pilot has earned some experience, and your organziation has gained some reputation for the stunt.
-			notes = Be sure your pilot signs off on the insurance waiver before attempting this one, as it's not covered.
-			hash = 1591037089
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = PQS_CITY
-					names = Jebediah's Tool Shed
-					celestialName = Kerbin
-					name = Jebediah's Tool Shed
-					icon = marker
-					latitude = -0.0678115196176901
-					longitude = 285.35376092069
-					altitude = 20
-					index = 0
-					hidden = False
-					clustered = False
-					pqsCity = KSC
-					pqsOffset = -482.33867014036,301.395265848322,25.0097717584435
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.SpawnVessel
-				vesselsCreated = False
-				deferVesselCreation = False
-				VESSEL_DETAIL
-				{
-					name = Tool Shed
-					craftURL = ContractPacks/GAP/Assets/Land/Tool Shed.craft
-					flagURL = ContractPacks/GAP/Assets/Flags/WrightAeronautical
-					vesselType = Ship
-					body = Kerbin
-					lat = -0.0678115196176901
-					lon = 285.35376092069
-					heading = 328
-					pitch = 0
-					roll = 0
-					orbiting = False
-					owned = True
-				}
-			}
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.DestroyVessel
-				onState = CONTRACT_COMPLETED
-				vessel = Tool Shed
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.Wright-Barnstorm
-				title = Your aircraft must
-				notes = 
-				completedMessage = 
-				define = GAPcraftWrightBarnstorm
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = True
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = have a pilot
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					minCrew = 1
-					maxCrew = 2147483647
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = PartValidation
-					id = PartValidation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = have wings
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					minCount = 1
-					maxCount = 2147483647
-					FILTER
-					{
-						type = FILTER
-						category = Aero
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = With category: Aero
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = With category: Aero
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = All
-					id = PreFlightCheck
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = complete all pre-flight checks
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = remain stationary on the runway
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						biome = Runway
-						maxSpeed = 0.1
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-Barnstorm
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Runway
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-Barnstorm
-							title = Biome: Runway
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Less than 0 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.Wright-Barnstorm
-							title = Speed: Less than 0 m/s
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = Duration
-						id = RegisterFlightPlan
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = review checklist:
-						waitingText = registering flight plan:
-						completionText = flight plan registered
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-					PARAM
-					{
-						name = Duration
-						id = RequestTakeoffKSC
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = request clearance for takeoff:
-						waitingText = requesting clearance for takeoff:
-						completionText = be cleared for takeoff
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.Wright-Barnstorm
-				title = barnstorm Jebediah's tool shed
-				notes = 
-				completedMessage = 
-				hideChildren = True
-				vessel = GAPcraftWrightBarnstorm
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Vessel: GAPcraftWrightBarnstorm
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = Vessel: GAPcraftWrightBarnstorm
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = 
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					hidden = True
-					hideChildren = True
-					allowStateReset = True
-					targetBody = Kerbin
-					situation = FLYING
-					maxAltitude = 78
-					minSpeed = 3
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Flying
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Situation: Flying
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Altitude: Below 78 m
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Altitude: Below 78 m
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Speed: Greater than 3 m/s
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Speed: Greater than 3 m/s
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = VisitWaypoint
-					id = VisitWaypoint
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = 
-					notes = 
-					completedMessage = 
-					hidden = True
-					hideChildren = True
-					allowStateReset = False
-					distance = 20
-					waypointIndex = 0
-					hideOnCompletion = True
-					showMessages = False
-				}
-			}
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroupBarnstormFinish
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.Wright-Barnstorm
-				title = and then land and stop anywhere
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				hideChildren = True
-				vessel = GAPcraftWrightBarnstorm
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = False
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Vessel: GAPcraftWrightBarnstorm
-					optional = True
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = Vessel: GAPcraftWrightBarnstorm
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ReachState
-					id = ReachState
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = 
-					notes = 
-					completedMessage = 
-					hidden = True
-					hideChildren = True
-					allowStateReset = True
-					targetBody = Kerbin
-					situation = LANDED
-					maxSpeed = 0
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Destination: Kerbin
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Destination: Kerbin
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Situation: Landed
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Situation: Landed
-						notes = 
-						completedMessage = 
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Speed: Less than 0 m/s
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.Wright-Barnstorm
-						title = Speed: Less than 0 m/s
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = All
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.Wright-Barnstorm
-				title = safely
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				PARAM
-				{
-					name = VesselNotDestroyed
-					id = VesselNotDestroyed
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = without destroying your aircraft
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vessel = GAPcraftWrightBarnstorm
-				}
-				PARAM
-				{
-					name = KerbalDeathsCustom
-					id = KerbalDeaths
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.Wright-Barnstorm
-					title = or killing anyone
-					notes = 
-					completedMessage = 
-					countMax = 1
-					count = 0
-					vesselIdentifier = GAPcraftWrightBarnstorm
 				}
 			}
 		}
@@ -21095,839 +22009,6 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = e6c4572d-789b-4e9b-a602-7278bfa9d21e
-			type = ConfiguredContract
-			prestige = 0
-			seed = 303210297
-			state = Offered
-			agent = SSI Aerospace
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 151200,0,6000,47000,18000,10,25,5,196387.165469931,0,0,0
-			subtype = SSI-Mach2
-			title = Achieve Mach 2!
-			description = Mach Kerman believes with current liquid-fueled rocket technology, that it's possible to exceed Mach 2, which is twice the speed of sound. Doing so would bring SSI another step closer to spaceplane development. He wants you to take an airplane above 2,500m but below 20,000m and see if you can exceed Mach 2 safely in level controlled flight.
-			synopsis = Launch an airplane from the runway, fly between 2,500m and 20,000m, exceed 686 m/s in level flight for 5 seconds, and then land back at KSC safely.
-			completedMessage = Wow! You did it! You reached Mach 2, and came back safely!\n\nInigma passed your flight data to Gene Kerman at the Kerbal Space Program, and Gene says he's very proud of your accomplishments, and that he's very glad to have you and SSI Aerospace working together.
-			notes = Going Mach 1 was cool. Going Mach 2 will be even cooler. Unfortunately, scientists at SSI and at KSC both predict it will also lead to twice the number of required autographs when you get back.
-			hash = -593218254
-			targetBody = Kerbin
-			PARAM
-			{
-				name = VesselParameterGroup
-				id = VesselParameterGroup
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.SSI-Mach2
-				title = Your aircraft must
-				notes = 
-				completedMessage = 
-				define = GAPcraftSSIMach2
-				duration = 0
-				dissassociateVesselsOnContractFailure = True
-				dissassociateVesselsOnContractCompletion = True
-				PARAM
-				{
-					name = HasCrew
-					id = HasCrew
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = have a certified pilot
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					trait = Pilot
-					minCrew = 1
-					maxCrew = 2147483647
-					minExperience = 0
-					maxExperience = 5
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Trait: Pilot
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Trait: Pilot
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-				}
-				PARAM
-				{
-					name = PartValidation
-					id = PartValidation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = have wings
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					minCount = 1
-					maxCount = 2147483647
-					FILTER
-					{
-						type = FILTER
-						category = Aero
-					}
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = With category: Aero
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = With category: Aero
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-					PARAM
-					{
-						name = CountParameterDelegate`1
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Count: At least 1 
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-				}
-				PARAM
-				{
-					name = PartValidation
-					id = PartValidation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = not have any solid rocket motors
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					allowStateReset = True
-					minCount = 0
-					maxCount = 2147483647
-					FILTER
-					{
-						type = NONE
-						MODULE
-						{
-							name = ModuleEngines
-							allowShutdown = False
-						}
-					}
-					PARAM
-					{
-						name = AllParameterDelegate`1
-						id = None have module
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = None have module
-						notes = 
-						completedMessage = 
-						hidden = True
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = With Name: Engines
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = With Name: Engines
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = With Allow Shutdown: False
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = With Allow Shutdown: False
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-				PARAM
-				{
-					name = All
-					id = PreFlightCheck
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = complete all pre-flight checks
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = remain stationary on the runway
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						biome = Runway
-						maxSpeed = 0.1
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Runway
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Biome: Runway
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Less than 0 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Speed: Less than 0 m/s
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-					}
-					PARAM
-					{
-						name = Duration
-						id = RegisterFlightPlan
-						state = Incomplete
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = review checklist:
-						waitingText = registering flight plan:
-						completionText = flight plan registered
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-					PARAM
-					{
-						name = Duration
-						id = RequestTakeoffKSC
-						state = Incomplete
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = 
-						notes = 
-						completedMessage = 
-						completeInSequence = True
-						duration = 10
-						preWaitText = request clearance for takeoff:
-						waitingText = requesting clearance for takeoff:
-						completionText = be cleared for takeoff
-						endTime = 0
-						startCriteria = CONTRACT_ACCEPTANCE
-						triggered = False
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = All
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.SSI-Mach2
-				title = achieve Mach 2
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = VesselParameterGroup
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = fly between 2500m and 20,000m
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					vessel = GAPcraftSSIMach2
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Vessel: GAPcraftSSIMach2 (TBD)
-						optional = True
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Vessel: GAPcraftSSIMach2 (TBD)
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = 
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						situation = FLYING
-						minAltitude = 2500
-						maxAltitude = 20000
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Flying
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Situation: Flying
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Altitude: Between 2,500 m and 20,000 m
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Altitude: Between 2,500 m and 20,000 m
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-					}
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = VesselParameterGroup
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = fly faster than 686 m/s
-					notes = 
-					completedMessage = 
-					hideChildren = True
-					vessel = GAPcraftSSIMach2
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Vessel: GAPcraftSSIMach2 (TBD)
-						optional = True
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Vessel: GAPcraftSSIMach2 (TBD)
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = 
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						situation = FLYING
-						minSpeed = 686
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Flying
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Situation: Flying
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Speed: Greater than 686 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Speed: Greater than 686 m/s
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-					}
-				}
-				PARAM
-				{
-					name = VesselParameterGroup
-					id = VesselParameterGroup
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = with less than 10 m/s of vertical speed
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					hideChildren = True
-					vessel = GAPcraftSSIMach2
-					duration = 0
-					dissassociateVesselsOnContractFailure = True
-					dissassociateVesselsOnContractCompletion = False
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = Vessel: GAPcraftSSIMach2 (TBD)
-						optional = True
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						title = Vessel: GAPcraftSSIMach2 (TBD)
-						notes = 
-						completedMessage = 
-						hidden = True
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = 
-						notes = 
-						completedMessage = 
-						hidden = True
-						hideChildren = True
-						allowStateReset = True
-						targetBody = Kerbin
-						situation = FLYING
-						minRateOfClimb = -10
-						maxRateOfClimb = 10
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: Kerbin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Destination: Kerbin
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Flying
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Situation: Flying
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Rate of Climb: Between -10 m/s and 10 m/s
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Rate of Climb: Between -10 m/s and 10 m/s
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-					}
-				}
-				PARAM
-				{
-					name = Duration
-					id = Duration
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = 
-					notes = 
-					completedMessage = 
-					completeInSequence = True
-					duration = 5
-					preWaitText = and hold for:
-					waitingText = and hold for:
-					completionText = You did it!
-					endTime = 0
-					startCriteria = CONTRACT_ACCEPTANCE
-					triggered = False
-				}
-			}
-			PARAM
-			{
-				name = Any
-				id = Any
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.SSI-Mach2
-				title = and then land and stop
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				PARAM
-				{
-					name = Any
-					id = Any
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = at one of the following recovery areas
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = VesselParameterGroup
-						id = VesselParameterGroup
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = the KSC Runway
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						vessel = GAPcraftSSIMach2
-						duration = 0
-						dissassociateVesselsOnContractFailure = True
-						dissassociateVesselsOnContractCompletion = False
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Vessel: GAPcraftSSIMach2 (TBD)
-							optional = True
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Vessel: GAPcraftSSIMach2 (TBD)
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ReachState
-							id = ReachState
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Mach2
-							title = 
-							notes = 
-							completedMessage = 
-							hidden = True
-							hideChildren = True
-							allowStateReset = True
-							targetBody = Kerbin
-							biome = Runway
-							situation = LANDED
-							maxSpeed = 0
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Destination: Kerbin
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Destination: Kerbin
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Biome: Runway
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Biome: Runway
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Situation: Landed
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Situation: Landed
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Speed: Less than 0 m/s
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Speed: Less than 0 m/s
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-						}
-					}
-					PARAM
-					{
-						name = VesselParameterGroup
-						id = VesselParameterGroup
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = GAP.SSI-Mach2
-						title = or the Spaceplane Hangar Air Terminal
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						vessel = GAPcraftSSIMach2
-						duration = 0
-						dissassociateVesselsOnContractFailure = True
-						dissassociateVesselsOnContractCompletion = False
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Vessel: GAPcraftSSIMach2 (TBD)
-							optional = True
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							title = Vessel: GAPcraftSSIMach2 (TBD)
-							notes = 
-							completedMessage = 
-							hidden = True
-						}
-						PARAM
-						{
-							name = ReachState
-							id = ReachState
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = GAP.SSI-Mach2
-							title = 
-							notes = 
-							completedMessage = 
-							hidden = True
-							hideChildren = True
-							allowStateReset = True
-							targetBody = Kerbin
-							biome = SPH
-							situation = LANDED
-							maxSpeed = 0
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Destination: Kerbin
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Destination: Kerbin
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Biome: SPH
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Biome: SPH
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Situation: Landed
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Situation: Landed
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-							PARAM
-							{
-								name = ParameterDelegate`1
-								id = Speed: Less than 0 m/s
-								state = Incomplete
-								disableOnStateChange = False
-								values = 0,0,0,0,0
-								title = Speed: Less than 0 m/s
-								notes = 
-								completedMessage = 
-								hidden = True
-							}
-						}
-					}
-				}
-			}
-			PARAM
-			{
-				name = All
-				id = All
-				state = Incomplete
-				values = 0,0,0,0,0
-				ContractIdentifier = GAP.SSI-Mach2
-				title = safely
-				notes = 
-				completedMessage = 
-				completeInSequence = True
-				PARAM
-				{
-					name = VesselNotDestroyed
-					id = VesselNotDestroyed
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = without destroying your aircraft
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					vessel = GAPcraftSSIMach2
-				}
-				PARAM
-				{
-					name = KerbalDeathsCustom
-					id = KerbalDeaths
-					state = Complete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = GAP.SSI-Mach2
-					title = or killing anyone
-					notes = 
-					completedMessage = 
-					countMax = 1
-					count = 0
-					vesselIdentifier = GAPcraftSSIMach2
-				}
-			}
-		}
-		CONTRACT
-		{
 			guid = 69331499-dd3d-49e5-8c7b-8f71f382754d
 			type = ConfiguredContract
 			prestige = 0
@@ -22023,10 +22104,10 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
 						title = Count: At least 1 
 						notes = 
 						completedMessage = 
-						hidden = True
 					}
 				}
 				PARAM
@@ -22081,10 +22162,10 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
 							title = Destination: Kerbin
 							notes = 
 							completedMessage = 
-							hidden = True
 						}
 						PARAM
 						{
@@ -22093,10 +22174,10 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
 							title = Biome: Runway
 							notes = 
 							completedMessage = 
-							hidden = True
 						}
 						PARAM
 						{
@@ -22105,10 +22186,10 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
 							title = Speed: Less than 0 m/s
 							notes = 
 							completedMessage = 
-							hidden = True
 						}
 					}
 					PARAM
@@ -22116,6 +22197,7 @@ GAME
 						name = Duration
 						id = RegisterFlightPlan
 						state = Incomplete
+						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.CoastGuard-Certification
 						title = 
@@ -22135,6 +22217,7 @@ GAME
 						name = Duration
 						id = RequestTakeoffKSC
 						state = Incomplete
+						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.CoastGuard-Certification
 						title = 
@@ -22169,15 +22252,15 @@ GAME
 				PARAM
 				{
 					name = ParameterDelegate`1
-					id = Vessel: GAPcraftCoastGuardCertification (TBD)
+					id = Vessel: GAPcraftCoastGuardCertification
 					optional = True
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					title = Vessel: GAPcraftCoastGuardCertification (TBD)
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
 					notes = 
 					completedMessage = 
-					hidden = True
 				}
 				PARAM
 				{
@@ -22230,6 +22313,7 @@ GAME
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
 					title = Lt. Dan Kerman: On board
 					notes = 
 					completedMessage = 
@@ -22255,15 +22339,15 @@ GAME
 				PARAM
 				{
 					name = ParameterDelegate`1
-					id = Vessel: GAPcraftCoastGuardCertification (TBD)
+					id = Vessel: GAPcraftCoastGuardCertification
 					optional = True
 					state = Incomplete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
-					title = Vessel: GAPcraftCoastGuardCertification (TBD)
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
 					notes = 
 					completedMessage = 
-					hidden = True
 				}
 				PARAM
 				{
@@ -22290,10 +22374,10 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
 						title = Destination: Kerbin
 						notes = 
 						completedMessage = 
-						hidden = True
 					}
 					PARAM
 					{
@@ -22302,10 +22386,10 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
 						title = Situation: Landed
 						notes = 
 						completedMessage = 
-						hidden = True
 					}
 					PARAM
 					{
@@ -22314,10 +22398,10 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
 						title = Speed: Less than 0 m/s
 						notes = 
 						completedMessage = 
-						hidden = True
 					}
 				}
 			}
@@ -22404,10 +22488,10 @@ GAME
 							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
 							title = Lt. Dan Kerman
 							notes = 
 							completedMessage = 
-							hidden = True
 						}
 					}
 				}
@@ -22450,22 +22534,531 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
 						title = Recover Lt. Dan Kerman
 						notes = 
 						completedMessage = 
-						hidden = True
 					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = f4d14f34-25dc-4c1e-8bab-6c47780eff81
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1136869974
+			state = Offered
+			agent = Wright Aeronautical
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 151200,0,0,0,2000,0,40,10,197202.6054698,0,0,0
+			subtype = Wright-Barnstorm
+			title = Barnstorm Jebediah's tool shed!
+			description = There's an old tool shed by the hangar which used to belong to Jebediah Kerman, but is now owned by Wright Aeronautical to store fuel for the aviation program. Jebediah thinks it's not only big enough to house an airplane, but even big enough to fly through it. Bill Kerman objected, Bob Kerman protested, and now Jebediah thinks we outta prove it.\n\nHe managed to convince Orville Kerman that the stunt was somehow for science, and he now has the keys back to the shed. Grinning, he says he's already moved the fuel tanks to a safer location, and that we're ready to try!
+			synopsis = Go barnstorm Jebediah's tool shed near KSC.
+			completedMessage = Amazing! You actually managed to fly an airplane through a building!\n\nYour pilot has earned some experience, and your organziation has gained some reputation for the stunt.
+			notes = Be sure your pilot signs off on the insurance waiver before attempting this one, as it's not covered.
+			hash = 1591037089
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = PQS_CITY
+					names = Jebediah's Tool Shed
+					celestialName = Kerbin
+					name = Jebediah's Tool Shed
+					icon = marker
+					latitude = -0.0678114865739704
+					longitude = 285.353755969352
+					altitude = 20
+					index = 0
+					hidden = False
+					clustered = False
+					pqsCity = KSC
+					pqsOffset = -482.33867014036,301.395265848322,25.0097717584435
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnVessel
+				vesselsCreated = False
+				deferVesselCreation = False
+				VESSEL_DETAIL
+				{
+					name = Tool Shed
+					craftURL = ContractPacks/GAP/Assets/Land/Tool Shed.craft
+					flagURL = ContractPacks/GAP/Assets/Flags/WrightAeronautical
+					vesselType = Ship
+					body = Kerbin
+					lat = -0.0678114865739704
+					lon = 285.353755969352
+					heading = 328
+					pitch = 0
+					roll = 0
+					orbiting = False
+					owned = True
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.DestroyVessel
+				onState = CONTRACT_COMPLETED
+				vessel = Tool Shed
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Barnstorm
+				title = Your aircraft must
+				notes = 
+				completedMessage = 
+				define = GAPcraftWrightBarnstorm
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = have a pilot
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = have wings
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						category = Aero
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With category: Aero
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = With category: Aero
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Count: At least 1 
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = PreFlightCheck
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = complete all pre-flight checks
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = remain stationary on the runway
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						hideChildren = True
+						allowStateReset = True
+						targetBody = Kerbin
+						biome = Runway
+						maxSpeed = 0.1
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Runway
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Biome: Runway
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Speed: Less than 0 m/s
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Barnstorm
+							title = Speed: Less than 0 m/s
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = Duration
+						id = RegisterFlightPlan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = review checklist:
+						waitingText = registering flight plan:
+						completionText = flight plan registered
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+					PARAM
+					{
+						name = Duration
+						id = RequestTakeoffKSC
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = request clearance for takeoff:
+						waitingText = requesting clearance for takeoff:
+						completionText = be cleared for takeoff
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Barnstorm
+				title = barnstorm Jebediah's tool shed
+				notes = 
+				completedMessage = 
+				hideChildren = True
+				vessel = GAPcraftWrightBarnstorm
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightBarnstorm
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = Vessel: GAPcraftWrightBarnstorm
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = FLYING
+					maxAltitude = 78
+					minSpeed = 3
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Flying
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Situation: Flying
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Below 78 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Altitude: Below 78 m
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 3 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Speed: Greater than 3 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					distance = 20
+					waypointIndex = 0
+					hideOnCompletion = True
+					showMessages = False
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroupBarnstormFinish
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Barnstorm
+				title = and then land and stop anywhere
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftWrightBarnstorm
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightBarnstorm
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = Vessel: GAPcraftWrightBarnstorm
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Barnstorm
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Barnstorm
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = without destroying your aircraft
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftWrightBarnstorm
+				}
+				PARAM
+				{
+					name = KerbalDeathsCustom
+					id = KerbalDeaths
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Barnstorm
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					countMax = 1
+					count = 0
+					vesselIdentifier = GAPcraftWrightBarnstorm
 				}
 			}
 		}
 		UNREAD_CONTRACTS
 		{
+			contract = d48b62bc-da41-4310-ac22-a8c0ea64ad91
 			contract = 9ca98f04-aed2-4337-84d8-052d1bf16934
 			contract = 7f929f33-186f-4a40-9942-29404e565d8e
 			contract = 7fed0afc-d3c8-4606-8053-2d00fdd33c3e
 			contract = 8d9a1b7a-9a93-4811-98e1-8afe30ecfb39
 			contract = 7e2bb4f7-cb16-416e-83cc-f16e6d21e3db
 			contract = 5024277c-eb9c-4bf3-bb7d-8132e7fbf57e
+			contract = 2b51e48a-0e83-4a6f-adcb-95231e95973a
 			contract = 372f1433-e613-4d62-aada-2e3c73a8eeaf
 			contract = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
 			contract = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
@@ -22497,7 +23090,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 37155
+		nextCheck = 38754
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -22630,7 +23223,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = 607d8501-6529-4d08-bc0e-cb8f789dcfc1|N|True,640a61b7-fd71-423d-87ef-f164d8929386|N|True
+				ActiveListID = e6c4572d-789b-4e9b-a602-7278bfa9d21e|N|True,607d8501-6529-4d08-bc0e-cb8f789dcfc1|N|True
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -22666,9 +23259,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 45254.56546992
+		UT = 46008.5254697992
 		activeVessel = 0
-		mapViewFiltering = -1026
+		mapViewFiltering = 2038
 	}
 	LoaderInfo
 	{
@@ -22790,7 +23383,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 15
+				flight = 17
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
 				0 = SpecialExperience3,Kerbin
@@ -22839,10 +23432,16 @@ GAME
 				14 = Land,Kerbin
 				14 = Flight,Kerbin
 				14 = Recover
+				15 = Flight,Kerbin
+				15 = Land,Kerbin
+				15 = Recover
+				16 = Flight,Kerbin
+				16 = Land,Kerbin
+				16 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 15
+				flight = 17
 			}
 		}
 		KERBAL
@@ -22932,10 +23531,10 @@ GAME
 			tour = False
 			state = Available
 			ToD = 0
-			idx = -1
+			idx = 0
 			CAREER_LOG
 			{
-				flight = 4
+				flight = 5
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = ExitVessel,Kerbin
@@ -22951,10 +23550,13 @@ GAME
 				3 = Land,Kerbin
 				3 = ExitVessel,Kerbin
 				3 = Recover
+				4 = Flight,Kerbin
+				4 = Land,Kerbin
+				4 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 4
+				flight = 5
 			}
 		}
 		KERBAL
@@ -23181,77 +23783,5 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Break the sound barrier!</b>~n~nYou have broken the sound barrier and achieved the amazing speed of Mach 1! Don't worry, we're sure it can be fixed back up in a jiffy for the next guy!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  36,000   </color>~n<color=#6DCFF6>© 10   </color>~n<color=#E0D503>¡ 50   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Purchase propeller engine tech.</b>~n~nPart transfer complete.~n~nYour organization now has access to the following:~n~n- NS90 Tail Rotor~n~nEnjoy the new part!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  -3,000   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Build and fly a seaplane!</b>~n~nCongratulations on another aviation first! You have propelled SSI to one of the most popular organizations on Kerbin. SSI has credited your account with a share of funds from various investors who are excited about SSI's future.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  30,000   </color>~n<color=#6DCFF6>© 5   </color>~n<color=#E0D503>¡ 5   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Failed
-			message = <b>Build and fly a seaplane!</b>~n~nWe have failed our contract for SSI Aerospace: Build and fly a seaplane!~n~n<b><color=#ED0B0B>Penalties for Failure:</color></b> <color=#ED0B0B>£  -15,000   </color><color=#ED0B0B>¡ -5   </color>~n~n
-			color = 1
-			icon = 2
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Fly an airplane to 10,000m.</b>~n~nYou did it! 10,000m reached, and your pilot snapped a great picture!~n~nWhile your pilot rests up at the Astronaut Complex, be sure to check in with Gene at Mission Control for another SSI opportunity if interested.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  20,000   </color>~n<color=#6DCFF6>© 1   </color>~n<color=#E0D503>¡ 5   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Give an airplane ride - Passengers: 1</b>~n~nAirplane ride completed!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  2,000   </color>~n<color=#E0D503>¡ 1   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Achieve an airspeed of 220 m/s</b>~n~nCongratulations, you have set a new airspeed record of 220 m/s and returned alive!~n~nYour success in meeting Wright Aeronautical airspeed challenges has Inigma Kerman calling for you to see if you can help SSI surmount one of the most daring airspeed challenges ever conceived. Check in with Mission Control for details.~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  12,000   </color>~n<color=#6DCFF6>© 3   </color>~n<color=#E0D503>¡ 10   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have discovered some desert pyramids on Kerbin.~n<color=#b4d455>£  1,200 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Complete
-			message = <b>Investigate the Island Airfield</b>~n~nHope you had fun, time to get back to work!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455>£  25,000   </color>~n<color=#E0D503>¡ 2   </color>~n~n
-			color = 2
-			icon = 3
-			read = False
-		}
 	}
 }
