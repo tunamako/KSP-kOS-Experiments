@@ -2,7 +2,6 @@
 
 /*
 
-
 # except...
 
 #   this, duh!
@@ -19,6 +18,9 @@
 /saves/*
 !/saves/Wah R&D/
 !/saves/Wah Enterprises/
+!/saves/DarkMultiPlayer/Ships
+!/saves/DarkMultiPlayer/Subassemblies
+!/saves/DarkMultiPlayer/persistent.sfs
 
 #   other global stuff like ships and scripts
 !/Screenshots
