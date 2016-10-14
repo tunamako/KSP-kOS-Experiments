@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 38
+	launchID = 39
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	PARAMETERS
@@ -105,7 +105,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 46008.4454697992
+		update = 54708.4724666953
 		version = 1.1.3
 		WEIGHTS
 		{
@@ -127,1391 +127,6 @@ GAME
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = e62db757-1512-4aeb-8830-8fc717699ae8
-				type = SurveyContract
-				prestige = 0
-				seed = 182178343
-				state = Offered
-				agent = Kerbin World-Firsts Record-Keeping Society
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,6880.73381781578,12155.9630781412,7500,0,2.18,2,132622.399999998,0,0,0
-				targetBody = 1
-				centerLatitude = -1.72857080243697
-				centerLongitude = -73.4860445070892
-				randomTopic = Kerbin
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 18400
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 440764200
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = -1.72856139063766
-					wpLongitude = -73.4860208944866
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 68958568-ca32-407d-8e39-b69bf35a1b9a
-				type = SurveyContract
-				prestige = 0
-				seed = -1636366670
-				state = Offered
-				agent = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,7500,13250,7500,0,2,2,84755.9718458262,0,0,0
-				targetBody = 1
-				centerLatitude = 1.60905517940571
-				centerLongitude = -70.4647588410589
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 19100
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1807884777
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 1.60907760576652
-					wpLongitude = -70.4646973815436
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = a008f86f-f908-4628-bbf2-1aca50ac8d8d
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791215
-				state = Offered
-				agent = Wenkel Corporation
-				deadlineType = Floating
-				expiryType = Floating
-				values = 45359.9979400635,48308397.8061676,7500,13250,7500,0,1.814059,1.814059,48243.0779400611,0,0,0
-				targetBody = 1
-				centerLatitude = 4.79644111410653
-				centerLongitude = -72.6690219097143
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17100
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1855821159
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 4.79645923010814
-					wpLongitude = -72.6690714261085
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = b7df336c-cc93-487d-98cc-875bb2934f99
-				type = SurveyContract
-				prestige = 0
-				seed = 556750120
-				state = Offered
-				agent = Kerlington Model Rockets and Paper Products Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,7500,13250,7500,0,2,2,67796.2199999976,0,0,0
-				targetBody = 1
-				centerLatitude = -2.17789507141603
-				centerLongitude = -76.0946071723082
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17800
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -2068949
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = -2.17790930897039
-					wpLongitude = -76.0946108453851
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 57c2dc29-c842-4893-9605-058c0b130af9
-				type = SurveyContract
-				prestige = 0
-				seed = 1680791138
-				state = Offered
-				agent = Kerbal Motion LLC
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,7500,13250,7500,0,2,2,110883.079999998,0,0,0
-				targetBody = 1
-				centerLatitude = -7.55437263777238
-				centerLongitude = -72.5154130993963
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 16400
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1113090606
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = -7.5543516389728
-					wpLongitude = -72.515498709058
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 607d8501-6529-4d08-bc0e-cb8f789dcfc1
-				type = ConfiguredContract
-				prestige = 0
-				seed = 1947242664
-				state = Active
-				agent = Anomaly Surveyor Group
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 435900,0,0,50000,0,0,35,0,441126.852500021,28020.6862222184,0,0
-				subtype = AS_Kerbin_Pyramids
-				title = Investigate structures in Kerbin's desert
-				description = From orbit, we can see something strange in the western desert.  There's what look like pyramids in an area of the desert that can't be accessed from the ground.  The Kerbin Archeological Society would love us if we could land there and take a closer look.
-				synopsis = Visit the structures in the desert.
-				completedMessage = What will future archeologist think when they see the KSC?
-				hash = -997446575
-				targetBody = Kerbin
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.WaypointGenerator
-					WAYPOINT
-					{
-						type = WAYPOINT
-						names = Pyramids
-						celestialName = Kerbin
-						name = Pyramids
-						icon = ContractPacks/AnomalySurveyor/Icons/pyramids
-						latitude = -6.49976362801318
-						longitude = -141.68024760056
-						altitude = 0
-						index = 0
-						hidden = False
-						clustered = False
-						randomAltitude = False
-						underwater = False
-					}
-				}
-				BEHAVIOUR
-				{
-					type = ContractConfigurator.Behaviour.DialogBox
-					DIALOG_BOX
-					{
-						condition = PARAMETER_COMPLETED
-						position = LEFT
-						width = 0.8
-						height = 0
-						title = Tut-Un Jeb-Ahn
-						parameter = WP0
-						titleColor = #FFFFFFFF
-						KerbalSection
-						{
-							showName = True
-							textColor = #FFB9DA54
-							crewIndex = 0
-							gender = Male
-						}
-						TextSection
-						{
-							text = I see an ancient statue of a Kerbal, half-sunk into the sands.
-							textColor = #FFCCCCCC
-							fontSize = 20
-						}
-					}
-					DIALOG_BOX
-					{
-						condition = PARAMETER_COMPLETED
-						position = LEFT
-						width = 0.8
-						height = 0
-						title = Tut-Un Jeb-Ahn
-						parameter = WP0
-						titleColor = #FFFFFFFF
-						InstructorSection
-						{
-							showName = True
-							textColor = #FFB9DA54
-							name = Instructor_Gene
-							animation = true_nodA
-						}
-						TextSection
-						{
-							text = Amazing...  you found an antique Kerbal civilization.  Can you see anything else?
-							textColor = #FFCCCCCC
-							fontSize = 20
-						}
-					}
-					DIALOG_BOX
-					{
-						condition = PARAMETER_COMPLETED
-						position = LEFT
-						width = 0.8
-						height = 0
-						title = Tut-Un Jeb-Ahn
-						parameter = WP0
-						titleColor = #FFFFFFFF
-						KerbalSection
-						{
-							showName = True
-							textColor = #FFB9DA54
-							crewIndex = 0
-							gender = Male
-						}
-						TextSection
-						{
-							text = There's an inscription on the statue:\n\n    My name is Tut-Un Jeb-Ahn, king of kings:\n    Look on my works, ye Mighty, and despair!
-							textColor = #FFCCCCCC
-							fontSize = 20
-						}
-					}
-				}
-				PARAM
-				{
-					name = All
-					id = WP0
-					state = Incomplete
-					values = 0,0,0,0,0
-					ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-					title = Check out the pyramids
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = VesselIsType
-						id = VesselIsType
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-						title = 
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						vesselType = EVA
-					}
-					PARAM
-					{
-						name = VisitWaypoint
-						id = VisitWaypoint
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
-						title = 
-						notes = 
-						completedMessage = 
-						allowStateReset = True
-						distance = 15
-						waypointIndex = 0
-						hideOnCompletion = True
-						showMessages = False
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = d48b62bc-da41-4310-ac22-a8c0ea64ad91
-				type = PartTest
-				prestige = 0
-				seed = -1026928418
-				state = Offered
-				agent = Rockomax Conglomerate
-				deadlineType = Floating
-				expiryType = Floating
-				values = 19315.8960745368,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,64864.9815444096,0,0,0
-				part = solidBooster1-1
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = solidBooster1-1
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.29990825024429163
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 9ca98f04-aed2-4337-84d8-052d1bf16934
-				type = PartTest
-				prestige = 0
-				seed = -1183795828
-				state = Offered
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,1800,4500,1800,1,1,1,63115.5918458254,0,0,0
-				part = solidBooster.sm
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = solidBooster.sm
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.13546840294053239
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 7f929f33-186f-4a40-9942-29404e565d8e
-				type = PartTest
-				prestige = 0
-				seed = -945690817
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,1800,4724.99978542328,1889.99991416931,1,0.952381,1,88386.065469931,0,0,0
-				part = stackDecoupler
-				haul = False
-				dest = 1
-				sit = PRELAUNCH
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = stackDecoupler
-					body = Kerbin
-					situation = PRELAUNCH
-					uniqueID = 0.85763040364609588
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = PRELAUNCH
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = eaa7e62e-2a0e-4a20-87a3-314e1cc0a18a
-				type = PartTest
-				prestige = 0
-				seed = 1680791213
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,5400,14174.9993562698,5669.99974250793,2,3.809524,3,46083.0799999977,0,0,0
-				part = stackSeparatorMini
-				haul = False
-				dest = 1
-				sit = SPLASHED
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = stackSeparatorMini
-					body = Kerbin
-					situation = SPLASHED
-					uniqueID = 0.88435486559027565
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SPLASHED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = bfe65830-6fe9-4794-b80d-eb1b00a8c3f2
-				type = PartTest
-				prestige = 0
-				seed = 1680791175
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,5400,14174.9993562698,5669.99974250793,2,3.809524,3,46083.0799999977,0,0,0
-				part = radialDecoupler
-				haul = False
-				dest = 1
-				sit = SPLASHED
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = radialDecoupler
-					body = Kerbin
-					situation = SPLASHED
-					uniqueID = 0.92150926400046296
-					haul = False
-					repeatability = ALWAYS
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SPLASHED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 3f7608e9-e259-4296-8fbf-67bc16bcfaf7
-				type = SurveyContract
-				prestige = 1
-				seed = -1595107021
-				state = Offered
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,46008000,9375,16562,9375,0,2,2,86938.467032613,0,0,0
-				targetBody = 1
-				centerLatitude = 8.06813668978483
-				centerLongitude = -59.5994522747073
-				randomTopic = KSP: 2HOT Thermometer
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17800
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1402297623
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 8.06814715953699
-					wpLongitude = -59.5994671095864
-					wpLandlocked = False
-				}
-			}
-			CONTRACT
-			{
-				guid = 12ca8d86-4965-42c7-a202-b30a77cd45ea
-				type = PartTest
-				prestige = 1
-				seed = -942694472
-				state = Offered
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,22500,56250,22500,8,15,11,82435.0462222185,0,0,0
-				part = fairingSize3
-				haul = False
-				dest = 1
-				sit = ORBITING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = fairingSize3
-					body = Kerbin
-					situation = ORBITING
-					uniqueID = 0.10574863343767292
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ORBITING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 260000
-						maxAlt = 270000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 7fed0afc-d3c8-4606-8053-2d00fdd33c3e
-				type = PartTest
-				prestige = 1
-				seed = -2131746949
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,82746.2854165084,0,0,0
-				part = HeatShield2
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = HeatShield2
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.51662678994081301
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 24000
-						maxAlt = 35000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 1860
-						maxSpd = 2300
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 8d9a1b7a-9a93-4811-98e1-8afe30ecfb39
-				type = PartTest
-				prestige = 1
-				seed = -942694474
-				state = Offered
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,22500,56250,22500,8,15,11,60835.0462222185,0,0,0
-				part = mk2CargoBayS
-				haul = False
-				dest = 1
-				sit = ORBITING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = mk2CargoBayS
-					body = Kerbin
-					situation = ORBITING
-					uniqueID = 0.0083145643623147927
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ORBITING
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = a378c630-ee65-410b-9614-5a01274f9af4
-				type = PartTest
-				prestige = 1
-				seed = 1849806244
-				state = Offered
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,11250,28125,11250,4,8,5,46093.0999999977,0,0,0
-				part = parachuteRadial
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = parachuteRadial
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.57968937492914929
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 9000
-						maxAlt = 12000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 130
-						maxSpd = 210
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 7e2bb4f7-cb16-416e-83cc-f16e6d21e3db
-				type = PartTest
-				prestige = 1
-				seed = -1643228124
-				state = Offered
-				agent = Rockomax Conglomerate
-				deadlineType = Floating
-				expiryType = Floating
-				values = 34754.6251178843,7402735.15010935,19433.3345666726,53441.6712166668,20988.0016822815,6,12.55986,9,77027.7317990497,0,0,0
-				part = decoupler1-2
-				haul = False
-				dest = 1
-				sit = SUB_ORBITAL
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = decoupler1-2
-					body = Kerbin
-					situation = SUB_ORBITAL
-					uniqueID = 0.98645818558822307
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 230000
-						maxAlt = 240000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 05aeccdd-a530-4660-aac4-c5f4c5ca7df0
-				type = PartTest
-				prestige = 1
-				seed = 1680791244
-				state = Offered
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,22500,56250,22500,8,15,11,46083.0799999977,0,0,0
-				part = smallHardpoint
-				haul = False
-				dest = 1
-				sit = ORBITING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = smallHardpoint
-					body = Kerbin
-					situation = ORBITING
-					uniqueID = 0.17207520230304227
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ORBITING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 180000
-						maxAlt = 190000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 749df1f1-eabd-4bfb-baec-c2e6194a75ca
-				type = PartTest
-				prestige = 1
-				seed = 1849806227
-				state = Offered
-				agent = C7 Aerospace Division
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,18000,45000,18000,6,12,9,46093.0999999977,0,0,0
-				part = structuralPylon
-				haul = False
-				dest = 1
-				sit = SUB_ORBITAL
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = structuralPylon
-					body = Kerbin
-					situation = SUB_ORBITAL
-					uniqueID = 0.40787896206969348
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 180000
-						maxAlt = 190000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 5024277c-eb9c-4bf3-bb7d-8132e7fbf57e
-				type = PartTest
-				prestige = 1
-				seed = 965453403
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,68759.874580319,0,0,0
-				part = stackSeparatorBig
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = stackSeparatorBig
-					body = Kerbin
-					situation = FLYING
-					uniqueID = 0.47818097866986925
-					haul = False
-					repeatability = BODYANDSITUATION
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 63000
-						maxAlt = 66000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 760
-						maxSpd = 1470
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 2b51e48a-0e83-4a6f-adcb-95231e95973a
-				type = PartTest
-				prestige = 2
-				seed = -1070405895
-				state = Offered
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 36610.1703643799,15595932.5752258,43548.3874082565,125201.611203051,62099.9987125397,9,21.60591,13.20755,82607.6758341808,0,0,0
-				part = liquidEngine3
-				haul = False
-				dest = 2
-				sit = SUB_ORBITAL
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = liquidEngine3
-					body = Mun
-					situation = SUB_ORBITAL
-					uniqueID = 0.30060149277588422
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 80000
-						maxAlt = 90000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 292518c2-3a6a-401e-b44c-b6313a570689
-				type = PartTest
-				prestige = 2
-				seed = 176923076
-				state = Offered
-				agent = RealChute
-				deadlineType = Floating
-				expiryType = Floating
-				values = 37565.2187347412,16002783.1809998,70434.7851276398,176086.962819099,81000,14,31.05,24.15,60870.513315011,0,0,0
-				part = RC.cone
-				haul = False
-				dest = 2
-				sit = LANDED
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = RC.cone
-					body = Mun
-					situation = LANDED
-					uniqueID = 0.65264734656207601
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 372f1433-e613-4d62-aada-2e3c73a8eeaf
-				type = PartTest
-				prestige = 2
-				seed = -103732074
-				state = Offered
-				agent = RealChute
-				deadlineType = Floating
-				expiryType = Floating
-				values = 18782.6093673706,16002783.1809998,28173.9140510559,70434.7851276398,32400,6,11.5,9.2,63590.3421615564,0,0,0
-				part = RC.stack
-				haul = False
-				dest = 2
-				sit = ESCAPING
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = RC.stack
-					body = Mun
-					situation = ESCAPING
-					uniqueID = 0.22492868417172165
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ESCAPING
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
-				type = PartTest
-				prestige = 2
-				seed = 1906476906
-				state = Offered
-				agent = Periapsis Rocket Supplies Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,18403200,54000,135000,54000,9,18,14,66905.8745802786,0,0,0
-				part = sepMotor1
-				haul = False
-				dest = 2
-				sit = SUB_ORBITAL
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = sepMotor1
-					body = Mun
-					situation = SUB_ORBITAL
-					uniqueID = 0.98176223830401999
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SUB_ORBITAL
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 90000
-						maxAlt = 100000
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
-				type = PartTest
-				prestige = 2
-				seed = 1382093761
-				state = Offered
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,18403200,32400,93149.9980688095,37259.9992275238,6,8.695652,8,66929.7545802791,0,0,0
-				part = radialDecoupler2
-				haul = False
-				dest = 2
-				sit = ESCAPING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = radialDecoupler2
-					body = Mun
-					situation = ESCAPING
-					uniqueID = 0.76770400803894923
-					haul = False
-					repeatability = ONCEPERPART
-					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 2
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = ESCAPING
-						title = 
-					}
-				}
-			}
 			CONTRACT
 			{
 				guid = e6c4572d-789b-4e9b-a602-7278bfa9d21e
@@ -1551,7 +166,7 @@ GAME
 					{
 						name = HasCrew
 						id = HasCrew
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.SSI-Mach2
@@ -1565,6 +180,12 @@ GAME
 						maxCrew = 2147483647
 						minExperience = 0
 						maxExperience = 5
+						DOCKED_SUB_VESSEL
+						{
+							hash = 1098305958
+							strength = STRONG
+							completionTime = 46086.2254697867
+						}
 						PARAM
 						{
 							name = ParameterDelegate`1
@@ -1593,7 +214,7 @@ GAME
 					{
 						name = PartValidation
 						id = PartValidation
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.SSI-Mach2
@@ -1604,6 +225,12 @@ GAME
 						allowStateReset = True
 						minCount = 1
 						maxCount = 2147483647
+						DOCKED_SUB_VESSEL
+						{
+							hash = 1098305958
+							strength = STRONG
+							completionTime = 46086.2254697867
+						}
 						FILTER
 						{
 							type = FILTER
@@ -1637,7 +264,7 @@ GAME
 					{
 						name = PartValidation
 						id = PartValidation
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = GAP.SSI-Mach2
@@ -1648,6 +275,12 @@ GAME
 						allowStateReset = True
 						minCount = 0
 						maxCount = 2147483647
+						DOCKED_SUB_VESSEL
+						{
+							hash = 1098305958
+							strength = STRONG
+							completionTime = 46086.2254697867
+						}
 						FILTER
 						{
 							type = NONE
@@ -2347,6 +980,1431 @@ GAME
 						count = 0
 						vesselIdentifier = GAPcraftSSIMach2
 					}
+				}
+			}
+			CONTRACT
+			{
+				guid = e62db757-1512-4aeb-8830-8fc717699ae8
+				type = SurveyContract
+				prestige = 0
+				seed = 182178343
+				state = Offered
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,6880.73381781578,12155.9630781412,7500,0,2.18,2,132622.399999998,0,0,0
+				targetBody = 1
+				centerLatitude = -1.72857080243697
+				centerLongitude = -73.4860445070892
+				randomTopic = Kerbin
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 18400
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 440764200
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = -1.72856139063766
+					wpLongitude = -73.4860208944866
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 68958568-ca32-407d-8e39-b69bf35a1b9a
+				type = SurveyContract
+				prestige = 0
+				seed = -1636366670
+				state = Offered
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,7500,13250,7500,0,2,2,84755.9718458262,0,0,0
+				targetBody = 1
+				centerLatitude = 1.60905517940571
+				centerLongitude = -70.4647588410589
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 19100
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1807884777
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 1.60907760576652
+					wpLongitude = -70.4646973815436
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 57c2dc29-c842-4893-9605-058c0b130af9
+				type = SurveyContract
+				prestige = 0
+				seed = 1680791138
+				state = Offered
+				agent = Kerbal Motion LLC
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,7500,13250,7500,0,2,2,110883.079999998,0,0,0
+				targetBody = 1
+				centerLatitude = -7.55437263777238
+				centerLongitude = -72.5154130993963
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 16400
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1113090606
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -7.5543516389728
+					wpLongitude = -72.515498709058
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = b7df336c-cc93-487d-98cc-875bb2934f99
+				type = SurveyContract
+				prestige = 0
+				seed = 556750120
+				state = Offered
+				agent = Kerlington Model Rockets and Paper Products Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64800,46008000,7500,13250,7500,0,2,2,67796.2199999976,0,0,0
+				targetBody = 1
+				centerLatitude = -2.17789507141603
+				centerLongitude = -76.0946071723082
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17800
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -2068949
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -2.17790930897039
+					wpLongitude = -76.0946108453851
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 607d8501-6529-4d08-bc0e-cb8f789dcfc1
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1947242664
+				state = Active
+				agent = Anomaly Surveyor Group
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 435900,0,0,50000,0,0,35,0,441126.852500021,28020.6862222184,0,0
+				subtype = AS_Kerbin_Pyramids
+				title = Investigate structures in Kerbin's desert
+				description = From orbit, we can see something strange in the western desert.  There's what look like pyramids in an area of the desert that can't be accessed from the ground.  The Kerbin Archeological Society would love us if we could land there and take a closer look.
+				synopsis = Visit the structures in the desert.
+				completedMessage = What will future archeologist think when they see the KSC?
+				hash = -997446575
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.WaypointGenerator
+					WAYPOINT
+					{
+						type = WAYPOINT
+						names = Pyramids
+						celestialName = Kerbin
+						name = Pyramids
+						icon = ContractPacks/AnomalySurveyor/Icons/pyramids
+						latitude = -6.49976362801318
+						longitude = -141.68024760056
+						altitude = 0
+						index = 0
+						hidden = False
+						clustered = False
+						randomAltitude = False
+						underwater = False
+					}
+				}
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.DialogBox
+					DIALOG_BOX
+					{
+						condition = PARAMETER_COMPLETED
+						position = LEFT
+						width = 0.8
+						height = 0
+						title = Tut-Un Jeb-Ahn
+						parameter = WP0
+						titleColor = #FFFFFFFF
+						KerbalSection
+						{
+							showName = True
+							textColor = #FFB9DA54
+							crewIndex = 0
+							gender = Male
+						}
+						TextSection
+						{
+							text = I see an ancient statue of a Kerbal, half-sunk into the sands.
+							textColor = #FFCCCCCC
+							fontSize = 20
+						}
+					}
+					DIALOG_BOX
+					{
+						condition = PARAMETER_COMPLETED
+						position = LEFT
+						width = 0.8
+						height = 0
+						title = Tut-Un Jeb-Ahn
+						parameter = WP0
+						titleColor = #FFFFFFFF
+						InstructorSection
+						{
+							showName = True
+							textColor = #FFB9DA54
+							name = Instructor_Gene
+							animation = true_nodA
+						}
+						TextSection
+						{
+							text = Amazing...  you found an antique Kerbal civilization.  Can you see anything else?
+							textColor = #FFCCCCCC
+							fontSize = 20
+						}
+					}
+					DIALOG_BOX
+					{
+						condition = PARAMETER_COMPLETED
+						position = LEFT
+						width = 0.8
+						height = 0
+						title = Tut-Un Jeb-Ahn
+						parameter = WP0
+						titleColor = #FFFFFFFF
+						KerbalSection
+						{
+							showName = True
+							textColor = #FFB9DA54
+							crewIndex = 0
+							gender = Male
+						}
+						TextSection
+						{
+							text = There's an inscription on the statue:\n\n    My name is Tut-Un Jeb-Ahn, king of kings:\n    Look on my works, ye Mighty, and despair!
+							textColor = #FFCCCCCC
+							fontSize = 20
+						}
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = WP0
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
+					title = Check out the pyramids
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = VesselIsType
+						id = VesselIsType
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						vesselType = EVA
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = AnomalySurveyor.AS_Kerbin_Pyramids
+						title = 
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						distance = 15
+						waypointIndex = 0
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = d48b62bc-da41-4310-ac22-a8c0ea64ad91
+				type = PartTest
+				prestige = 0
+				seed = -1026928418
+				state = Offered
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 19315.8960745368,8228571.72775267,1871.8268485569,4913.54525432272,1946.69985752106,1,1.024133,1,64864.9815444096,0,0,0
+				part = solidBooster1-1
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster1-1
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.29990825024429163
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 9ca98f04-aed2-4337-84d8-052d1bf16934
+				type = PartTest
+				prestige = 0
+				seed = -1183795828
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,1800,4500,1800,1,1,1,63115.5918458254,0,0,0
+				part = solidBooster.sm
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster.sm
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.13546840294053239
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7f929f33-186f-4a40-9942-29404e565d8e
+				type = PartTest
+				prestige = 0
+				seed = -945690817
+				state = Offered
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,1800,4724.99978542328,1889.99991416931,1,0.952381,1,88386.065469931,0,0,0
+				part = stackDecoupler
+				haul = False
+				dest = 1
+				sit = PRELAUNCH
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = stackDecoupler
+					body = Kerbin
+					situation = PRELAUNCH
+					uniqueID = 0.85763040364609588
+					haul = False
+					repeatability = ALWAYS
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = PRELAUNCH
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 624e127a-5c1f-43b8-a741-2d765e447677
+				type = SurveyContract
+				prestige = 1
+				seed = 1989212053
+				state = Offered
+				agent = Experimental Engineering Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 127058.823680878,45105882.4067116,9562.49982118607,18582.5640552816,10312.5002235174,0,1.818182,2,173141.949150665,0,0,0
+				targetBody = 1
+				centerLatitude = 5.54699642389097
+				centerLongitude = -71.7935824509558
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGHMIX
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17800
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 987721950
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 5.54701245521055
+					wpLongitude = -71.7935912876414
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 3f7608e9-e259-4296-8fbf-67bc16bcfaf7
+				type = SurveyContract
+				prestige = 1
+				seed = -1595107021
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,9375,16562,9375,0,2,2,86938.467032613,0,0,0
+				targetBody = 1
+				centerLatitude = 8.06813668978483
+				centerLongitude = -59.5994522747073
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17800
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1402297623
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 8.06814715953699
+					wpLongitude = -59.5994671095864
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 12ca8d86-4965-42c7-a202-b30a77cd45ea
+				type = PartTest
+				prestige = 1
+				seed = -942694472
+				state = Offered
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,22500,56250,22500,8,15,11,82435.0462222185,0,0,0
+				part = fairingSize3
+				haul = False
+				dest = 1
+				sit = ORBITING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = fairingSize3
+					body = Kerbin
+					situation = ORBITING
+					uniqueID = 0.10574863343767292
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ORBITING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 260000
+						maxAlt = 270000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7fed0afc-d3c8-4606-8053-2d00fdd33c3e
+				type = PartTest
+				prestige = 1
+				seed = -2131746949
+				state = Offered
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,82746.2854165084,0,0,0
+				part = HeatShield2
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = HeatShield2
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.51662678994081301
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 24000
+						maxAlt = 35000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 1860
+						maxSpd = 2300
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 8d9a1b7a-9a93-4811-98e1-8afe30ecfb39
+				type = PartTest
+				prestige = 1
+				seed = -942694474
+				state = Offered
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,22500,56250,22500,8,15,11,60835.0462222185,0,0,0
+				part = mk2CargoBayS
+				haul = False
+				dest = 1
+				sit = ORBITING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = mk2CargoBayS
+					body = Kerbin
+					situation = ORBITING
+					uniqueID = 0.0083145643623147927
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, use the [Run Test] option in the part's context menu when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ORBITING
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7e2bb4f7-cb16-416e-83cc-f16e6d21e3db
+				type = PartTest
+				prestige = 1
+				seed = -1643228124
+				state = Offered
+				agent = Rockomax Conglomerate
+				deadlineType = Floating
+				expiryType = Floating
+				values = 34754.6251178843,7402735.15010935,19433.3345666726,53441.6712166668,20988.0016822815,6,12.55986,9,77027.7317990497,0,0,0
+				part = decoupler1-2
+				haul = False
+				dest = 1
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = decoupler1-2
+					body = Kerbin
+					situation = SUB_ORBITAL
+					uniqueID = 0.98645818558822307
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 230000
+						maxAlt = 240000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 5024277c-eb9c-4bf3-bb7d-8132e7fbf57e
+				type = PartTest
+				prestige = 1
+				seed = 965453403
+				state = Offered
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,68759.874580319,0,0,0
+				part = stackSeparatorBig
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = stackSeparatorBig
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.47818097866986925
+					haul = False
+					repeatability = BODYANDSITUATION
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 63000
+						maxAlt = 66000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 760
+						maxSpd = 1470
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 2b51e48a-0e83-4a6f-adcb-95231e95973a
+				type = PartTest
+				prestige = 2
+				seed = -1070405895
+				state = Offered
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 36610.1703643799,15595932.5752258,43548.3874082565,125201.611203051,62099.9987125397,9,21.60591,13.20755,82607.6758341808,0,0,0
+				part = liquidEngine3
+				haul = False
+				dest = 2
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = liquidEngine3
+					body = Mun
+					situation = SUB_ORBITAL
+					uniqueID = 0.30060149277588422
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 80000
+						maxAlt = 90000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 292518c2-3a6a-401e-b44c-b6313a570689
+				type = PartTest
+				prestige = 2
+				seed = 176923076
+				state = Offered
+				agent = RealChute
+				deadlineType = Floating
+				expiryType = Floating
+				values = 37565.2187347412,16002783.1809998,70434.7851276398,176086.962819099,81000,14,31.05,24.15,60870.513315011,0,0,0
+				part = RC.cone
+				haul = False
+				dest = 2
+				sit = LANDED
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = RC.cone
+					body = Mun
+					situation = LANDED
+					uniqueID = 0.65264734656207601
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = LANDED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 372f1433-e613-4d62-aada-2e3c73a8eeaf
+				type = PartTest
+				prestige = 2
+				seed = -103732074
+				state = Offered
+				agent = RealChute
+				deadlineType = Floating
+				expiryType = Floating
+				values = 18782.6093673706,16002783.1809998,28173.9140510559,70434.7851276398,32400,6,11.5,9.2,63590.3421615564,0,0,0
+				part = RC.stack
+				haul = False
+				dest = 2
+				sit = ESCAPING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = RC.stack
+					body = Mun
+					situation = ESCAPING
+					uniqueID = 0.22492868417172165
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
+				type = PartTest
+				prestige = 2
+				seed = 1906476906
+				state = Offered
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,54000,135000,54000,9,18,14,66905.8745802786,0,0,0
+				part = sepMotor1
+				haul = False
+				dest = 2
+				sit = SUB_ORBITAL
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = sepMotor1
+					body = Mun
+					situation = SUB_ORBITAL
+					uniqueID = 0.98176223830401999
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 90000
+						maxAlt = 100000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
+				type = PartTest
+				prestige = 2
+				seed = 1382093761
+				state = Offered
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,18403200,32400,93149.9980688095,37259.9992275238,6,8.695652,8,66929.7545802791,0,0,0
+				part = radialDecoupler2
+				haul = False
+				dest = 2
+				sit = ESCAPING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDecoupler2
+					body = Mun
+					situation = ESCAPING
+					uniqueID = 0.76770400803894923
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 7e80e878-af9a-4997-b015-3069cab9579c
+				type = ConfiguredContract
+				prestige = 1
+				seed = 174384093
+				state = Active
+				agent = Field Research Team
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 484440,0,0,47711,0,0,13,0,489667.292500021,46084.3054697871,0,0
+				subtype = FS_HardScience
+				title = Gather rare science results from Kerbin's Badlands
+				description = They say that it's difficult to find water at Kerbin's Badlands.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
+				synopsis = Run the requested experiments in while splashed down at Kerbin's Badlands.
+				completedMessage = This is some great data that we've accumulated!
+				hash = 335385938
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.WaypointGenerator
+					WAYPOINT
+					{
+						type = WAYPOINT
+						names = Suggested Badlands Splashdown
+						celestialName = Kerbin
+						name = Suggested Badlands Splashdown
+						icon = ContractPacks/FieldResearch/Icons/research
+						latitude = -20.4345703125
+						longitude = 71.3232421875
+						altitude = 0
+						index = 0
+						hidden = False
+						clustered = False
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = WAYPOINT
+						names = Suggested Badlands Splashdown
+						celestialName = Kerbin
+						name = Suggested Badlands Splashdown
+						icon = ContractPacks/FieldResearch/Icons/research
+						latitude = -14.2822265625
+						longitude = 41.2646484375
+						altitude = 0
+						index = 1
+						hidden = False
+						clustered = False
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = WAYPOINT
+						names = Suggested Badlands Splashdown
+						celestialName = Kerbin
+						name = Suggested Badlands Splashdown
+						icon = ContractPacks/FieldResearch/Icons/research
+						latitude = -30.4541015625
+						longitude = 50.4931640625
+						altitude = 0
+						index = 2
+						hidden = False
+						clustered = False
+						randomAltitude = False
+						underwater = False
+					}
+				}
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_HardScience
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					biome = Badlands
+					situation = SrfSplashed
+					experiment = dmbathymetryscan
+					experiment = telemetryReport
+					experiment = crewReport
+					recovery = crewReport
+					recovery = dmbathymetryscan
+					recoveryMethod = None
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Biome: Kerbin's Badlands
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = Biome: Kerbin's Badlands
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Splashed down
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = Situation: Splashed down
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Bathymetry Data
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = Experiment: Bathymetry Data
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = dmbathymetryscanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_HardScience
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Telemetry Report
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = Experiment: Telemetry Report
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = telemetryReportSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_HardScience
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Crew Report
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_HardScience
+						title = Experiment: Crew Report
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = crewReportSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_HardScience
+							title = 
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 61b6921d-6804-4b27-a57f-bd3ccb5dc901
+				type = SurveyContract
+				prestige = 1
+				seed = 1589000530
+				state = Offered
+				agent = Zaltonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,46008000,9562.49982118607,18582.5640552816,10518.7500312924,0,1.620483,1.818182,67693.1454697856,0,0,0
+				targetBody = 1
+				centerLatitude = -2.75407096189799
+				centerLongitude = -75.2074749674226
+				randomTopic = KSP: 2HOT Thermometer
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Kerbin
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 16900
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = 1444833823
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = -2.75400937359888
+					wpLongitude = -75.2074788403513
+					wpLandlocked = False
+				}
+			}
+			CONTRACT
+			{
+				guid = e5f7177d-d5b6-429f-b000-385f19d0222d
+				type = SurveyContract
+				prestige = 0
+				seed = 1856183586
+				state = Offered
+				agent = Probodobodyne Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 108000,46008000,30000,53000,30000,0,9.72,9.72,156243.477720781,0,0,0
+				targetBody = 1
+				centerLatitude = -0.305582755125623
+				centerLongitude = -74.7359851611215
+				randomTopic = KSP: Double-C Seismic Accelerometer
+				dataName = seismic
+				anomalyName = disturbances
+				reportName = readings
+				locationName = Kerbin near Catgee's Trail
+				focusedSurvey = False
+				targetBand = GROUND
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Take seismic readings
+					experiment = seismicScan
+					flightThreshold = 16700
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = 1391104748
+					wpIndex = 0
+					wpTexture = seismic
+					wpLatitude = -0.155593660496376
+					wpLongitude = -74.756131355426
+					wpLandlocked = True
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Take seismic readings
+					experiment = seismicScan
+					flightThreshold = 16900
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = 1391104748
+					wpIndex = 1
+					wpTexture = seismic
+					wpLatitude = -0.369983767938456
+					wpLongitude = -74.8363851682612
+					wpLandlocked = True
+				}
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 8800,0,3,3,0
+					targetBody = 1
+					actionDescription = Take seismic readings
+					experiment = seismicScan
+					flightThreshold = 16700
+					band = 1
+					clusterState = FULL
+					verified = True
+					contextual = False
+					wpSeed = 1391104748
+					wpIndex = 2
+					wpTexture = seismic
+					wpLatitude = -0.294923293348833
+					wpLongitude = -74.8796249449043
+					wpLandlocked = True
 				}
 			}
 			CONTRACT_FINISHED
@@ -13937,7 +13995,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 50033.965135553
+		funds = 32533.6648292328
 	}
 	SCENARIO
 	{
@@ -14073,7 +14131,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 15.45563
+		sci = 11.65564
 		Tech
 		{
 			id = start
@@ -14333,6 +14391,16 @@ GAME
 			part = radPanelEdge
 			part = radPanelLg
 			part = mediumDishAntenna
+		}
+		Tech
+		{
+			id = advRocketry
+			state = Available
+			cost = 45
+			part = liquidEngine3
+			part = radialLiquidEngine1-2
+			part = toroidalFuelTank
+			part = radialDecoupler2
 		}
 		Science
 		{
@@ -16204,6 +16272,136 @@ GAME
 			sci = 1.8
 			cap = 1.8
 		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowBadlands
+			title = Crew Report while flying over Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.7
+			sci = 4.2
+			cap = 4.2
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowBadlands
+			title = Temperature Scan while flying over Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.7
+			sci = 2.1
+			cap = 2.1
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedBadlands
+			title = Materials Study from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 7.2
+			cap = 7.2
+		}
+		Science
+		{
+			id = magScan@KerbinSrfLandedBadlands
+			title = Magnetometer Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.5
+			cap = 1.5
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedBadlands
+			title = Atmospheric Pressure Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 0.9
+			cap = 0.9
+		}
+		Science
+		{
+			id = seismicScan@KerbinSrfLandedBadlands
+			title = Seismic Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedBadlands
+			title = EVA Report from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 2.4
+			cap = 2.4
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedBadlands
+			title = Temperature Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 0.9
+			cap = 0.9
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfSplashedBadlands
+			title = Temperature Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfSplashedBadlands
+			title = Atmospheric Pressure Scan from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 1.2
+			cap = 1.2
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfSplashedBadlands
+			title = Materials Study from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 9.6
+			cap = 9.6
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfSplashedBadlands
+			title = Crew Report from Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 2.4
+			cap = 2.4
+		}
+		Science
+		{
+			id = dmbathymetryscan@KerbinSrfSplashedBadlandsShallow
+			title = Bathymetry Data from the shallows of Kerbin's Badlands
+			dsc = 1
+			scv = 0
+			sbv = 0.4
+			sci = 6.4
+			cap = 6.4
+		}
 		ExpParts
 		{
 			KAXkueyTailRotor = 1
@@ -16218,7 +16416,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 434.0635
+		rep = 438.4615
 	}
 	SCENARIO
 	{
@@ -20045,194 +20243,6 @@ GAME
 		}
 		CONTRACT
 		{
-			guid = 7e80e878-af9a-4997-b015-3069cab9579c
-			type = ConfiguredContract
-			prestige = 1
-			seed = 174384093
-			state = Offered
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 484440,0,0,47711,0,0,13,0,489667.292500021,0,0,0
-			subtype = FS_HardScience
-			title = Gather rare science results from Kerbin's Badlands
-			description = They say that it's difficult to find water at Kerbin's Badlands.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
-			synopsis = Run the requested experiments in while splashed down at Kerbin's Badlands.
-			completedMessage = This is some great data that we've accumulated!
-			hash = 335385938
-			targetBody = Kerbin
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -20.4345703125
-					longitude = 71.3232421875
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -14.2822265625
-					longitude = 41.2646484375
-					altitude = 0
-					index = 1
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Badlands Splashdown
-					celestialName = Kerbin
-					name = Suggested Badlands Splashdown
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -30.4541015625
-					longitude = 50.4931640625
-					altitude = 0
-					index = 2
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_HardScience
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Kerbin
-				biome = Badlands
-				situation = SrfSplashed
-				experiment = dmbathymetryscan
-				experiment = telemetryReport
-				experiment = crewReport
-				recoveryMethod = None
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Kerbin's Badlands
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Biome: Kerbin's Badlands
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Splashed down
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Situation: Splashed down
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Bathymetry Data
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Bathymetry Data
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = dmbathymetryscanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Telemetry Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Telemetry Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = telemetryReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Crew Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Crew Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = crewReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
-		CONTRACT
-		{
 			guid = 28003bee-501b-448d-9b72-4949cc4265ad
 			type = ConfiguredContract
 			prestige = 0
@@ -23054,6 +23064,7 @@ GAME
 			contract = d48b62bc-da41-4310-ac22-a8c0ea64ad91
 			contract = 9ca98f04-aed2-4337-84d8-052d1bf16934
 			contract = 7f929f33-186f-4a40-9942-29404e565d8e
+			contract = 624e127a-5c1f-43b8-a741-2d765e447677
 			contract = 7fed0afc-d3c8-4606-8053-2d00fdd33c3e
 			contract = 8d9a1b7a-9a93-4811-98e1-8afe30ecfb39
 			contract = 7e2bb4f7-cb16-416e-83cc-f16e6d21e3db
@@ -23062,6 +23073,8 @@ GAME
 			contract = 372f1433-e613-4d62-aada-2e3c73a8eeaf
 			contract = 80a6e297-b1bb-4fe5-b646-9d3cfa80b7cf
 			contract = 8d7d0d4f-66bd-4055-92dd-869007bca6bd
+			contract = 61b6921d-6804-4b27-a57f-bd3ccb5dc901
+			contract = e5f7177d-d5b6-429f-b000-385f19d0222d
 			contract = c4dbb7b0-c190-421d-bbda-32fd7662c5ae
 			contract = 69331499-dd3d-49e5-8c7b-8f71f382754d
 		}
@@ -23090,7 +23103,7 @@ GAME
 	{
 		name = RemoteTechProgressTracker
 		scene = 7, 8, 5
-		nextCheck = 38754
+		nextCheck = 47552
 		CelestialBodyInfo
 		{
 			body = Sun
@@ -23223,7 +23236,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = e6c4572d-789b-4e9b-a602-7278bfa9d21e|N|True,607d8501-6529-4d08-bc0e-cb8f789dcfc1|N|True
+				ActiveListID = e6c4572d-789b-4e9b-a602-7278bfa9d21e|N|True,607d8501-6529-4d08-bc0e-cb8f789dcfc1|N|True,7e80e878-af9a-4997-b015-3069cab9579c|N|True
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -23259,9 +23272,465 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.1.3
-		UT = 46008.5254697992
+		UT = 54711.9124666947
 		activeVessel = 0
 		mapViewFiltering = 2038
+		VESSEL
+		{
+			pid = 39937d21313845e1b2e39d6a04076053
+			name = Test Jet Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = 
+			splashed = False
+			met = 35.0399999943911
+			lct = 53769.4328965281
+			lastUT = 53804.4728965225
+			root = 0
+			lat = -14.1921642255138
+			lon = 38.3980327405937
+			alt = 503.863738368731
+			hgt = 1.189258
+			nrm = 0.09891275,-0.8383504,-0.5360829
+			rot = -0.3527011,-0.4760499,0.4318483,0.680063
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300021.379466991
+				ECC = 1
+				INC = 90.0969099056248
+				LPE = 90
+				LAN = 119.177361563805
+				MNA = 0.288150369617697
+				EPH = 54698.2924666969
+				REF = 1
+			}
+			PART
+			{
+				name = mediumDishAntenna
+				cid = 4292188942
+				uid = 3737245717
+				mid = 384536369
+				launchID = 38
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Mirror
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.04
+				temp = 284.873960910345
+				tempExt = 289.786864283948
+				tempExtUnexp = 289.791216459308
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/default
+				rTrf = mediumDishAntenna
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = False
+					animTime = 0.9930159
+					animSpeed = 0
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					deployPercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle
+							guiName = Retract
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = False
+					animTime = 1
+					animSpeed = 0
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					deployPercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Toggle
+							guiName = Blink Lights
+							category = Toggle
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+						PopupNameTagChanger
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Change Name Tag
+							guiName = Change Name Tag
+							category = Change Name Tag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRTAntenna
+					isEnabled = True
+					IsRTAntenna = True
+					IsRTActive = True
+					IsRTPowered = False
+					IsRTBroken = False
+					IsNonRetractable = False
+					RTDishCosAngle = 0.923879532511287
+					RTOmniRange = 0
+					RTDishRange = 0
+					stagingEnabled = True
+					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+						EventToggle
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Toggle
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Target
+							guiName = No Target
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Start deployed
+							guiName = Start deployed
+							category = Start deployed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventEditorClose
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiActiveUncommand = False
+							guiIcon = Start retracted
+							guiName = Start retracted
+							category = Start retracted
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Deactivate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						OverrideTarget
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Set Target
+							guiName = [EVA] Set Target
+							category = [EVA] Set Target
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideOpen
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Open
+							guiName = [EVA] Force Open
+							category = [EVA] Force Open
+							guiActiveUnfocused = False
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						OverrideClose
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = [EVA] Force Close
+							guiName = [EVA] Force Close
+							category = [EVA] Force Close
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActionToggle
+						{
+							actionGroup = None
+						}
+						ActionOpen
+						{
+							actionGroup = None
+						}
+						ActionClose
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSPUPassive
+					isEnabled = True
+					IsRTPowered = False
+					IsRTSignalProcessor = True
+					IsRTCommandStation = False
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 46143.9854697775
+				Gear = False, 46161.3454697747
+				Light = True, 47358.6997324858
+				RCS = False, 0
+				SAS = True, 46150.5454697765
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 1
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				kOSVesselModule
+				{
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
@@ -23383,7 +23852,7 @@ GAME
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 17
+				flight = 18
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
 				0 = SpecialExperience3,Kerbin
@@ -23438,10 +23907,15 @@ GAME
 				16 = Flight,Kerbin
 				16 = Land,Kerbin
 				16 = Recover
+				17 = Land,Kerbin
+				17 = Flight,Kerbin
+				17 = ExitVessel,Kerbin
+				17 = BoardVessel,Kerbin
+				17 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 17
+				flight = 18
 			}
 		}
 		KERBAL
@@ -23782,6 +24256,6 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
+		flash = False
 	}
 }
