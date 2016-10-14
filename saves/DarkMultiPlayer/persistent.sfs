@@ -1,0 +1,8380 @@
+GAME
+{
+	version = 1.1.3
+	Title = DarkMultiPlayer
+	Description = 
+	linkURL = 
+	linkCaption = 
+	Mode = CAREER
+	Status = 1
+	scene = 5
+	editor = None
+	flag = Squad/Flags/default
+	launchID = 1
+	modded = True
+	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
+	PARAMETERS
+	{
+		preset = Normal
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanGoToAdmin = True
+			CanGoToAstronautC = True
+			CanGoToMissionControl = True
+			CanGoToRnD = True
+			CanSelectFlag = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = False
+			MissingCrewsRespawn = True
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = False
+			IndestructibleFacilities = False
+			ResourceAbundance = 1
+			ReentryHeatScale = 1
+		}
+		CAREER
+		{
+			TechTreeUrl = GameData\ModuleManager.TechTree
+			StartingFunds = 25000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 1
+			RepGainMultiplier = 1
+			ScienceGainMultiplier = 1
+			FundsLossMultiplier = 1
+			RepLossMultiplier = 1
+			RepLossDeclined = 1
+		}
+	}
+	SCENARIO
+	{
+		name = BiomeTracker
+		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = ContractConfiguratorSettings
+		scene = 5, 7, 8
+		lastMCButton = Available
+		DisplayOfferedOrbits = True
+		DisplayOfferedWaypoints = True
+		DisplayActiveOrbits = True
+		DisplayActiveWaypoints = True
+		CONTRACT_STATE
+		{
+			type = StnSciContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMAnomalyContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMReconContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMMagneticSurveyContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMSurveyContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = DMAsteroidSurveyContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = CollectScience
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = ExploreBody
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = GrandTour
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = PartTest
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = PlantFlag
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = RecoverAsset
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = ARMContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = BaseContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = ISRUContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = SatelliteContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = StationContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = SurveyContract
+			enabled = True
+		}
+		CONTRACT_STATE
+		{
+			type = TourismContract
+			enabled = False
+		}
+		CONTRACT_STATE
+		{
+			type = WorldFirstContract
+			enabled = False
+		}
+	}
+	SCENARIO
+	{
+		name = ContractPreLoader
+		scene = 7, 8, 5
+		CONTRACT
+		{
+			guid = 588456bc-120c-4ca9-b738-ed1e6accecf5
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1425244133
+			state = Offered
+			agent = Space Exploration & Technology Initiative
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 185760000,0,7500,18750,15000,1,25,0,185830927.179673,0,0,0
+			subtype = ReachSpace
+			title = Escape the atmosphere!
+			description = Reaching space is the difference between a rocket program and a space program. It will also reassure the public of our progress.
+			synopsis = We want you to send a probe to an altitude of at least 70km.
+			completedMessage = You have reached space!
+			hash = 1690175058
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.Expression
+				CONTRACT_OFFERED
+				{
+				}
+				CONTRACT_ACCEPTED
+				{
+				}
+				CONTRACT_COMPLETED_SUCCESS
+				{
+					type = Double
+					setiReachSpace = 10
+				}
+				CONTRACT_COMPLETED_FAILURE
+				{
+				}
+			}
+			PARAM
+			{
+				name = VesselIsType
+				id = VesselIsType
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = SETIcontracts.ReachSpace
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = True
+				vesselType = Probe
+			}
+			PARAM
+			{
+				name = ReachState
+				id = ReachState
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = SETIcontracts.ReachSpace
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = True
+				targetBody = Kerbin
+				minAltitude = 70000
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Destination: Kerbin
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.ReachSpace
+					title = Destination: Kerbin
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Altitude: Above 70,000 m
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.ReachSpace
+					title = Altitude: Above 70,000 m
+					notes = 
+					completedMessage = 
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 93ac366c-8e46-4c2d-9940-31d47cc72e7b
+			type = ConfiguredContract
+			prestige = 0
+			seed = 17029685
+			state = Offered
+			agent = Space Exploration & Technology Initiative
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 185760000,0,4000,9000,8000,0,8,0,185830933.01326,0,0,0
+			subtype = Altitude18km
+			title = Altitude Record of 18km!
+			description = Although balloons have already reached the upper atmosphere, achieving this altitude by rocket is an important step on our way to space. This will also secure support for further missions.
+			synopsis = We want you to reach an altitude of 18km.
+			completedMessage = You set a new altitude record!
+			hash = -1592226916
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.Expression
+				CONTRACT_OFFERED
+				{
+				}
+				CONTRACT_ACCEPTED
+				{
+				}
+				CONTRACT_COMPLETED_SUCCESS
+				{
+					type = Double
+					setiAltitude18km = 10
+				}
+				CONTRACT_COMPLETED_FAILURE
+				{
+				}
+			}
+			PARAM
+			{
+				name = VesselIsType
+				id = VesselIsType
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = SETIcontracts.Altitude18km
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = True
+				vesselType = Probe
+			}
+			PARAM
+			{
+				name = ReachState
+				id = ReachState
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = SETIcontracts.Altitude18km
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = True
+				targetBody = Kerbin
+				minAltitude = 18000
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Destination: Kerbin
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.Altitude18km
+					title = Destination: Kerbin
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Altitude: Above 18,000 m
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.Altitude18km
+					title = Altitude: Above 18,000 m
+					notes = 
+					completedMessage = 
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 687b67e8-a21f-43ba-88ba-d2f011804584
+			type = ConfiguredContract
+			prestige = 1
+			seed = 1286651762
+			state = Offered
+			agent = Space Exploration & Technology Initiative
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 185760000,0,12500,18750,25000,0,20,0,185830933.09326,0,0,0
+			subtype = MannedAltitude18km
+			title = Manned altitude record of 18km!
+			description = While the lower atmosphere is now widely used for the rapid transportation of kerbals, mail and other goods, a new official altitude record for manned vessels would be quite the boost to the reputation of our space program.
+			synopsis = We want you to launch a kerbal to an altitude of at least 18,000m.
+			completedMessage = You have reached 18km, we congratulate you on this new manned altitude record!
+			hash = -195438281
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.Expression
+				CONTRACT_OFFERED
+				{
+				}
+				CONTRACT_ACCEPTED
+				{
+				}
+				CONTRACT_COMPLETED_SUCCESS
+				{
+					type = Double
+					setiMannedAltitude18km = 10
+				}
+				CONTRACT_COMPLETED_FAILURE
+				{
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = manned18km
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = SETIcontracts.MannedAltitude18km
+				title = 
+				notes = 
+				completedMessage = 
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.MannedAltitude18km
+					title = 
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = SETIcontracts.MannedAltitude18km
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.MannedAltitude18km
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					minAltitude = 18000
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = SETIcontracts.MannedAltitude18km
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Altitude: Above 18,000 m
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = SETIcontracts.MannedAltitude18km
+						title = Altitude: Above 18,000 m
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = ReturnHome
+					id = ReturnHome
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = SETIcontracts.MannedAltitude18km
+					title = Land or splashdown on Kerbin
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 7f5cc19f-44b2-41bb-82cd-b124f9a84585
+			type = ConfiguredContract
+			prestige = 0
+			seed = 9000553
+			state = Offered
+			agent = Wright Aeronautical
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 151200,0,2000,3000,4000,5,5,5,222517.010321487,0,0,0
+			subtype = Wright-Glider
+			title = Build and fly a glider!
+			description = Wilbur and Orville Kerman have been overseeing SSI's flying machine project and have formed a new venture company called Wright Aeronautical to explore the frontiers of powered air flight. To get started, they want you to develop a prototype gilder to test a few flight control concepts. Your glider must have a command seat, wings to control its flight, and be able to land safely.\n\nGetting the glider up into the air is up to your imagination, however Jebediah Kerman recommends the tried and true solid rocket approach. That or jumping off a cliff. Your choice. Whatever you decide to do, just make sure your pilot survives as we don't want any bad publicity this early into our program. To be counted as a true glider, you will need to decouple any boosters you decide to use.
+			synopsis = Making a glider isn't that hard. Getting it up off the ground, however, will present a challenge.
+			completedMessage = The glider flight test was a success!\n\nThe fact that you landed safely is even more amazing.
+			notes = Jebediah hints that if you decide to go with a solid rocket launch assist, that you include a means to decouple the solid rockets for a smoother flight.
+			hash = 1877636146
+			targetBody = Kerbin
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Glider
+				title = Your glider must
+				notes = 
+				completedMessage = 
+				define = GAPcraftWrightGlider
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = have a volunteer
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = have a command seat
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						part = seatExternalCmd
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With type: EAS-1 External Command Seat
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = With type: EAS-1 External Command Seat
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = have wings
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						category = Aero
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With category: Aero
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = With category: Aero
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = not have any engines after launch
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								name = ModuleEngines
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Glider
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Name: Engines
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Glider
+								title = With Name: Engines
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								name = ModuleEnginesFX
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Glider
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Name: Engines
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Glider
+								title = With Name: Engines
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								name = FSengine
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-Glider
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Name: F Sengine
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-Glider
+								title = With Name: F Sengine
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Glider
+				title = get airborne
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftWrightGlider
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightGlider
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = Vessel: GAPcraftWrightGlider
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					targetBody = Kerbin
+					situation = FLYING
+					minSpeed = 15
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Flying
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Situation: Flying
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 15 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Speed: Greater than 15 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = WrightLand
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Glider
+				title = and then land and stop anywhere
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftWrightGlider
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightGlider
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = Vessel: GAPcraftWrightGlider
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-Glider
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-Glider
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = without destroying your flying machine
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftWrightGlider
+				}
+				PARAM
+				{
+					name = KerbalDeathsCustom
+					id = KerbalDeaths
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-Glider
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					countMax = 1
+					count = 0
+					vesselIdentifier = GAPcraftWrightGlider
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 5be528de-6f00-468f-8e2b-deac949ea98f
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1652967846
+			state = Offered
+			agent = Wright Aeronautical
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 151200,0,2000,10000,6000,10,50,5,222517.010321487,0,0,0
+			subtype = Wright-FirstFlight
+			title = Build and fly your first airplane!
+			description = Thanks to your organization's research efforts, we have finally developed an air-breathing engine that should be light enough to mount to a glider, making controlled powered air flight possible!\n\nPrevious attempts to use solid rockets for gliders often ended in disaster and a scarcity of willing volunteers.  Wright Aeronautical is asking you to partner with them to build and test a flying machine using an air breathing engine. Your flying machine must have wings so it can control its flight, and must be able to land safely.\n\nThis is a whole new frontier where many have failed before, so there isn't any investment money avaialble to offer you at the moment. Wright Aeronautical is willing to cover labor costs, and SSI will cover snacks, and notify the press, however, you will need to put forth your own funds to acquire the parts necessary for this project. If you succeed, your pilot will acquire both valuable flying skills and your organization will become known worldwide.
+			synopsis = It's time to construct a flying machine - one that will prove to the world that controlled powered air flight is indeed possible!
+			completedMessage = Congratulations! The flight was a success!\n\nThe historic flight was thankfully caught on camera by the lone press agent who responded to the press invitation. His article about your flight has been read by millions, and you have now spured the imaginations of Kerbals everywhere.
+			notes = Wilbur and Orville both wanted to go, but the coin they flipped landed on its side - hence the reason why they're also asking you to put up a volunteer to pilot the contraption.
+			hash = -2046280915
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.AwardExperience
+				parameter = WrightLand
+				experience = 1
+				awardImmediately = False
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-FirstFlight
+				title = Your flying machine must
+				notes = 
+				completedMessage = 
+				define = GAPcraftWrightFirstFlight
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = have a volunteer
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = PartValidation
+					id = PartValidation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = have wings
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCount = 1
+					maxCount = 2147483647
+					FILTER
+					{
+						type = FILTER
+						category = Aero
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = With category: Aero
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = With category: Aero
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = have an air breathing engine only
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = not have any solid rocket engines
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								EngineType = SolidBooster
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-FirstFlight
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Engine Type: SolidBooster
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-FirstFlight
+								title = With Engine Type: SolidBooster
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = PartValidation
+						id = PartValidation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = not have any liquid rocket engines
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCount = 0
+						maxCount = 2147483647
+						FILTER
+						{
+							type = NONE
+							MODULE
+							{
+								EngineType = LiquidFuel
+							}
+						}
+						PARAM
+						{
+							name = AllParameterDelegate`1
+							id = None have module
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-FirstFlight
+							title = None have module
+							notes = 
+							completedMessage = 
+							PARAM
+							{
+								name = ParameterDelegate`1
+								id = With Engine Type: LiquidFuel
+								state = Incomplete
+								disableOnStateChange = False
+								values = 0,0,0,0,0
+								ContractIdentifier = GAP.Wright-FirstFlight
+								title = With Engine Type: LiquidFuel
+								notes = 
+								completedMessage = 
+							}
+						}
+					}
+					PARAM
+					{
+						name = HasResource
+						id = HasResource
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = not have any solid rocket fuel
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						capacity = False
+						RESOURCE
+						{
+							resource = SolidFuel
+							minQuantity = 0
+							maxQuantity = 0
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Resource: SolidFuel: None
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-FirstFlight
+							title = Resource: SolidFuel: None
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasResource
+						id = HasResource
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = not have any oxidizer
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						capacity = False
+						RESOURCE
+						{
+							resource = Oxidizer
+							minQuantity = 0
+							maxQuantity = 0
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Resource: Oxidizer: None
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.Wright-FirstFlight
+							title = Resource: Oxidizer: None
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-FirstFlight
+				title = get airborne
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftWrightFirstFlight
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightFirstFlight
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = Vessel: GAPcraftWrightFirstFlight
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					targetBody = Kerbin
+					situation = FLYING
+					minSpeed = 15
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Flying
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Situation: Flying
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Greater than 15 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Speed: Greater than 15 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = WrightLand
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-FirstFlight
+				title = and then land and stop anywhere
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftWrightFirstFlight
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftWrightFirstFlight
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = Vessel: GAPcraftWrightFirstFlight
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.Wright-FirstFlight
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.Wright-FirstFlight
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = without destroying your flying machine
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftWrightFirstFlight
+				}
+				PARAM
+				{
+					name = KerbalDeathsCustom
+					id = KerbalDeaths
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.Wright-FirstFlight
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					countMax = 1
+					count = 0
+					vesselIdentifier = GAPcraftWrightFirstFlight
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = adf0e807-7e04-4704-af93-dac629f06bab
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1302194072
+			state = Offered
+			agent = KSC Island Tours
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 151200,0,8000,0,16000,0,0,20,222517.010321487,0,0,0
+			subtype = IslandTours-Shoreline
+			title = KSC Shoreline Tour - Seats: 4
+			description = Tourists to KSC come not just for the launches, but also to see the debris fields around KSC. Rich in historical value, the best treasures are those seen through a glass bottom boat near the KSC shoreline.
+			synopsis = The neat thing about working for KSC Island Tours is that they pay in advance per passenger, for all their contracts!
+			completedMessage = Shoreline tour completed! KSC Island Tours thanks you for your service.
+			notes = Time to get wet! Take 4 tourists on a tour of KSC's shoreline. You must use a boat and pilot it within 100m of the waypoints.
+			hash = -873033008
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnPassengers
+				count = 4
+				KERBAL
+				{
+					name = Maxdia Kerman
+					gender = Female
+					experienceTrait = Scientist
+					kerbalType = Tourist
+				}
+				KERBAL
+				{
+					name = Matnand Kerman
+					gender = Male
+					experienceTrait = Pilot
+					kerbalType = Tourist
+				}
+				KERBAL
+				{
+					name = Genesen Kerman
+					gender = Male
+					experienceTrait = Scientist
+					kerbalType = Tourist
+				}
+				KERBAL
+				{
+					name = Desbas Kerman
+					gender = Male
+					experienceTrait = Scientist
+					kerbalType = Tourist
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = PQS_CITY
+					names = KSC Shoreline Tour Start
+					celestialName = Kerbin
+					name = KSC Shoreline Tour Start
+					icon = marker
+					latitude = 0.0477345515575173
+					longitude = 285.610508909905
+					altitude = 5
+					index = 0
+					hidden = False
+					clustered = False
+					pqsCity = KSC
+					pqsOffset = 2197.87757133291,1530.08245552771,-44.1550643325954
+					randomAltitude = False
+					underwater = False
+				}
+				WAYPOINT
+				{
+					type = PQS_CITY
+					names = KSC Shoreline Tour End
+					celestialName = Kerbin
+					name = KSC Shoreline Tour End
+					icon = marker
+					latitude = -0.227734415158069
+					longitude = 285.710508799211
+					altitude = 5
+					index = 1
+					hidden = False
+					clustered = False
+					pqsCity = KSC
+					pqsOffset = 3265.13915381182,-1347.2747900578,-48.7243988233913
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = Your craft must
+				notes = 
+				completedMessage = 
+				define = GAPcraftIslandToursShoreline
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = have a certified engineer
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					trait = Engineer
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Trait: Engineer
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Trait: Engineer
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrewCapacity
+					id = HasCrewCapacity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = have at least 4 passenger seats
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					minCapacity = 5
+					maxCapacity = 2147483647
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = load all tourists
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = HasPassengers
+						id = HasPassengers
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Maxdia Kerman
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						index = 0
+						count = 0
+						KERBAL
+						{
+							name = Maxdia Kerman
+							gender = Female
+							experienceTrait = Scientist
+							kerbalType = Tourist
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = On Board: Maxdia Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.IslandTours-Shoreline
+							title = On Board: Maxdia Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasPassengers
+						id = HasPassengers
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Matnand Kerman
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						index = 0
+						count = 0
+						KERBAL
+						{
+							name = Matnand Kerman
+							gender = Male
+							experienceTrait = Pilot
+							kerbalType = Tourist
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = On Board: Matnand Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.IslandTours-Shoreline
+							title = On Board: Matnand Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasPassengers
+						id = HasPassengers
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Genesen Kerman
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						index = 0
+						count = 0
+						KERBAL
+						{
+							name = Genesen Kerman
+							gender = Male
+							experienceTrait = Scientist
+							kerbalType = Tourist
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = On Board: Genesen Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.IslandTours-Shoreline
+							title = On Board: Genesen Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = HasPassengers
+						id = HasPassengers
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Desbas Kerman
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						index = 0
+						count = 0
+						KERBAL
+						{
+							name = Desbas Kerman
+							gender = Male
+							experienceTrait = Scientist
+							kerbalType = Tourist
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = On Board: Desbas Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.IslandTours-Shoreline
+							title = On Board: Desbas Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = start the tour at the shoreline waypoint
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftIslandToursShoreline
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftIslandToursShoreline
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Vessel: GAPcraftIslandToursShoreline
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					distance = 100
+					waypointIndex = 0
+					hideOnCompletion = True
+					showMessages = False
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					targetBody = Kerbin
+					situation = SPLASHED
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Splashed down
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Situation: Splashed down
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = end the tour at the shoreline waypoint
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftIslandToursShoreline
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftIslandToursShoreline
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Vessel: GAPcraftIslandToursShoreline
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					distance = 100
+					waypointIndex = 1
+					hideOnCompletion = True
+					showMessages = False
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					targetBody = Kerbin
+					situation = SPLASHED
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Splashed down
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Situation: Splashed down
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = beach your boat or land your seaplane anywhere on land
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftIslandToursShoreline
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftIslandToursShoreline
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Vessel: GAPcraftIslandToursShoreline
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = without destroying your aircraft
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftIslandToursShoreline
+				}
+				PARAM
+				{
+					name = KerbalDeathsCustom
+					id = KerbalDeaths
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					countMax = 1
+					count = 0
+					vesselIdentifier = GAPcraftIslandToursShoreline
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.IslandTours-Shoreline
+				title = and recover all tourists
+				notes = 
+				completedMessage = 
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Maxdia Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Maxdia Kerman
+						gender = Female
+						experienceTrait = Scientist
+						kerbalType = Tourist
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Maxdia Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Recover Maxdia Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Matnand Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Matnand Kerman
+						gender = Male
+						experienceTrait = Pilot
+						kerbalType = Tourist
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Matnand Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Recover Matnand Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Genesen Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Genesen Kerman
+						gender = Male
+						experienceTrait = Scientist
+						kerbalType = Tourist
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Genesen Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Recover Genesen Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.IslandTours-Shoreline
+					title = Desbas Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Desbas Kerman
+						gender = Male
+						experienceTrait = Scientist
+						kerbalType = Tourist
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Desbas Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.IslandTours-Shoreline
+						title = Recover Desbas Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 0fc848b7-9e27-4fa5-ae20-5406ebe67c79
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1325586434
+			state = Offered
+			agent = KSC Coast Guard
+			deadlineType = Floating
+			expiryType = Floating
+			ignoresWeight = True
+			values = 21600,21600,4000,0,6000,0,0,0,92917.0103214869,0,0,0
+			subtype = CoastGuard-Certification
+			title = Coast Guard Rescue Certification
+			description = With most money going to the Kerbal Space Program, the KSC Coast Guard often finds itself short on funds for new craft and qualified personnel. We are asking your organization to partner with us to help save lives and bring home what is lost or needs retrieving.\n\nThis is a volunteer contract only, with hazard pay being available only in the most dangerous of missions. We will provide a small advance for fuel and supplies, but what you'll earn mostly by serving is the pride in knowing you are making a difference, and a good reputation. Join us today and our trained rescue diver and paramedic, Lt. Dan Kerman, will help train your volunteers, and will accompany you as a rescue diver on KSC Coast Guard rescue missions.
+			synopsis = KSC Coast Guard: Our motto is Always Ready - Kemper Keratus!
+			completedMessage = KSC Coast Guard Certification Mission Completed! Your organization is now certified to accept KSC Coast Guard rescue and retrieval contracts.
+			notes = Rescue Lt. Dan from the waters off the eastern shore of the Kerbal Space Center. Bring him back to dry land by any means possible so he can be recovered.
+			hash = 1424908495
+			targetBody = Kerbin
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.SpawnKerbal
+				KERBAL_DETAIL
+				{
+					name = Lt. Dan Kerman
+					gender = Male
+					experienceTrait = Pilot
+					kerbalType = Crew
+					body = Kerbin
+					lat = -0.00876186473979663
+					lon = 285.747522891964
+					landed = True
+					owned = False
+					addToRoster = False
+				}
+			}
+			BEHAVIOUR
+			{
+				type = ContractConfigurator.Behaviour.WaypointGenerator
+				WAYPOINT
+				{
+					type = PQS_CITY
+					names = S.O.S.
+					celestialName = Kerbin
+					name = S.O.S.
+					icon = marker
+					latitude = -0.00876186473979663
+					longitude = 285.747522891964
+					altitude = 0
+					index = 0
+					hidden = False
+					clustered = False
+					pqsCity = KSC
+					pqsOffset = 3636.74176576774,948.452291817594,-54.6489646538366
+					randomAltitude = False
+					underwater = False
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = Your craft must
+				notes = 
+				completedMessage = 
+				define = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = True
+				PARAM
+				{
+					name = HasCrew
+					id = HasCrew
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = have a Kerbal in command
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					allowStateReset = True
+					minCrew = 1
+					maxCrew = 2147483647
+					minExperience = 0
+					maxExperience = 5
+					PARAM
+					{
+						name = CountParameterDelegate`1
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Count: At least 1
+						notes = 
+						completedMessage = 
+					}
+				}
+				PARAM
+				{
+					name = HasCrewCapacity
+					id = HasCrewCapacity
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = have at least 1 passenger seat
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					allowStateReset = True
+					failWhenUnmet = True
+					minCapacity = 2
+					maxCapacity = 2147483647
+				}
+				PARAM
+				{
+					name = All
+					id = PreFlightCheck
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = complete all pre-flight checks
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = remain stationary on the runway
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						hideChildren = True
+						allowStateReset = True
+						targetBody = Kerbin
+						biome = Runway
+						maxSpeed = 0.1
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: Kerbin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Destination: Kerbin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Runway
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Biome: Runway
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Speed: Less than 0 m/s
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Speed: Less than 0 m/s
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = Duration
+						id = RegisterFlightPlan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = review checklist:
+						waitingText = registering flight plan:
+						completionText = flight plan registered
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+					PARAM
+					{
+						name = Duration
+						id = RequestTakeoffKSC
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = 
+						notes = 
+						completedMessage = 
+						completeInSequence = True
+						duration = 10
+						preWaitText = request clearance for takeoff:
+						waitingText = requesting clearance for takeoff:
+						completionText = be cleared for takeoff
+						endTime = 0
+						startCriteria = CONTRACT_ACCEPTANCE
+						triggered = False
+					}
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = navigate to S.O.S Waypoint
+				notes = 
+				completedMessage = 
+				hideChildren = True
+				vessel = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftCoastGuardCertification
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = VisitWaypoint
+					id = VisitWaypoint
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = 
+					notes = 
+					completedMessage = 
+					hidden = True
+					hideChildren = True
+					allowStateReset = False
+					distance = 500
+					waypointIndex = 0
+					hideOnCompletion = True
+					showMessages = False
+				}
+			}
+			PARAM
+			{
+				name = HasCrew
+				id = HasCrew
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = rescue crewman
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				allowStateReset = True
+				minCrew = 0
+				maxCrew = 2147483647
+				minExperience = 0
+				maxExperience = 5
+				KERBAL
+				{
+					name = Lt. Dan Kerman
+					gender = Male
+					experienceTrait = Pilot
+					kerbalType = Crew
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Lt. Dan Kerman: On board
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Lt. Dan Kerman: On board
+					notes = 
+					completedMessage = 
+				}
+			}
+			PARAM
+			{
+				name = VesselParameterGroup
+				id = VesselParameterGroup
+				state = Incomplete
+				disableOnStateChange = False
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = and land back on land
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				hideChildren = True
+				vessel = GAPcraftCoastGuardCertification
+				duration = 0
+				dissassociateVesselsOnContractFailure = True
+				dissassociateVesselsOnContractCompletion = False
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Vessel: GAPcraftCoastGuardCertification
+					optional = True
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Vessel: GAPcraftCoastGuardCertification
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ReachState
+					id = ReachState
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = 
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hidden = True
+					hideChildren = True
+					allowStateReset = True
+					targetBody = Kerbin
+					situation = LANDED
+					maxSpeed = 0
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Destination: Kerbin
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Destination: Kerbin
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Speed: Less than 0 m/s
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Speed: Less than 0 m/s
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = safely
+				notes = 
+				completedMessage = 
+				completeInSequence = True
+				PARAM
+				{
+					name = VesselNotDestroyed
+					id = VesselNotDestroyed
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = without destroying your rescue craft
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					vessel = GAPcraftCoastGuardCertification
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = or killing anyone
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = or killing your crew
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						countMax = 1
+						count = 0
+						vesselIdentifier = GAPcraftCoastGuardCertification
+					}
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = or killing anyone you need to rescue
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						countMax = 1
+						count = 0
+						KERBAL
+						{
+							name = Lt. Dan Kerman
+							gender = Male
+							experienceTrait = Pilot
+							kerbalType = Crew
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Lt. Dan Kerman
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.CoastGuard-Certification
+							title = Lt. Dan Kerman
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			PARAM
+			{
+				name = All
+				id = All
+				state = Incomplete
+				values = 0,0,0,0,0
+				ContractIdentifier = GAP.CoastGuard-Certification
+				title = and recover
+				notes = 
+				completedMessage = 
+				PARAM
+				{
+					name = RecoverKerbalCustom
+					id = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.CoastGuard-Certification
+					title = Lt. Dan Kerman
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					count = 0
+					index = 0
+					KERBAL
+					{
+						name = Lt. Dan Kerman
+						gender = Male
+						experienceTrait = Pilot
+						kerbalType = Crew
+						recovered = False
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recover Lt. Dan Kerman
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.CoastGuard-Certification
+						title = Recover Lt. Dan Kerman
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 72e37783-811d-443a-ad9d-3e453500c80a
+			type = ConfiguredContract
+			prestige = 0
+			seed = 619568829
+			state = Offered
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1264440,0,0,25403,0,0,4,0,1337204.92860189,0,0,0
+			subtype = FS_GeologicalStudy
+			title = Geological study of Kerbin
+			description = Geologically speaking, we know very little about Kerbin.  That's why we've applied for a research grant to do a geological study of Kerbin.  We haven't actually received the grant, but I'm sure things will work out fine.
+			synopsis = Perform a study of Kerbin's geology.
+			completedMessage = Great work, I hope Linus remembered to submit the grant paperwork!
+			hash = 965370709
+			targetBody = Kerbin
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Kerbin
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15534,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Grasslands
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Grasslands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Kerbin's Grasslands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15881,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Shores
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Shores
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Kerbin's Shores
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15337,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Badlands
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Badlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Kerbin's Badlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15650,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Tundra
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Tundra
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Kerbin's Tundra
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15920,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = IceCaps
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Ice Caps
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Kerbin's Ice Caps
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 07331cfc-95de-4879-baa8-5ea0ab5982c1
+			type = ConfiguredContract
+			prestige = 0
+			seed = 1196038994
+			state = Offered
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1149180,0,0,25577,0,0,4,0,1222026.19542868,0,0,0
+			subtype = FS_ClimateStudy
+			title = Climate study of Kerbin
+			description = Due to the number of Kerbals that believe the crazy notion that rocketry has an adverse effect on Kerbin's climate, we've been asked by the government to perform a climate study.  Let's prove once and for all that rocketry is completely safe (ecologically speaking, that is).
+			synopsis = Perform a study of Kerbin's climate.
+			completedMessage = Great work, I'm sure we'll be able to make this data fit our narrative!
+			hash = 822882104
+			targetBody = Kerbin
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Kerbin
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15481,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Badlands
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Badlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Kerbin's Badlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15896,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Grasslands
+				situation = SrfLanded
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Grasslands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Kerbin's Grasslands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15926,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = IceCaps
+				situation = FlyingLow
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Ice Caps
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Kerbin's Ice Caps
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying low
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Flying low
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15715,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Shores
+				situation = FlyingLow
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Shores
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Kerbin's Shores
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying low
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Flying low
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15587,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Kerbin
+				biome = Highlands
+				situation = FlyingLow
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Kerbin's Highlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Kerbin's Highlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying low
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Flying low
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		UNREAD_CONTRACTS
+		{
+			contract = 0fc848b7-9e27-4fa5-ae20-5406ebe67c79
+			contract = 72e37783-811d-443a-ad9d-3e453500c80a
+		}
+	}
+	SCENARIO
+	{
+		name = ContractSystem
+		scene = 7, 8, 5, 6
+		update = -1000
+		version = 1.1.3
+		WEIGHTS
+		{
+			StnSciContract = 30
+			DMAsteroidSurveyContract = 30
+			DMSurveyContract = 30
+			DMMagneticSurveyContract = 30
+			DMReconContract = 30
+			DMAnomalyContract = 30
+			ConfiguredContract = 30
+			SurveyContract = 30
+			SatelliteContract = 30
+			ISRUContract = 30
+			ARMContract = 30
+			RecoverAsset = 30
+			PlantFlag = 30
+			PartTest = 30
+			GrandTour = 30
+		}
+		CONTRACTS
+		{
+			CONTRACT
+			{
+				guid = 1fe2fdc8-9dea-46ee-9fcd-510e3812a95a
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1605339937
+				state = Active
+				agent = Field Research Team
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 819360,0,0,30000,0,0,2,0,890293.053259965,72846.1954286773,0,0
+				subtype = FS_KSC
+				title = Perform experiments around KSC
+				description = There are lots of opportunities to do science around the Kerbal Space Center.  Wernher needs us to run a few tests at different locations as a control test of our experiments.
+				synopsis = Run the required tests around the Kerbal Space Center and recover the data.
+				completedMessage = Everything is looking good with these experiments, time to get them into space!
+				hash = 1338354939
+				targetBody = Kerbin
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 5297,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_KSC
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					biome = KSC
+					situation = SrfLanded
+					experiment = telemetryReport
+					recoveryMethod = Ideal
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Location: KSC
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Location: KSC
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Telemetry Report
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Experiment: Telemetry Report
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = telemetryReportSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = 
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Recovery: Recover or transmit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = Recovery: Recover or transmit
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 7364,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_KSC
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					biome = R&D
+					situation = SrfLanded
+					experiment = temperatureScan
+					recoveryMethod = Ideal
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Location: KSC's R&D
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Location: KSC's R&D
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Temperature Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Experiment: Temperature Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = temperatureScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = 
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Recovery: Recover or transmit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = Recovery: Recover or transmit
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 7119,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_KSC
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					biome = TrackingStation
+					situation = SrfLanded
+					experiment = temperatureScan
+					recoveryMethod = Ideal
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Location: KSC's Tracking Station
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Location: KSC's Tracking Station
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Temperature Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Experiment: Temperature Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = temperatureScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = 
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Recovery: Recover or transmit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = Recovery: Recover or transmit
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = CollectScienceCustom
+					id = CollectScience
+					state = Incomplete
+					disableOnStateChange = False
+					values = 5409,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_KSC
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = False
+					targetBody = Kerbin
+					biome = AstronautComplex
+					situation = SrfLanded
+					experiment = barometerScan
+					recoveryMethod = Ideal
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Location: KSC's Astronaut Complex
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Location: KSC's Astronaut Complex
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Situation: Landed
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Situation: Landed
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Experiment: Atmospheric Pressure Scan
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_KSC
+						title = Experiment: Atmospheric Pressure Scan
+						notes = 
+						completedMessage = 
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = barometerScanSubject
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = 
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Recovery: Recover or transmit
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = FieldResearch.FS_KSC
+							title = Recovery: Recover or transmit
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = d8c2ea0b-a35c-4ea7-8855-ba53263fae08
+				type = ConfiguredContract
+				prestige = 0
+				seed = 522638863
+				state = Active
+				agent = Kerbal Space Program
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 151200,0,0,4000,500,1,1,1,222517.010321487,72846.1954286773,0,0
+				subtype = KSP-Car
+				title = Drive a car around KSC!
+				description = Welcome to the Kerbal Space Center! SSI encourages you to check out various locations to familiarize yourself with what is available to you. Now that you've got the parts, Gene Kerman from the Kerbal Space Program encourages you to develop a car which you can drive around in.
+				synopsis = Build and drive a car to every waypoint around the Kerbal Space Center.
+				completedMessage = Aside from a lot of dust, you found the drive around KSC rather exciting as you imagined a lot of what could be. The question Gene asks you is, will it be?
+				notes = It's time to check out your new digs!
+				hash = 60720453
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.WaypointGenerator
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = Astronaut Complex
+						celestialName = Kerbin
+						name = Astronaut Complex
+						icon = marker
+						latitude = -0.0841218494468412
+						longitude = 285.357496881615
+						altitude = 5
+						index = 0
+						hidden = False
+						clustered = False
+						pqsCity = KSC
+						pqsOffset = -442.023973235631,130.851555233741,25.4368833075387
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = Space Center
+						celestialName = Kerbin
+						name = Space Center
+						icon = marker
+						latitude = -0.0805787241735945
+						longitude = 285.380639053803
+						altitude = 5
+						index = 1
+						hidden = False
+						clustered = False
+						pqsCity = KSC
+						pqsOffset = -199.917096819299,169.648987401799,25.4046314417319
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = Tracking Station
+						celestialName = Kerbin
+						name = Tracking Station
+						icon = marker
+						latitude = -0.113180373436297
+						longitude = 285.38950134613
+						altitude = 5
+						index = 2
+						hidden = False
+						clustered = False
+						pqsCity = KSC
+						pqsOffset = -104.72171727426,-171.137778944692,25.4729950999099
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = R&D Center
+						celestialName = Kerbin
+						name = R&D Center
+						icon = marker
+						latitude = -0.112021708662764
+						longitude = 285.356860558335
+						altitude = 5
+						index = 3
+						hidden = False
+						clustered = False
+						pqsCity = KSC
+						pqsOffset = -446.649857779978,-161.387740734775,25.5017392180753
+						randomAltitude = False
+						underwater = False
+					}
+					WAYPOINT
+					{
+						type = PQS_CITY
+						names = Administration Building
+						celestialName = Kerbin
+						name = Administration Building
+						icon = marker
+						latitude = -0.0922209319574578
+						longitude = 285.338971108885
+						altitude = 5
+						index = 4
+						hidden = False
+						clustered = False
+						pqsCity = KSC
+						pqsOffset = -635.450871107884,44.6770752507737,25.391827671981
+						randomAltitude = False
+						underwater = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = Your vehicle must
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					define = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = True
+					PARAM
+					{
+						name = HasCrew
+						id = HasCrew
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = have a driver
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = True
+						minCrew = 1
+						maxCrew = 2147483647
+						minExperience = 0
+						maxExperience = 5
+						PARAM
+						{
+							name = CountParameterDelegate`1
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = GAP.KSP-Car
+							title = Count: At least 1
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = start at the Astronaut Complex
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hideChildren = True
+					vessel = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftKSPCar
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = Vessel: GAPcraftKSPCar
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						hideChildren = True
+						allowStateReset = False
+						distance = 30
+						waypointIndex = 0
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = drive to the Space Center
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					vessel = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftKSPCar
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = Vessel: GAPcraftKSPCar
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						distance = 30
+						waypointIndex = 1
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = drive to the Tracking Station
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					vessel = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftKSPCar
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = Vessel: GAPcraftKSPCar
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						distance = 30
+						waypointIndex = 2
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = drive to the R&D Center
+					notes = 
+					completedMessage = 
+					hideChildren = True
+					vessel = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftKSPCar
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = Vessel: GAPcraftKSPCar
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						distance = 30
+						waypointIndex = 3
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = VesselParameterGroup
+					id = VesselParameterGroup
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = end at the Administration Building
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					hideChildren = True
+					vessel = GAPcraftKSPCar
+					duration = 0
+					dissassociateVesselsOnContractFailure = True
+					dissassociateVesselsOnContractCompletion = False
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Vessel: GAPcraftKSPCar
+						optional = True
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = Vessel: GAPcraftKSPCar
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = VisitWaypoint
+						id = VisitWaypoint
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = 
+						notes = 
+						completedMessage = 
+						hidden = True
+						allowStateReset = True
+						distance = 30
+						waypointIndex = 4
+						hideOnCompletion = True
+						showMessages = False
+					}
+				}
+				PARAM
+				{
+					name = All
+					id = All
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.KSP-Car
+					title = safely
+					notes = 
+					completedMessage = 
+					completeInSequence = True
+					PARAM
+					{
+						name = VesselNotDestroyed
+						id = VesselNotDestroyed
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = without destroying your craft
+						notes = 
+						completedMessage = 
+						allowStateReset = True
+						vessel = GAPcraftKSPCar
+					}
+					PARAM
+					{
+						name = KerbalDeathsCustom
+						id = KerbalDeaths
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = GAP.KSP-Car
+						title = or killing anyone
+						notes = 
+						completedMessage = 
+						countMax = 1
+						count = 0
+						vesselIdentifier = GAPcraftKSPCar
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = bbc782d0-96ea-49ec-a681-cd5161d4ba3e
+				type = ConfiguredContract
+				prestige = 0
+				seed = 12972453
+				state = Completed
+				agent = SSI Aerospace
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 151200,0,0,-2500,0,0,0,0,158170.935977137,7573.4616718451,0,7573.4616718451
+				subtype = SSI-Start
+				title = Join SSI Aerospace!
+				description = Welcome to SSI Aerospace! We are an engineering cooperative focused on developing aerospace assets for use by the Kerbal Space Program.\n\nBased out of the Research & Development Facility at KSC, our member organizations include the Ford Carriage Company, Tesla Electrics, Wright Aeronautical, and Inigma Industries. I'm Inigma Kerman, founder of SSI, and I want to personally extend an invitation to your organization to join us!\n\nAs a member, your organization will gain access to contracts we have been offered by the Kerbal Space Program and other organizations, and be able to contract with our member organizations for any prototypes they have developed, as well as be able to enter into contracts with our Venture Capital Fund for any loans you may need.\n\nTo join, simply contribute 10% of your organization's starting funds to our Venture Capital Fund so we can start exploring a number of ideas together!
+				synopsis = Accept this contract to join SSI Aerospace and receive all the benefits of membership including contracts, a prototype marketplace, and assistance funding.
+				completedMessage = Welcome to SSI Aerospace!\n\nWe're glad you've decided to join us. Be sure to check in with Mission Control to see what opportunties are now available to your organization!
+				notes = Accepting this contract is required in order to unlock the GAP contract tree.
+				hash = 1765326305
+				targetBody = Kerbin
+				PARAM
+				{
+					name = Timer
+					id = Timer
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Start
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					duration = 1
+					endTime = 7574.4616718451
+					timerType = CONTRACT_ACCEPTANCE
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 32cd43d2-e0fd-441c-b4b6-3ed8fb675983
+				type = ConfiguredContract
+				prestige = 0
+				seed = 1206409606
+				state = Completed
+				agent = SSI Aerospace
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 151200,0,0,-3000,0,0,0,0,222133.393259965,71604.1274660658,0,71604.1274660658
+				subtype = SSI-Wright-KAXHuey
+				title = Purchase propeller engine tech.
+				description = Hello, my name is Orville Kerman, and I and my brother founded Wright Aeronautical. We started out with a bicycle company but have only recently begun exploring the area of aerodynamics. We have recently developed an engine that is light enough to mount onto a flying machine!\n\nAs a member of SSI, you may purchase the following production-ready prototype that will allow you to start making flying machines:\n\n- NS90 Tail Rotor
+				synopsis = Propeller engine technology is at your fingertips! Simply cover the cost of our initial production run, and this prototype will be yours!
+				completedMessage = Part transfer complete.\n\nYour organization now has access to the following:\n\n- NS90 Tail Rotor\n\nEnjoy the new part!
+				notes = The part will be available immediately to your organization upon contract acceptance.
+				hash = -647895332
+				targetBody = Kerbin
+				BEHAVIOUR
+				{
+					type = ContractConfigurator.Behaviour.ExperimentalPart
+					part = KAXkueyTailRotor
+					unlockCriteria = CONTRACT_ACCEPTANCE
+					lockCriteria = DO_NOT_LOCK
+				}
+				PARAM
+				{
+					name = Timer
+					id = Timer
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = GAP.SSI-Wright-KAXHuey
+					title = 
+					notes = 
+					completedMessage = 
+					fakeFailures = True
+					duration = 1
+					endTime = 71605.1274660658
+					timerType = CONTRACT_ACCEPTANCE
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ContractVesselTracker
+		scene = 7, 8, 5
+	}
+	SCENARIO
+	{
+		name = CustomWaypoints
+		scene = 7, 8
+	}
+	SCENARIO
+	{
+		name = CutSceneConfigurator
+		scene = 7
+	}
+	SCENARIO
+	{
+		name = DMScienceScenario
+		scene = 7, 5, 8, 6
+		Asteroid_Science
+		{
+		}
+		Anomaly_Records
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = Funding
+		scene = 7, 8, 5, 6
+		funds = 19500
+	}
+	SCENARIO
+	{
+		name = InterVesselManager
+		scene = 7, 5, 8
+	}
+	SCENARIO
+	{
+		name = KerbalAlarmClockScenario
+		scene = 5, 6, 8
+		KACAlarmListStorage
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = PersistentDataStore
+		scene = 7, 8, 5
+		DATA
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = RemoteTechProgressTracker
+		scene = 7, 8, 5
+		nextCheck = 91
+		CelestialBodyInfo
+		{
+			body = Sun
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Kerbin
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Mun
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Minmus
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Moho
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Eve
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Duna
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Ike
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Jool
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Laythe
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Vall
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Bop
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Tylo
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Gilly
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Pol
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Dres
+			coverage = 0
+			activeRange = 0
+		}
+		CelestialBodyInfo
+		{
+			body = Eeloo
+			coverage = 0
+			activeRange = 0
+		}
+	}
+	SCENARIO
+	{
+		name = Reputation
+		scene = 7, 8, 5, 6
+		rep = 0
+	}
+	SCENARIO
+	{
+		name = ResearchAndDevelopment
+		scene = 7, 8, 5, 6
+		sci = 13
+		Tech
+		{
+			id = start
+			state = Available
+			cost = 0
+			part = Engineer7500
+			part = EngineerChip
+			part = KR-2042
+			part = kOSMachine0m
+			part = kOSMachine1m
+			part = RTShortAntenna1
+			part = setiMiniSRB3
+			part = setiProbeStack1
+			part = basicFin
+			part = standardNoseCone
+			part = probeCoreOcto
+			part = batteryBankMini
+			part = solidBooster.sm
+			part = sensorBarometer
+			part = sensorThermometer
+			part = adapterSmallMiniTall
+			part = longAntenna
+		}
+		Tech
+		{
+			id = engineering101
+			state = Available
+			cost = 4
+			part = dmBathymetry
+			part = KIS.guide
+			part = KIS.wrench
+			part = setiMiniBattery
+			part = setiMiniServiceBay
+			part = seatExternalCmd
+			part = probeCoreCube
+			part = probeCoreSphere
+			part = batteryPack
+			part = ksp.r.largeBatteryPack
+			part = sensorAccelerometer
+			part = telescopicLadder
+			part = telescopicLadderBay
+			part = spotLight1
+			part = spotLight2
+			part = roverWheel1
+			part = roverWheel2
+		}
+		Tech
+		{
+			id = structuralParts
+			state = Available
+			cost = 1
+			part = adapterSmallMiniShort
+			part = structuralIBeam2
+			part = structuralIBeam3
+			part = structuralIBeam1
+			part = structuralMiniNode
+			part = structuralPanel1
+			part = structuralPanel2
+			part = strutCube
+			part = strutOcto
+			part = trussAdapter
+			part = trussPiece1x
+			part = trussPiece3x
+			part = ladder1
+		}
+		Tech
+		{
+			id = basicRocketry
+			state = Available
+			cost = 12
+			part = dmmagBoom
+			part = hybridBooster
+			part = noseCone
+			part = R8winglet
+			part = sasModule
+			part = liquidEngine
+			part = solidBooster
+			part = fuelTankSmallFlat
+			part = fuelTankSmall
+			part = fuelTank
+			part = fuelTank.long
+			part = stackSeparator
+			part = stackSeparatorMini
+			part = stackDecoupler
+			part = stackDecouplerMini
+		}
+		Tech
+		{
+			id = survivability
+			state = Available
+			cost = 16
+			part = RC.cone
+			part = RTShortDish2
+			part = setiHeatShield065
+			part = setiMiniAFC
+			part = solarPanels5
+			part = batteryBank
+			part = FuelCell
+			part = radPanelSm
+			part = miniLandingLeg
+			part = parachuteSingle
+			part = ServiceBay.125
+		}
+		Tech
+		{
+			id = stability
+			state = Available
+			cost = 8
+			part = setiMiniInlineRCSlinear
+			part = setiMiniRCSlinear
+			part = setiMiniRCStank8
+			part = CanardController
+			part = sweptWing
+			part = tailfin
+			part = airplaneTail
+			part = airplaneTailB
+			part = fairingSize1
+			part = miniIntake
+			part = winglet
+			part = winglet3
+			part = Mark1Cockpit
+			part = miniJetEngine
+			part = miniFuselage
+			part = MK1Fuselage
+			part = Mk1FuselageStructural
+			part = GearFixed
+			part = GearFree
+			part = SmallGearBay
+		}
+		Tech
+		{
+			id = modularWings
+			state = Available
+			cost = 1
+			part = wingShuttleDelta
+			part = wingShuttleElevon1
+			part = wingShuttleElevon2
+			part = wingShuttleStrake
+			part = wingConnector
+			part = wingConnector2
+			part = wingConnector3
+			part = wingConnector4
+			part = wingConnector5
+			part = deltaWing
+			part = delta.small
+			part = StandardCtrlSrf
+			part = elevon2
+			part = elevon3
+			part = smallCtrlSrf
+			part = elevon5
+			part = wingStrake
+			part = structuralWing
+			part = structuralWing2
+			part = structuralWing3
+			part = structuralWing4
+			part = sweptWing1
+			part = sweptWing2
+		}
+		Tech
+		{
+			id = generalRocketry
+			state = Available
+			cost = 20
+			part = setiLFOenginePomeranian
+			part = setiMiniFuelTank3
+			part = microEngine
+			part = radialEngineMini
+			part = liquidEngine2
+			part = solidBooster1-1
+			part = sepMotor1
+			part = miniFuelTank
+			part = radialDecoupler
+			part = launchClamp1
+		}
+		Tech
+		{
+			id = advRocketry
+			state = Available
+			cost = 45
+			part = liquidEngine3
+			part = radialLiquidEngine1-2
+			part = toroidalFuelTank
+			part = radialDecoupler2
+		}
+		Tech
+		{
+			id = aviation
+			state = Available
+			cost = 45
+			part = KAXradialprop
+			part = KAXsportprop
+			part = airbrake1
+			part = airScoop
+			part = CircularIntake
+			part = JetEngine
+			part = nacelleBody
+			part = smallHardpoint
+			part = structuralPylon
+		}
+		Tech
+		{
+			id = aerodynamicSystems
+			state = Available
+			cost = 90
+			part = KAXelectricprop
+			part = KAXmedCockpit
+			part = KAXmedFuselage
+			part = KAXmedJetFuel
+			part = KAXmedTail
+			part = noseConeAdapter
+			part = fairingSize2
+			part = MK1CrewCabin
+			part = Mark2Cockpit
+		}
+		Tech
+		{
+			id = basicScience
+			state = Available
+			cost = 45
+			part = dmscope
+			part = RTLongAntenna3
+			part = RTLongDish2
+			part = setiProbeStack2
+			part = setiMiniSolarExt
+			part = probeCoreHex
+			part = solarPanels3
+		}
+		Tech
+		{
+			id = miniaturization
+			state = Available
+			cost = 90
+			part = dmSIGINT.Small
+			part = science.module.radial
+			part = science.module
+			part = dockingPort3
+		}
+		Tech
+		{
+			id = electrics
+			state = Available
+			cost = 90
+			part = rpwsAnt
+			part = KIS.ghettoblaster
+			part = RTGigaDish2
+			part = setiMiniSolarRetr
+			part = solarPanels4
+			part = batteryBankLarge
+			part = HighGainAntenna
+			part = FuelCellArray
+			part = foldingRadSmall
+			part = radPanelEdge
+			part = radPanelLg
+			part = mediumDishAntenna
+		}
+		Tech
+		{
+			id = enhancedSurvivability
+			state = Available
+			cost = 45
+			part = RC.cone.double
+			part = RC.radial
+			part = RC.stack
+			part = HeatShield1
+			part = mk1pod
+			part = radialDrogue
+			part = parachuteLarge
+			part = parachuteRadial
+			part = parachuteDrogue
+		}
+		ExpParts
+		{
+			KAXkueyTailRotor = 1
+		}
+	}
+	SCENARIO
+	{
+		name = ResourceScenario
+		scene = 7, 8, 5, 6
+		RESOURCE_SETTINGS
+		{
+			GameSeed = 1150905845
+			MaxDeltaTime = 21600
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioAchievements
+		scene = 7, 8, 5, 6
+	}
+	SCENARIO
+	{
+		name = ScenarioContractEvents
+		scene = 7, 8, 5
+		id = 1513311612
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 8
+		SpaceCenter/Administration/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/Flag
+		{
+			intact = True
+		}
+		SpaceCenter/MissionControl/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/ForeverAlone
+		{
+			intact = True
+		}
+		SpaceCenter/ResearchAndDevelopment/Facility/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Building
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/OuterDish
+		{
+			intact = True
+		}
+		SpaceCenter/TrackingStation/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB2
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole/Facility
+		{
+			intact = True
+		}
+		SpaceCenter/AstronautComplex/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/BigTanks
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/SmallTanks
+		{
+			intact = True
+		}
+		SpaceCenter/LaunchPad/Facility/building
+		{
+			intact = True
+		}
+		SpaceCenter/SpaceplaneHangar/Facility/Tower
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/SouthComplex
+		{
+			intact = True
+		}
+		SpaceCenter/VehicleAssemblyBuilding/Facility/VAB3
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioUpgradeableFacilities
+		scene = 5, 6, 7, 8
+		SpaceCenter/LaunchPad
+		{
+			lvl = 0
+		}
+		SpaceCenter/Runway
+		{
+			lvl = 0
+		}
+		SpaceCenter/VehicleAssemblyBuilding
+		{
+			lvl = 0
+		}
+		SpaceCenter/SpaceplaneHangar
+		{
+			lvl = 0
+		}
+		SpaceCenter/TrackingStation
+		{
+			lvl = 0
+		}
+		SpaceCenter/AstronautComplex
+		{
+			lvl = 1
+		}
+		SpaceCenter/MissionControl
+		{
+			lvl = 0
+		}
+		SpaceCenter/ResearchAndDevelopment
+		{
+			lvl = 0
+		}
+		SpaceCenter/Administration
+		{
+			lvl = 0
+		}
+		SpaceCenter/FlagPole
+		{
+			lvl = 0
+		}
+	}
+	SCENARIO
+	{
+		name = StnSciScenario
+		scene = 5, 7, 6, 8
+		xp = 0
+	}
+	SCENARIO
+	{
+		name = StrategySystem
+		scene = 7, 8, 5, 6
+		STRATEGIES
+		{
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6
+	}
+	SCENARIO
+	{
+		name = contractScenario
+		scene = 7, 6, 8, 5
+		version = 1.0.6.4
+		stockToolbar = True
+		replaceStockToolbar = False
+		replaceStockWarned = False
+		toolTips = True
+		fontSmall = True
+		windowSize = 0
+		Contracts_Window_Parameters
+		{
+			WindowPosition = 50,80,250,300,50,80,250,300,50,80,250,300,50,80,250,300
+			WindowVisible = False,False,False,False
+			Contracts_Window_Mission
+			{
+				MissionName = MasterMission
+				ActiveListID = d8c2ea0b-a35c-4ea7-8855-ba53263fae08|N|True,1fe2fdc8-9dea-46ee-9fcd-510e3812a95a|N|True
+				HiddenListID = 
+				VesselIDs = 
+				AscendingSort = True
+				ShowActiveList = True
+				SortMode = 1
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		lastSeed = 0
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 1.1.3
+		UT = 72970.013536473
+		activeVessel = 0
+		mapViewFiltering = -1026
+		VESSEL
+		{
+			pid = 065f67a8c2c140babb8a06501aee4a23
+			name = Ast. NYG-082
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.413495703239757
+			lon = 219.021783066447
+			alt = 17958371508.2118
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.5891138,-0.409398,-0.3734188,0.5881298
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15963936929.3393
+				ECC = 0.146659428885963
+				INC = 1.21664096319726
+				LPE = 6.47183866281712
+				LAN = 20.0000818644256
+				MNA = 6.1837241916199
+				EPH = 5090905.36734096
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 2118050511
+				mid = 2118050511
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 527054.988098145
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 096ee966d3ba445ca57739c2cf874b81
+			name = Ast. FGL-421
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.121139571943843
+			lon = 194.979228638294
+			alt = 15452615444.9494
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.1382332,-0.7639144,-0.4327726,0.4582949
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14675316791.1247
+				ECC = 0.0750614274196334
+				INC = 2.30344106214825
+				LPE = 338.950262195383
+				LAN = 18.8365198051529
+				MNA = 0.233205886200442
+				EPH = 4944803.13345424
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1208638336
+				mid = 1208638336
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1297121.67663574
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 0cb5e06e29a345b8b42470da96356578
+			name = Ast. SKR-796
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.608336302765296
+			lon = 189.591029062201
+			alt = 16839770626.5515
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.3762329,0.6495482,0.4361885,0.4962614
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 16802832591.1035
+				ECC = 0.192246086709217
+				INC = 0.608640565155094
+				LPE = 14.4302820050024
+				LAN = 282.247169928254
+				MNA = 6.17178513623972
+				EPH = 2737884.37124721
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1022535171
+				mid = 1022535171
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1666390.92407227
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1eabf9c698074e059624ee5cef6fd032
+			name = Ast. VVF-055
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.142640177226224
+			lon = 187.782502579363
+			alt = 14613483136.3336
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.604365,0.6007074,-0.5073177,0.1285393
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14252022949.2474
+				ECC = 0.0509197678458801
+				INC = 0.242932303434651
+				LPE = 6.5750379944698
+				LAN = 332.671218606169
+				MNA = 5.75150689319971
+				EPH = 3215253.40200893
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 780182388
+				mid = 780182388
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1677277.44140625
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1f437d42d35144a6ad5e51bba61bddbd
+			name = Ast. BYS-886
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.304045964851692
+			lon = 189.111677233015
+			alt = 14172965731.1756
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.1568726,-0.8801396,-0.2832356,0.3471639
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13997484388.4948
+				ECC = 0.0319453164458561
+				INC = 0.314121235849672
+				LPE = 87.2531845676288
+				LAN = 294.506855246457
+				MNA = 5.76807960708091
+				EPH = 4353795.80923549
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1812225964
+				mid = 1812225964
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1237121.41113281
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 22b9b96d89b34f1eb9fef504cf20000e
+			name = Ast. OTZ-753
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.118175922181483
+			lon = 178.842735625139
+			alt = 13448133394.0826
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.1068532,0.6892873,-0.270731,0.6634532
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13662410911.7126
+				ECC = 0.00708143021390965
+				INC = 0.461725442306344
+				LPE = 284.806627088707
+				LAN = 14.5162627436049
+				MNA = 0.68593747674237
+				EPH = 4074187.93570034
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1771395930
+				mid = 1771395930
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 235526.055908203
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 369f90aa2dd94d19b05bc6df33d4a32a
+			name = Ast. XKD-910
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.257936720317341
+			lon = 186.622653988631
+			alt = 13973677980.379
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.5562112,0.2913215,0.7511103,0.2039466
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13921834842.7553
+				ECC = 0.0231465853706343
+				INC = 1.01537913770391
+				LPE = 178.399440891377
+				LAN = 202.181590201174
+				MNA = 0.0200829029767746
+				EPH = 5161160.40884487
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1642413893
+				mid = 1642413893
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 984083.422851563
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 529c88715e974e3fa145d8b21a6383b2
+			name = Ast. SUG-973
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 1.17993047171644
+			lon = 183.622685525552
+			alt = 14517503010.2769
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.525042,0.4515566,-0.5543766,0.4616212
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14493992739.442
+				ECC = 0.0568661217746668
+				INC = 1.2418650412806
+				LPE = 185.096657834143
+				LAN = 112.641054786204
+				MNA = 6.23782564413873
+				EPH = 2942656.56363002
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 791480112
+				mid = 791480112
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 298423.848724365
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 582a67682dcf49498cc6f853b1df8681
+			name = Ast. JUQ-870
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.262766098867152
+			lon = 183.1270482395
+			alt = 16143937051.9672
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.06886908,0.1371026,0.9214497,0.356918
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 17538790679.5182
+				ECC = 0.220606861125812
+				INC = 0.263075223735957
+				LPE = 178.345658343731
+				LAN = 91.1934722941742
+				MNA = 6.23201602837643
+				EPH = 2170794.06363002
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1108666726
+				mid = 1108666726
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 871035.424804688
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 59c31bfa25a2492c805c6af5edc413db
+			name = Ast. ZFC-428
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.54659059867626
+			lon = 216.653845419114
+			alt = 18398673736.3489
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.6880097,-0.6053814,-0.2287032,0.3284066
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 16321511510.0839
+				ECC = 0.163804228172926
+				INC = 0.808315390534407
+				LPE = 197.836684707085
+				LAN = 174.951885803627
+				MNA = 6.20581539283072
+				EPH = 4775210.37222377
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 181874125
+				mid = 181874125
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1310165.35949707
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 59f9e7a6f7a54577957c64b7a3e477cd
+			name = Ast. SHH-928
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.108315813395823
+			lon = 192.833744666763
+			alt = 13852060905.0254
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.2201851,0.5458695,-0.5411302,0.6006023
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13889629932.4098
+				ECC = 0.0383682049994719
+				INC = 0.203558055286438
+				LPE = 31.0135996776396
+				LAN = 45.8262410287382
+				MNA = 5.39766456599786
+				EPH = 5183374.76431362
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 874362820
+				mid = 874362820
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 415836.502075195
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 5bac623bc9a046b0aa1a561bc201854a
+			name = Ast. SGV-665
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.74422018852681
+			lon = 179.166658037299
+			alt = 13620084929.4307
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1689706,0.8022228,0.5598068,0.1204318
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13973792815.0607
+				ECC = 0.0277552527798588
+				INC = 0.775237606404805
+				LPE = 184.073714676073
+				LAN = 73.7477192990142
+				MNA = 6.23269376171087
+				EPH = 1913478.32876674
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 743183923
+				mid = 743183923
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1337237.62207031
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 5c5fc330f5154c39911af669899cf3af
+			name = Ast. HGD-443
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.502304515503455
+			lon = 181.915451812018
+			alt = 14101356144.101
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.3880454,-0.6283944,-0.6495332,0.1806875
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14146568966.0523
+				ECC = 0.0358404288228424
+				INC = 0.699235569953294
+				LPE = 343.027157772845
+				LAN = 316.84173199748
+				MNA = 0.319076915490821
+				EPH = 3572718.30679409
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 678785859
+				mid = 678785859
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 211061.549377441
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 5d47010b3e1a40109f8ee95f3e565646
+			name = Ast. TKX-833
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.276966216762362
+			lon = 203.727783204192
+			alt = 17069084665.0443
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3988952,0.5434343,0.6576993,0.3361452
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15611341767.5262
+				ECC = 0.13404769912414
+				INC = 0.613040880202548
+				LPE = 356.270556346738
+				LAN = 357.714324845594
+				MNA = 6.12087475547484
+				EPH = 4137787.5694894
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1863758483
+				mid = 1863758483
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1183179.41894531
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 74c5310b279246329d9993fbf3a2586f
+			name = Ast. PVM-955
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.341396496573821
+			lon = 180.646870006155
+			alt = 14003125739.2854
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6247391,0.3940569,0.380969,0.556132
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14044447357.6277
+				ECC = 0.0351382714687132
+				INC = 0.603983152697422
+				LPE = 332.718030367121
+				LAN = 327.073076204421
+				MNA = 0.440574176122934
+				EPH = 3755821.9444894
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 2062537490
+				mid = 2062537490
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 668259.146118164
+				refTime = 1728000
+				size = 1
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 7770fd1461bd439491ce7c77d112deaf
+			name = Ast. DCX-807
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.584865896936182
+			lon = 180.207987197598
+			alt = 14423137117.4685
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.7627167,0.07990286,0.2440467,0.5935656
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14752250967.1722
+				ECC = 0.0798378523681041
+				INC = 0.585820626730542
+				LPE = 178.024559376545
+				LAN = 94.3239669678657
+				MNA = 0.196691643134811
+				EPH = 2699146.68814174
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1204406089
+				mid = 1204406089
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1491214.08691406
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 89472e1b474f4a1d96ae9191e4ea0d12
+			name = Ast. CXR-788
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 1.3468990769249
+			lon = 179.151576474538
+			alt = 13569783343.417
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1536795,0.7777344,0.5468979,0.2690995
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14108320107.0514
+				ECC = 0.0326853234973378
+				INC = 1.5459150362889
+				LPE = 173.99418567698
+				LAN = 60.5957052999912
+				MNA = 0.06975259159698
+				EPH = 1502624.64834682
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 852852163
+				mid = 852852163
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 986173.516845703
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 967d8c7c6e1e4b548759b7fdaa86acee
+			name = Ast. BDB-048
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 1.54037457556096
+			lon = 179.457283343455
+			alt = 13683966568.099
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.2507443,0.6290094,-0.08913027,0.7304317
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 13963932149.8733
+				ECC = 0.025065861695226
+				INC = 1.54410573754134
+				LPE = 174.444139854637
+				LAN = 94.2864535764854
+				MNA = 0.316402868572323
+				EPH = 2758962.79531948
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 385094244
+				mid = 385094244
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1157948.98681641
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9e009f49239c4f49bebcd60417fe2a19
+			name = Ast. ZQX-874
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.245002488539533
+			lon = 182.730114167638
+			alt = 14350668631.215
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.5783104,0.0313062,-0.6920165,0.4309177
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14180097453.2869
+				ECC = 0.0466185061667969
+				INC = 0.555157721440633
+				LPE = 159.005912869986
+				LAN = 157.38695627396
+				MNA = 0.391103206902656
+				EPH = 4116867.8429269
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1253326296
+				mid = 1253326296
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1017176.13830566
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9ea6c918471e45ab8bd3aae6e276d6ce
+			name = Ast. KKJ-340
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.295840583657184
+			lon = 179.192469278218
+			alt = 13792425633.7056
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.4412655,-0.4005642,0.4993377,0.6288839
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14465762358.297
+				ECC = 0.0558902130374709
+				INC = 0.448163530966758
+				LPE = 200.873455626524
+				LAN = 41.345019850809
+				MNA = 0.00351435241857016
+				EPH = 1594860.20132534
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 726790328
+				mid = 726790328
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 289526.220703125
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = a05cbc7e8baf4990a010e06526145eb2
+			name = Ast. EGN-499
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.0155491976467072
+			lon = 199.360463138864
+			alt = 14979468448.0373
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.4085069,-0.5750099,-0.658656,0.2620267
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14417154929.0997
+				ECC = 0.0592572193718014
+				INC = 0.429659794539457
+				LPE = 192.384892785854
+				LAN = 202.278682761997
+				MNA = 6.00941338365929
+				EPH = 5038973.87320034
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 424141723
+				mid = 424141723
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 638698.150634766
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = a625b4beb4d14e079f4b430db54486b0
+			name = Ast. EBD-414
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.31833812871155
+			lon = 175.366456909511
+			alt = 13710298842.9064
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.257511,-0.4889531,-0.3919809,0.7355024
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14745872545.3677
+				ECC = 0.0899504190092984
+				INC = 0.327739353445355
+				LPE = 342.363403996618
+				LAN = 252.454067292821
+				MNA = 0.478571670137498
+				EPH = 2239033.6632394
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 863341446
+				mid = 863341446
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 905615.33203125
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = ab247a29c22c4a2e9450d43ce1c56843
+			name = Ast. INZ-691
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.118864906810711
+			lon = 188.164156519247
+			alt = 15393790897.0364
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1052746,-0.7194961,0.5576009,0.4004045
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14887030904.8108
+				ECC = 0.0891088544160437
+				INC = 0.201938700245362
+				LPE = 345.517501449285
+				LAN = 332.949514578717
+				MNA = 0.0928716151044069
+				EPH = 3706459.60318081
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 10808320
+				mid = 10808320
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 849934.918212891
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = aba5425009244486a8214fcb195379b2
+			name = Ast. ERU-862
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.605192946511971
+			lon = 201.046246586364
+			alt = 18471052984.1008
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.2571182,0.1618241,0.7759618,0.5527987
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 17226689560.0789
+				ECC = 0.210143663775913
+				INC = 0.864874188800589
+				LPE = 169.56409183772
+				LAN = 157.486026140609
+				MNA = 0.0569750828542864
+				EPH = 3897055.80679409
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1673834300
+				mid = 1673834300
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 622598.799133301
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = ad276d96a982488fa6a9459564fd1f63
+			name = Ast. ZIW-967
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.541100555737723
+			lon = 191.086219868688
+			alt = 16591242963.9491
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.073659,0.4136868,-0.2576124,0.8700997
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 16158394845.7955
+				ECC = 0.161908680415133
+				INC = 0.541703855688367
+				LPE = 21.4843053324694
+				LAN = 284.634965857694
+				MNA = 6.06467852321438
+				EPH = 2779867.52554409
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 184587976
+				mid = 184587976
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 634530.116271973
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = f081099887db441893af97b278a794cb
+			name = Ast. GHS-458
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.107810697171229
+			lon = 194.912844218601
+			alt = 14953216801.6458
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6079209,-0.6024388,0.4193292,0.3027584
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14392672872.428
+				ECC = 0.0571267869720277
+				INC = 2.23051156505915
+				LPE = 356.557787788909
+				LAN = 18.5261866728756
+				MNA = 0.0597360312229467
+				EPH = 5085355.7335519
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1637716558
+				mid = 1637716558
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 782569.226074219
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = f480645da0ba4fcf833ffbca75039c74
+			name = Ast. JLN-416
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.294555654151714
+			lon = 186.579892773278
+			alt = 14188316654.8472
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.502242,0.2582858,-0.505012,0.6526901
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14015288476.2852
+				ECC = 0.031211464650954
+				INC = 2.02193967544366
+				LPE = 345.323742663819
+				LAN = 15.7974049370835
+				MNA = 0.196646418413254
+				EPH = 4937410.10366909
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 799589969
+				mid = 799589969
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 113062.129211426
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = f9684090037947818d2573cf6dd06099
+			name = Ast. FNF-624
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = -0.0359744980450302
+			lon = 193.997012419325
+			alt = 15359419921.586
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2253792,0.6083791,0.07218237,0.7575414
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14628344605.3149
+				ECC = 0.0750820212514258
+				INC = 0.0821787708238113
+				LPE = 2.40700023131647
+				LAN = 348.880340123653
+				MNA = 5.95068809246838
+				EPH = 3816135.56753627
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 586691676
+				mid = 586691676
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 285311.961364746
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = fe57735d90a34b2dbb820e2bf70d67bd
+			name = Ast. OAK-044
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.431015173272298
+			lon = 180.360834988123
+			alt = 14070209927.6749
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.7308105,0.05868848,0.4301352,0.5267403
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14174352073.3812
+				ECC = 0.0436928199923246
+				INC = 0.52280098903403
+				LPE = 162.668942556285
+				LAN = 125.674674505055
+				MNA = 0.239863562305467
+				EPH = 3157870.49185268
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 658096738
+				mid = 658096738
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 1136319.9005127
+				refTime = 1728000
+				size = 0
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = ff5905b46d1f4fd0ba167c247798e573
+			name = Ast. ZXE-048
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1013.1554269
+			lct = 1013.1554269
+			lastUT = -1
+			root = 0
+			lat = 0.509598103736499
+			lon = 189.820397916889
+			alt = 14880539600.8217
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6328369,0.7672035,-0.09556659,0.04222866
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14388683694.1551
+				ECC = 0.0575284285524323
+				INC = 2.17893236584731
+				LPE = 170.397608749037
+				LAN = 177.145651234286
+				MNA = 0.138442903576034
+				EPH = 4511058.28482143
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 67993826
+				mid = 67993826
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 1013.1554269
+				lifetime = 599035.144042969
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+			}
+		}
+	}
+	LoaderInfo
+	{
+		BackgroundProcessing v0.4.4.0 = True
+		ModuleManager.2.6.25 v2.6.25.0 = True
+		FilterExtensions v1.0.0.0 = True
+		BetterBurnTime v1.0.0.0 = True
+		ContractConfigurator v1.0.0.0 / v1.19.0 = True
+		RemoteTech v1.7.0.0 / v1.7.1 = True
+		CC_RemoteTech v1.0.0.0 / v1.19.0 = True
+		AnomalySurveyor v1.0.0.0 / v1.7.0 = True
+		MiniAVC v1.0.3.0 = True
+		CustomBarnKit v1.1.9.0 = True
+		DarkMultiPlayer-Common v0.0.0.0 = True
+		DarkMultiPlayer v0.0.0.0 = True
+		ICSharpCode.SharpZipLib v0.86.0.518 / v0.86.0 = True
+		MessageWriter2 v0.0.0.0 = True
+		LandingHeight v1.0.0.0 = True
+		DMagic v1.3.0.2 / vv1.3.2 = True
+		ProgressParser v1.0.5.0 / vv5.0 = True
+		ContractParser v1.0.4.0 / vv4.0 = True
+		CapCom v1.0.2.4 / vv2.4 = True
+		ContractsWindow v1.0.6.4 / vv6.4 = True
+		Firespitter v7.1.6016.23694 = True
+		KerbalEngineer v1.1.1.0 = True
+		KerbalEngineer.Unity v1.0.0.0 = True
+		MiniAVC v1.0.3.2 = True
+		KerbalJointReinforcement v3.1.7.0 = True
+		KIS v1.2.12.0 / v1.2.12 for KSP 1.1 = True
+		KSPDev_Utils v0.13.0.0 / v0.13.0 for KSP v1.1 = True
+		kOS v1.0.0.0 = True
+		kOS.Safe v1.0.0.0 = True
+		KSP-AVC v1.1.6.1 = True
+		DockingPortAlignmentIndicator v1.0.0.0 = True
+		DPAI_RPM v1.0.0.0 = True
+		ModuleDockingNodeNamed v1.0.0.0 = True
+		PlanetShine v1.0.5938.30099 = True
+		QuickSearch v3.0.3.22768 = True
+		RCSBuildAid v0.8.1.22534 = True
+		RealChute v1.4.5964.18052 / v1.4.1.1 = True
+		CLSInterfaces v1.0.0.0 = True
+		ShipManifest v5.1.2.2 = True
+		SmokeScreen v2.6.17.0 = True
+		StationScience v1.6.0.0 = True
+		TacFuelBalancer v2.8.0.34891 = True
+		TakeCommand v1.4.0.0 = True
+		Trajectories v1.6.3.0 = True
+		KerbalAlarmClock v3.7.1.0 = True
+		KSPAlternateResourcePanel v2.8.1.0 = True
+		TransferWindowPlanner v1.5.1.0 = True
+		Scale v2.2.13.0 = True
+		Scale_Redist v1.0.0.0 = True
+		WaypointManager v1.0.0.0 / v2.5.3 = True
+		[x] Science! v5.0.6098.21682 = True
+		000_FilterExtensions = True
+		000_FilterExtensions Configs = True
+		BetterBurnTime = True
+		CommunityTechTree = True
+		ContractConfigurator = True
+		ContractPacks = True
+		Crowd Sourced Science = True
+		CustomBarnKit = True
+		DarkMultiPlayer = True
+		Diazo = True
+		DMagicOrbitalScience = True
+		DMagicUtilities = True
+		Firespitter = True
+		KAX = True
+		KerbalEngineer = True
+		KerbalJointReinforcement = True
+		KIS = True
+		kOS = True
+		KSP-AVC = True
+		NavyFish = True
+		PlanetShine = True
+		QuickSearch = True
+		RCSBuildAid = True
+		RealChute = True
+		RealPlume = True
+		RemoteTech = True
+		SETIcontracts = True
+		SETIprobeControlEnabler = True
+		SETIprobeParts = True
+		SETIrebalance = True
+		SETIrebalanceReactionWheels = True
+		SETIremoteTechConfig = True
+		ShipManifest = True
+		SmokeScreen = True
+		StationScience = True
+		TacFuelBalancer = True
+		TakeCommand = True
+		Trajectories = True
+		TriggerTech = True
+		TweakScale = True
+		UnmannedBeforeManned = True
+		WaypointManager = True
+		[x] Science! = True
+		BackgroundProcessing_V0.4.4.0.dll = True
+		ModuleManager.2.6.25.dll = True
+		ModuleManager.ConfigCache = True
+		ModuleManager.ConfigSHA = True
+		ModuleManager.Physics = True
+		ModuleManager.TechTree = True
+		toolbar-settings.dat = True
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Agavie Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.7481733
+			dumb = 0.09435291
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Calley Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.168819
+			dumb = 0.2249748
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Crisuna Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.8792676
+			dumb = 0.08643948
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Hudgee Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.9272997
+			dumb = 0.8282371
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Irbie Kerman
+			gender = Female
+			type = Crew
+			trait = Scientist
+			brave = 0.8590017
+			dumb = 0.7327602
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Irlenna Kerman
+			gender = Female
+			type = Crew
+			trait = Scientist
+			brave = 0.5367564
+			dumb = 0.04829223
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jebediah Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Jorster Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.7254853
+			dumb = 0.6959692
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Kirwise Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.3623046
+			dumb = 0.3934368
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Magllian Kerman
+			gender = Female
+			type = Crew
+			trait = Engineer
+			brave = 0.05422543
+			dumb = 0.9922506
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Merry Kerman
+			gender = Male
+			type = Crew
+			trait = Scientist
+			brave = 0.756815
+			dumb = 0.2925515
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Mirya Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.8638679
+			dumb = 0.6266709
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Natathy Kerman
+			gender = Female
+			type = Crew
+			trait = Engineer
+			brave = 0.8101127
+			dumb = 0.1350999
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Patdard Kerman
+			gender = Male
+			type = Crew
+			trait = Pilot
+			brave = 0.9298679
+			dumb = 0.4603272
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Sherfen Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.8030832
+			dumb = 0.004735198
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Valentina Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.55
+			dumb = 0.4
+			badS = True
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Wehrwin Kerman
+			gender = Male
+			type = Crew
+			trait = Engineer
+			brave = 0.1451285
+			dumb = 0.1470678
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Zeldie Kerman
+			gender = Female
+			type = Crew
+			trait = Pilot
+			brave = 0.7598748
+			dumb = 0.8553336
+			badS = False
+			tour = False
+			state = Available
+			ToD = 0
+			idx = -1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}

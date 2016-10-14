@@ -8,20 +8,22 @@
 !.gitignore
 
 #   flags and such
-!/GameData/Wah
+!/GameData/Wah/
 
 #   modlist
 !/wahmods.ckan
 
 #   managed game saves
-!/saves
+!/saves/
 /saves/*
 !/saves/Wah R&D/
 !/saves/Wah Enterprises/
+!/saves/DarkMultiPlayer/
+/saves/DarkMultiPlayer/*
 !/saves/DarkMultiPlayer/Ships
 !/saves/DarkMultiPlayer/Subassemblies
 !/saves/DarkMultiPlayer/persistent.sfs
 
 #   other global stuff like ships and scripts
-!/Screenshots
-!/Ships
+!/Screenshots/
+!/Ships/
