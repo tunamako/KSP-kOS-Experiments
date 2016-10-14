@@ -4,7 +4,7 @@ _stuco and tuna's shared automation-heavy games._
 
 ##To Do
 
-  - (none)
+  - develop proper docs for connecting to the game
 
 ##Getting Started
 
@@ -19,10 +19,5 @@ Once you've got this stuff set up, open CKAN and go to our KSP game, then go `Fi
 
 ##Managed Game Saves
 
-###Wah R&D (sandbox) (not initialized with new mods yet)
-where most of the KOS testing and some subassembly building will happen.
-Still setting this stuff up, but we'll get there one day.
-
-###Wah Enterprises (career)
-Where the actual srsbsns is conducted.
-Ships, scripts etc. can be shared across multiple users  playing this save, but progress-based game mechanics like in-progress flights, contracts, tech tree etc. will be overwritten between commits.
+_Games documentation is a WIP since we're experimenting with using the DarkMultiPlayer mod.
+Just stop by the /gen/ thread in the meantime._

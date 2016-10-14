@@ -3,7 +3,7 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.10.07.11.56.35",
+	"version": "2016.10.14.04.49.18",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"recommends": [
@@ -171,6 +171,9 @@
 		},
 		{
 			"name": "TakeCommand"
+		},
+		{
+			"name": "DarkMultiPlayer"
 		}
 	]
 }
