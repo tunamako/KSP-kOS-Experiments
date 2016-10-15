@@ -16,13 +16,11 @@
 #   managed game saves
 !/saves/
 /saves/*
-!/saves/Wah R&D/
-!/saves/Wah Enterprises/
 !/saves/DarkMultiPlayer/
 /saves/DarkMultiPlayer/*
-!/saves/DarkMultiPlayer/Ships
-!/saves/DarkMultiPlayer/Subassemblies
-!/saves/DarkMultiPlayer/persistent.sfs
+!/saves/DarkMultiPlayer/Ships/
+!/saves/DarkMultiPlayer/Subassemblies/
+!/saves/DarkMultiPlayer/RemoteTech_Settings.cfg
 
 #   other global stuff like ships and scripts
 !/Screenshots/
