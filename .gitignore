@@ -13,15 +13,7 @@
 #   modlist
 !/wahmods.ckan
 
-#   managed game saves
-!/saves/
-/saves/*
-!/saves/DarkMultiPlayer/
-/saves/DarkMultiPlayer/*
-!/saves/DarkMultiPlayer/Ships/
-!/saves/DarkMultiPlayer/Subassemblies/
-!/saves/DarkMultiPlayer/RemoteTech_Settings.cfg
-
 #   other global stuff like ships and scripts
-!/Screenshots/
 !/Ships/
+/Ships/*
+!/Ships/Script/
