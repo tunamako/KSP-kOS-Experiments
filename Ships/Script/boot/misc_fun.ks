@@ -1,7 +1,7 @@
 toggle ag1.
 set thrott to 1.
 set dirvector to heading(90, 90).
-set targetAlt to 800000.
+set targetAlt to 130000.
 lock throttle to thrott.
 lock steering to dirvector.
 
@@ -29,14 +29,6 @@ until ship:apoapsis >= targetAlt {
 }.
 print "Gravity turn complete.".
 
-function moveToPeriapsis {
-    print "Moving to periapsis...".
-    set thrott to -1.0.
-    set dirvector to ship:retrograde.
-    wait until ship:altitude - ship:periapsis < 20.
-    set thrott to 1.0.
-    print "Move complete. Adjusting orbit...".
-}
 function moveToApoapsis {
     print "Moving to apoapsis...".
     set thrott to -1.0.
@@ -45,20 +37,18 @@ function moveToApoapsis {
     set thrott to 1.0.
     print "Move complete. Adjusting orbit...".
 }
-
 moveToApoapsis().
-print "Initializing orbit circularization...".
+
+until ship:periapsis > 70000 {
+  set dirvector to ship:prograde.
+}
+
 until ship:apoapsis - ship:periapsis < 1500  {
-    if ship:apoapsis >= targetAlt + 10000 {
-        if ship:altitude - ship:periapsis > 250 {
-          moveToPeriapsis().
-        }
-        set dirvector to ship:retrograde.
-    }else if ship:apoapsis - ship:altitude > 250{
+    if ship:apoapsis - ship:altitude > 700 {
         moveToApoapsis().
     } else {
         set dirvector to ship:prograde.
     }.
-}
+}.
 print "Stable orbit achieved. Shutting down.".
 set thrott to -1.0.
