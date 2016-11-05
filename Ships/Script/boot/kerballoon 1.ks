@@ -30,7 +30,8 @@ wait 5.
 ag2 on.
 wait until alt:radar > 100.
 do_science().
-wait until altitude > 200 or ship:verticalspeed < 0.
+wait until ship:verticalspeed < 0 or ship:electriccharge < 10.
 ag3 on. stage.
+if ship:altitude > 18000 do_science().
 wait until alt:radar < 10. wait 10.
 do_science().

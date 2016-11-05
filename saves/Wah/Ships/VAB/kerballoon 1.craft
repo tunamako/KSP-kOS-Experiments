@@ -2,7 +2,7 @@ ship = kerballoon 1
 version = 1.1.3
 description = 
 type = VAB
-size = 2.021254,0.6599503,1.25
+size = 2.221253,0.6599503,1.25
 PART
 {
 	part = SR.PayloadTruss.35_4294415524
@@ -10,7 +10,7 @@ PART
 	pos = -0.4959997,16.21155,-1.572201
 	attPos = 0,0,0
 	attPos0 = -0.4959997,16.21155,-1.572201
-	rot = 0.5,0.5000001,0.5,-0.5000001
+	rot = 0.4999999,0.5000001,0.4999999,-0.5000001
 	attRot = 0.5000001,0.5000002,0.5000001,-0.5000002
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -243,7 +243,7 @@ PART
 	pos = -0.3771108,16.20035,-1.569302
 	attPos = 0,0,0
 	attPos0 = 0.002899409,0.118885,-0.01119999
-	rot = 0,0,0.7071071,-0.7071066
+	rot = 0,0,0.7071071,-0.7071065
 	attRot = 0,0,0,1
 	attRot0 = -1.685874E-07,0.7071068,-1.685874E-07,0.7071068
 	mir = 1,1,1
@@ -652,8 +652,8 @@ PART
 		bootFile_UIEditor
 		{
 			controlEnabled = True
-			options = None, /boot/kerballoon 1.ks, /boot/sounding 1.ks
-			display = None, kerballoon 1.ks, sounding 1.ks
+			options = None, /boot/kerballoon 1.ks, /boot/kerballoon 2.ks, /boot/sounding 1.ks
+			display = None, kerballoon 1.ks, kerballoon 2.ks, sounding 1.ks
 		}
 		EVENTS
 		{
@@ -2029,7 +2029,7 @@ PART
 	pos = -0.2130102,16.22275,-1.610303
 	attPos = 0,0,0
 	attPos0 = -0.03809774,0.2829876,0.01119983
-	rot = 0.7071069,-1.937151E-07,-1.788139E-07,0.7071068
+	rot = 0.7071068,-2.533197E-07,-1.192093E-07,0.7071068
 	attRot = 0,0,0.7071068,0.7071068
 	attRot0 = -0.7071068,-0.7071068,1.264406E-07,-1.264406E-07
 	mir = 1,1,1
@@ -2337,7 +2337,7 @@ PART
 	pos = 0.1640002,16.21155,-1.572201
 	attPos = 0,0,0
 	attPos0 = 0,0.6079998,0
-	rot = -0.5,-0.5000001,0.5,-0.5000001
+	rot = -0.4999999,-0.5000001,0.4999999,-0.5000001
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,0
 	mir = 1,1,1
@@ -2351,8 +2351,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = kerbin625BalloonS_4294103966
-	attN = top,kerbin625BalloonS_4294103966
+	link = batteryBankMini_4293395250
+	attN = top,batteryBankMini_4293395250
 	attN = bottom,SR.PayloadTruss.35_4294415524
 	EVENTS
 	{
@@ -2603,7 +2603,7 @@ PART
 	pos = -0.6880011,16.21155,-1.572201
 	attPos = 0,0,0
 	attPos0 = 0,-0.1919994,0
-	rot = 0.5000001,-0.5,-0.5000001,-0.5
+	rot = 0.5000001,-0.4999999,-0.5000001,-0.4999999
 	attRot = -0.9999999,0,0,0
 	attRot0 = 0,0,1,0
 	mir = 1,1,1
@@ -3025,14 +3025,14 @@ PART
 }
 PART
 {
-	part = kerbin625BalloonS_4294103966
+	part = batteryBankMini_4293395250
 	partName = Part
-	pos = 0.2640006,16.21155,-1.572201
+	pos = 0.3640002,16.21155,-1.572201
 	attPos = 0,0,0
-	attPos0 = 0,0.1000004,0
-	rot = 0,0,0.7071068,-0.7071069
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.7071068,0,0.7071068
+	attPos0 = 0,0.2,4.768371E-08
+	rot = -0.5,-0.5,-0.5,0.5
+	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
+	attRot0 = 0,1,1.192093E-07,0
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 0
@@ -3044,7 +3044,273 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
+	link = kerbin625BalloonS_4294103966
+	attN = top,kerbin625BalloonS_4294103966
 	attN = bottom,batteryBankMini_4294373912
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		currentKeyset = 1
+		groupNames = 
+		groupVisibility = 1011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111011111
+		groupVisibilityNames = Group1‣Group2‣Group3‣Group4‣Group5
+		DirectActionState = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+		hasData = true
+		focusFlightID = 0
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 60
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KOSNameTag
+		isEnabled = True
+		nameTag = 
+		stagingEnabled = True
+		EVENTS
+		{
+			PopupNameTagChanger
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Change Name Tag
+				guiName = Change Name Tag
+				category = Change Name Tag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAeroReentry
+		isEnabled = True
+		dead = False
+		crashTolerance = 8
+		damage = 0
+		stagingEnabled = True
+		EVENTS
+		{
+			ResetRecordedHeat
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Reset Heat Record
+				guiName = Reset Heat Record
+				category = Reset Heat Record
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = False
+			}
+			RepairDamage
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = No Damage
+				guiName = No Damage
+				category = No Damage
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = False
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 200.000000953674
+		maxAmount = 200.000000953674
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = kerbin625BalloonS_4294103966
+	partName = Part
+	pos = 0.4640002,16.21155,-1.572201
+	attPos = 0,0,0
+	attPos0 = 0,0.1,0
+	rot = 0,0,-0.7071069,0.7071068
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 0,0.7071068,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,batteryBankMini_4293395250
 	EVENTS
 	{
 	}
