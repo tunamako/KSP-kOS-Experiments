@@ -3,24 +3,24 @@
 	"abstract": "A list of modules installed on the default KSP instance",
 	"name": "installed-default",
 	"license": "unknown",
-	"version": "2016.10.14.04.49.18",
+	"version": "2016.11.05.02.54.53",
 	"identifier": "installed-default",
 	"spec_version": "v1.6",
 	"recommends": [
 		{
-			"name": "kOS"
-		},
-		{
 			"name": "ModuleManager"
 		},
 		{
-			"name": "KerbalAircraftExpansion"
+			"name": "kOS"
+		},
+		{
+			"name": "DeadlyReentry"
 		},
 		{
 			"name": "FirespitterCore"
 		},
 		{
-			"name": "FirespitterResourcesConfig"
+			"name": "ProceduralFairings-ForEverything"
 		},
 		{
 			"name": "RemoteTech"
@@ -35,16 +35,16 @@
 			"name": "SETI-RemoteTech"
 		},
 		{
-			"name": "AlternateResourcePanel"
+			"name": "NearFutureElectrical-Core"
 		},
 		{
-			"name": "BackgroundProcessing"
+			"name": "Kopernicus"
 		},
 		{
 			"name": "BetterBurnTime"
 		},
 		{
-			"name": "CapCom"
+			"name": "HideEmptyTechNodes"
 		},
 		{
 			"name": "CommunityTechTree"
@@ -65,7 +65,7 @@
 			"name": "ContractConfigurator-Tourism"
 		},
 		{
-			"name": "ContractsWindowPlus"
+			"name": "KerbalInventorySystemNoFun"
 		},
 		{
 			"name": "CrowdSourcedScience"
@@ -98,10 +98,7 @@
 			"name": "KIS"
 		},
 		{
-			"name": "LandingHeight"
-		},
-		{
-			"name": "PlanetShine-Config-Default"
+			"name": "InfernalRobotics-LegacyParts"
 		},
 		{
 			"name": "QuickSearch"
@@ -113,7 +110,7 @@
 			"name": "RealChute"
 		},
 		{
-			"name": "RealPlume-StockConfigs"
+			"name": "KerBalloons"
 		},
 		{
 			"name": "SETI-Contracts"
@@ -122,7 +119,7 @@
 			"name": "SETI-ProbeParts"
 		},
 		{
-			"name": "ShipManifest"
+			"name": "AGExt"
 		},
 		{
 			"name": "StationScience"
@@ -152,28 +149,163 @@
 			"name": "KSP-AVC"
 		},
 		{
-			"name": "ProgressParser"
+			"name": "InfernalRobotics"
 		},
 		{
-			"name": "ContractParser"
+			"name": "EVAHandrailsPackContinued"
 		},
 		{
 			"name": "FilterExtensions"
 		},
 		{
-			"name": "PlanetShine"
+			"name": "KAS"
 		},
 		{
-			"name": "SmokeScreen"
+			"name": "TimeControl"
 		},
 		{
-			"name": "RealPlume"
+			"name": "MainSailorTextures-Essentials"
+		},
+		{
+			"name": "KerbalGalaxyRevamped"
+		},
+		{
+			"name": "NearFutureProps"
+		},
+		{
+			"name": "NearFutureSolar"
+		},
+		{
+			"name": "NearFutureSolar-Core"
+		},
+		{
+			"name": "NearFutureSpacecraft"
+		},
+		{
+			"name": "ContractConfigurator-GrandTours"
+		},
+		{
+			"name": "PreciseManeuver"
+		},
+		{
+			"name": "MainSailorTextures-Complete"
+		},
+		{
+			"name": "Impact"
+		},
+		{
+			"name": "ContractConfigurator-UnmannedContracts"
+		},
+		{
+			"name": "ProceduralParts-Textures-SaturnNova"
+		},
+		{
+			"name": "ModularFlightIntegrator"
+		},
+		{
+			"name": "FerramAerospaceResearch"
 		},
 		{
 			"name": "TakeCommand"
 		},
 		{
-			"name": "DarkMultiPlayer"
+			"name": "HullcamVDSContinued"
+		},
+		{
+			"name": "ContractConfigurator-ContractPack-SCANsat"
+		},
+		{
+			"name": "SpacetuxSA"
+		},
+		{
+			"name": "SCANsat"
+		},
+		{
+			"name": "SoundingRockets"
+		},
+		{
+			"name": "USITools"
+		},
+		{
+			"name": "LaserDist"
+		},
+		{
+			"name": "KerbalWeights"
+		},
+		{
+			"name": "ContractConfigurator-RoverMissionsRedux"
+		},
+		{
+			"name": "NavballUpDefault"
+		},
+		{
+			"name": "ProceduralFairings"
+		},
+		{
+			"name": "ContractConfigurator-KerbalAcademy"
+		},
+		{
+			"name": "ProceduralParts"
+		},
+		{
+			"name": "ContractConfigurator-InterplanetaryMountaineer"
+		},
+		{
+			"name": "TCShipInfo"
+		},
+		{
+			"name": "ContractConfigurator-CleverSats"
+		},
+		{
+			"name": "VensStylePPTextures"
+		},
+		{
+			"name": "ContractConfigurator-HistoricMissions"
+		},
+		{
+			"name": "ContractConfigurator-SoundingRockets"
+		},
+		{
+			"name": "ContractConfigurator-RemoteTech"
+		},
+		{
+			"name": "TextureReplacer"
+		},
+		{
+			"name": "ExtraPlanetaryLaunchpads"
+		},
+		{
+			"name": "OuterPlanetsMod"
+		},
+		{
+			"name": "CommunityTerrainTexturePack"
+		},
+		{
+			"name": "NearFutureConstruction"
+		},
+		{
+			"name": "NearFutureElectrical"
+		},
+		{
+			"name": "NearFutureElectrical-DecayingRTGs"
+		},
+		{
+			"name": "NearFuturePropulsion"
+		},
+		{
+			"name": "B9PartSwitch"
+		},
+		{
+			"name": "CommunityResourcePack"
+		},
+		{
+			"name": "BackgroundProcessing"
+		},
+		{
+			"name": "TACLS"
+		},
+		{
+			"name": "TACLS-Config-Stock"
 		}
 	]
 }

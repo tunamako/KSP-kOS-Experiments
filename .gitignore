@@ -17,3 +17,13 @@
 !/Ships/
 /Ships/*
 !/Ships/Script/
+
+#   save-specific ships and settings
+!/saves/
+/saves/*
+!/saves/Wah/
+/saves/Wah/*
+!/saves/Wah/Ships/
+/saves/Wah/Ships/SPH/Auto-Saved Ship.craft
+/saves/Wah/Ships/VAB/Auto-Saved Ship.craft
+!/saves/Wah/RemoteTech_Settings.cfg
