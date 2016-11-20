@@ -12,8 +12,9 @@ function reachStableOrbit {
         lock steering to ship:prograde + R(0,1,0).
         set targetApoETA to 30 * ship:orbit:eccentricity.
 
-        stageHandler().
-        if (eta:apoapsis < targetApoETA and eta:apoapsis < eta:periapsis)
+        if ship:maxthrust < 0.1 {
+            stageHandler().
+        } else if (eta:apoapsis < targetApoETA and eta:apoapsis < eta:periapsis)
             or eta:apoapsis > eta:periapsis  {
             lock throttle to ship:orbit:eccentricity + 0.5.
         } else {
@@ -70,11 +71,9 @@ function reachLKO {
     parameter
         turnCoefficient is 20, //Generally a value between 15 and 25. The higher this is, the slower the craft will turn.
         stageHandler is {      //A function to define staging behavior when maxthrust reaches 0.1 or lower.
-            if ship:maxthrust < 0.1 {
-                lock throttle to 0. wait 1.
-                stage.
-                lock throttle to 1.
-            }
+          lock throttle to 0. wait 1.
+          stage.
+          lock throttle to 1.
         },
         targetAltitude is 75000.
 
