@@ -17,8 +17,8 @@ set lib["util"]["circularize"] to {
     print "Circularizing orbit.".
     print "Waiting for apopasis.".
     wait until eta:apoapsis < 15.
-    until ship:periapsis > targetAltitude or
-            (ship:apoapsis - ship:periapsis < 1500 and ship:periapsis > 70000) {
+    until ship:orbit:periapsis > targetAltitude or
+            (ship:orbit:apoapsis - ship:orbit:periapsis < 1500 and ship:orbit:periapsis > 70000) {
         lock steering to ship:prograde.
         set targetApoETA to 30 * ship:orbit:eccentricity.
 
@@ -39,6 +39,6 @@ set lib["util"]["circularize"] to {
     }
 
     clearscreen.
-    print "Stable orbit reached. Happy flying!".
-    return ship:apoapsis - ship:periapsis < targetAltitude/10.
-}
+    print "Stable orbit reached".
+    lock throttle to 0.
+}.
