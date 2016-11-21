@@ -1,6 +1,5 @@
 //fix launch startup
 @lazyglobal off.
-print "wah".
 set ship:control:pilotmainthrottle to 0.
 gear off.
 set terminal:charwidth to 6.
