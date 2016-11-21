@@ -56,7 +56,7 @@ function launchGravTurn {
             lock steering to ship:prograde.
         } else {
             set tarPitch to 90 - ship:velocity:surface:mag/turnCoefficient.
-            lock steering to heading(90, tarPitch).
+            lock steering to heading(pitchDirection, tarPitch).
             print "targetPitch: " + tarPitch.
         }.
         wait 0.01.
@@ -69,14 +69,15 @@ function launchGravTurn {
 function reachLKO {
     parameter
         turnCoefficient is 20, //Generally a value between 15 and 25. The higher this is, the slower the craft will turn.
+        targetAltitude is 75000,
+        pitchDirecction is 90,
         stageHandler is {      //A function to define staging behavior when maxthrust reaches 0.1 or lower.
             if ship:maxthrust < 0.1 {
                 lock throttle to 0. wait 1.
                 stage.
                 lock throttle to 1.
             }
-        },
-        targetAltitude is 75000.
+        }.
 
   //return true if the gravturn and circularization were successful
     return launchGravTurn(turnCoefficient, stageHandler, targetAltitude)

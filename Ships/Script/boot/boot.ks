@@ -1,50 +1,34 @@
-@lazyglobal off. clearscreen. set ship:control:pilotmainthrottle to 0. gear off. //fix various kos and ksp startup bugs.
-
+//fix launch startup
+@lazyglobal off.
+print "wah".
+set ship:control:pilotmainthrottle to 0.
+gear off.
+set terminal:charwidth to 6.
+set terminal:width to 96.
+set terminal:height to 24.
 wait 1.
-wait until addons:rt:haskscconnection(ship).
+
+//delete current bootstuffs
 deletepath("/boot/").
 
-local imports is list(
-  "/app/",
-  "/boot/",
-  "/lib/",
-  "/update/",
-  "/version.txt"
-).
-
-//somehow get the nametag of the processor from within.
-local local_kos_part is 0.
-local kos_part_lists is list(
-  ship:partsnamed("SR.ProbeCore"),
-  ship:partsnamed("kOSMachine1m"),
-  ship:partsnamed("kOSkal9000"),
-  ship:partsnamed("kOSMachineRad"),
-  ship:partsnamed("kOSMachine0m")
-).
-local kos_parts is list().
-for sublist in kos_part_lists {
-  for sublist_part in sublist {
-    kos_parts:add(sublist_part).
-  }
-}
-for kos_part in kos_parts {
-  local cpu is kos_part:getmodule("kOSProcessor").
-  if cpu:volume = core:currentvolume {
-    set local_kos_part to kos_part.
-    break.
-  }
-}
-
+//get the mission folder from this part's name tag
+local cpu_tag is core:part:tag.
 local mission_name is 0.
-if local_kos_part:tag:contains(".") {
-  set mission_name to local_kos_part:tag:split(".")[0].
+if cpu_tag:contains(".") {
+  set mission_name to cpu_tag:split(".")[0].
 } else {
-  set mission_name to local_kos_part:tag.
+  set mission_name to cpu_tag.
 }
 
-local archive_path is "0:/missions/" + mission_name.
-for item in imports {
-  local item_path is archive_path + item.
-  if exists(item_path) {copypath(item_path, "/").}
+//download the /drive folder
+local archive_dir is "0:/missions/"+mission_name+"/drive/".
+local contents is 0.
+cd(archive_dir).
+list files in contents.
+for item in contents {
+  local item_path is archive_dir + "/" + item:name.
+  copypath(item_path, core:volume:name+":/").
 }
+
+//reboot
 reboot.
