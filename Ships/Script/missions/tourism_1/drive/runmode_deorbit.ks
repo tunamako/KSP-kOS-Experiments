@@ -2,7 +2,7 @@ clearscreen.
 set ship:control:pilotmainthrottle to 0.
 
 print "Success!".
-until ship:periapsis < 0 or ship:maxthrust < 0.1 {
+until ship:periapsis < 0  {
     lock steering to heading(270, 0).
     lock throttle to 1.
 }
