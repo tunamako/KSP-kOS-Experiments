@@ -1,8 +1,11 @@
+clearscreen.
+print "Warping to the Mun".
+
 set warpmode to "rails".
-until not ship:orbit:hasnextpatch {
+until ship:body:name = "Mun" {
     set warp to 5.
 }
 set warp to 0.
 
-rm["set"]("runmode6_deorbit").
+rm["set"]("runmode6_land").
 reboot.
