@@ -10,11 +10,9 @@ lock throttle to 0.
 lock steering to ship:retrograde.
 wait 3.
 stage.
-wait until alt:radar < 10000.
+wait until alt:radar < 3000.
 toggle ag3.
 wait 1.
-stage.
-wait until alt:radar < 3000.
 stage.
 
 lock throttle to 0.
