@@ -4,10 +4,10 @@ stage.
 local ascent_profile is list(
   //byAltitude, targetPitch, targetThrottle
   list(    0,  90, 1.0),//at launch; instantly referenced as "previous_step"
-  list( 5000,  78, 0.4),
-  list(15000,  45, 0.8),
+  list( 5000,  80, 0.6),
+  list(15000,  50, 0.9),
   list(45000,  20, 0.2),
-  list(52000,   15, 1.0),
+  list(52000,  15, 1.0),
   list(69000,   0, 1.0)
 ).
 until ascent_profile:length = 1 {
@@ -35,7 +35,7 @@ until ascent_profile:length = 1 {
       "target_throttle", target_throttle
     ).
     if ship:maxthrust < 0.1 {stage.}
-    if ship:orbit:apoapsis > 75500 {
+    if ship:orbit:apoapsis > 85500 {
       print "apoapsis achieved: " + ship:orbit:apoapsis.
       break.
     }
@@ -48,7 +48,7 @@ lock throttle to 0.0.
 lock steering to ship:prograde.
 wait until eta:apoapsis < 10.
 lock throttle to 1.
-until max(ship:orbit:periapsis, 0) > 75000 {
+until max(ship:orbit:periapsis, 0) > 85000 {
   if ship:maxthrust < 0.1 {stage.}
   if eta:apoapsis < 20 or eta:apoapsis > eta:periapsis {
     lock throttle to 1.
@@ -61,8 +61,9 @@ until max(ship:orbit:periapsis, 0) > 75000 {
 }
 unlock throttle.
 unlock steering.
-toggle ag2.
+toggle ag2. // panels, antenna, and dish on
 ship:partstagged("dish")[0]:getmodule("ModuleRTAntenna"):setfield("target", kerbin).
+toggle ag4. //engine off (safety)
 
 
 rm["set"]("rm2_mission_step_2").

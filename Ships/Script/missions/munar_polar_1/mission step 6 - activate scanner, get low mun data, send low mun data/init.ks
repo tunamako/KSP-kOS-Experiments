@@ -1,4 +1,4 @@
-toggle ag1.
+//toggle ag1.
 runoncepath("/import").
 global rm is import("/lib/runmode").
 local runmode is rm["get"]().

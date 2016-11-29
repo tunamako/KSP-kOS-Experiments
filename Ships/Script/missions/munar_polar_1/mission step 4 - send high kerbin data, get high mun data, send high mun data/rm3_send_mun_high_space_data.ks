@@ -20,5 +20,5 @@ for science_module in science_modules {
     }
   }
 }
-wait 5.
-rm["set"]("rm4_check_mission step_7").
+
+rm["set"]("rm4_mission_step_5").

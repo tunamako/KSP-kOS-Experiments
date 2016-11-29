@@ -1,3 +1,5 @@
+
+toggle ag4. //engine on
 {
   //copy-pasted from https://ksp-kos.github.io/KOS/tutorials/exenode.html plus corrections
   local nd is nextnode.
@@ -32,5 +34,5 @@
   unlock throttle.
   remove nd.
 }
-//rm["set"]("rm3_mission_step_3").
-wait until false.
+toggle ag4. //engine off (safety)
+rm["set"]("rm3_store_ker_high_space_data").

@@ -26,16 +26,17 @@ function store_deployables {
     wait until deployable_module:hasdata or time:seconds > experiment_start + 10.
     if deployable_module:hasdata {
       print "Completed experiment: " + deployable_module:data[0]:title + ".".
-      //wait 5.
-      //deployable_module:toggle().
+      wait 5.
+      deployable_module:toggle().
     } else {
       print "Deployable experiment failed: " + deployable_module.
     }
   }
 }
 
+wait until ship:altitude > 65000.
 
 store_sensors().
 store_deployables().
 
-rm["set"]("rm3_send_mun_low_space_sci").
+rm["set"]("rm3_send_mun_high_space_data").

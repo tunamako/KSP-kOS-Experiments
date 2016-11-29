@@ -68,6 +68,7 @@ print "done".
 print "node has next patch:". print nextnode:orbit:hasnextpatch.
 print "node next patch body:". print nextnode:orbit:nextpatch:body.
 print "node next patch periapsis:". print nextnode:orbit:nextpatch:periapsis.
+wait until nextnode:eta < 2 * 60.
 
 
 rm["set"]("rm2_do_mun_encounter").

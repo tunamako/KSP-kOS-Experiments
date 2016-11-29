@@ -20,5 +20,5 @@ for science_module in science_modules {
     }
   }
 }
-wait 5.
-rm["set"]("rm4_check_mission step_7").
+
+rm["set"]("rm2_store_mun_high_space_data").
