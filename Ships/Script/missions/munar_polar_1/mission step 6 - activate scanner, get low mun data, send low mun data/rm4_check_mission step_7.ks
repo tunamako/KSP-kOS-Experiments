@@ -1,5 +1,5 @@
 wait until addons:rt:haskscconnection(ship).
-local archive_dir is "0:/missions/munar_polar_1/mission step 7".
+local archive_dir is "0:/missions/kerbin_polar_sat_1/drive".
 if exists(archive_dir) {
 
   local contents is 0.
