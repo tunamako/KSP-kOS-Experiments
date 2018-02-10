@@ -1,12 +1,12 @@
-#KSP-kOS-Experiments
+# KSP-kOS-Experiments
 
 _stuco and tuna's shared automation-heavy games._
 
-##To Do
+## To Do
 
   - develop proper docs for connecting to the game
 
-##Getting Started
+## Getting Started
 
 The stuff you'll need installed and configured before you get rolling:
 
